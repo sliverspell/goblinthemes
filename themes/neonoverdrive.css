@@ -1,1 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&family=Audiowide&family=Expletus+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Press+Start+2P&display=swap');
+
+/* Neon city overdrive theme by sliverspell */
+
+/* Background container image */
+.markdown-container {
+  background-image: url('');
+  background-color: #4d1f5f;
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  color: #ffffff; /* Adjusts default text color */
+  font-family: 'Orbitron', sans-serif; /* Default font for all text */
+  min-height: 100vh; /* Cover the entire viewport */
+}
+
+.markdown-container {
+    border: 1px!important; /* Removes all borders */
+    padding-left: 20px;
+    border-top: none; !important;
+    padding-top: 20px;
+  
+}
+
+.markdown-container *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-size: 12px !important;
+    font-family: 'Audiowide', cursive;
+    line-height: 1.2em !important;
+}
+
+
+.markdown-container h2, .markdown-container h3 {
+    border-bottom: none !important; /* Removes any border underneath h2 and h3 */
+}
+
+/* Text glow effect */
+.text-glow {
+  text-shadow: 0 0 8px #04d1ff; /* Blue glow */
+}
+
+/* Specific styles for markdown header */
+.markdown-header {
+  border-bottom: 4px solid #00ff00; /* Neon Green color */
+}
+
+/* Markdown divider --- */
+.markdown-container hr {
+  border: none !important;
+  height: 4px !important;
+  background-image: linear-gradient(to right, transparent, #0f0, transparent) !important;
+  margin: 16px 0 !important;
+  width: 100% !important;
+  display: block !important;
+  overflow: hidden !important;
+}
+
+
+
+
+/* Headers styling */
+h1 {
+    font-family: 'Zen Dots', cursive;
+    font-size: 30px; /* Example size, adjust as needed */
+    color: #d1ff04; /* Example color, adjust as needed */
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Audiowide', cursive;
+    font-size: 24px; /* Example size, adjust as needed */
+    color: #04d1ff; /* Example color, adjust as needed */
+    text-align: center;
+}
+
+h3, h4 {
+    font-family: 'Expletus Sans', cursive;
+    font-size: 20px; /* Example size for h3, adjust as needed */
+    color: #ff04d1; /* Example color, adjust as needed */
+    text-align: center;
+}
+
+h4 {
+    font-size: 18px; /* Smaller size for h4 */
+    color: white; /* Example color, adjust as needed */
+}
+h5 {
+    font-size: 14px; /* Smaller size for h5 */
+    color: white; /* Example color, adjust as needed */
+}
+h6 {
+    font-size: 12px; /* Smaller size for h6 */
+    color: white; /* Example color, adjust as needed */
+}
+
+
+/* Base styles for all notes */
+.note, .note2, .note3, .note4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000; /* Black text for all notes */
+    /* Default padding and font size, which can be overridden by inline styles */
+    padding: var(--note-padding, 10px); 
+    font-size: var(--note-font-size, 12px); /* Adjust default font size here if needed */
+    width: auto; 
+    height: auto;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.note { background-color: #d1ff04; }
+.note2 { background-color: #04d1ff; }
+.note3 { background-color: #ff04d1; }
+.note4 { background-color: #04ffb0; }
+
+
+
+/* Table styling for neon theme */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #04d1ff; /* Neon blue for text */
+}
+
+th, td {
+  border: 1px solid #ff04d1; /* Neon pink borders */
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #292834; /* Dark background for headers */
+  color: #04ffb0; /* Neon teal for header text */
+}
+
+tr:nth-child(odd) {
+  background-color: #1e1e2f; /* Slightly lighter dark shade for odd rows */
+}
+
+tr:nth-child(even) {
+  background-color: #292834; /* Consistent with header background */
+}
+
+/* Floating classes */
+.float-left {
+    float: left;
+    margin-right: 20px; /* Adds spacing to the right */
+}
+
+.float-right {
+    float: right;
+    margin-left: 20px; /* Adds spacing to the left */
+}
+
+/* Clearfix class */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both; /* Clears floats, ensuring container encompasses floated children */
+}
+
+/* Border roundness toggle */
+.square-border {
+    border-radius: 0; /* Makes borders square */
+}
+.note {
+    /* Default padding values */
+    --note-padding-top: 0;
+    --note-padding-bottom: 0;
+    --note-padding-left: 0;
+    --note-padding-right: 0;
+    padding: var(--note-padding-top) var(--note-padding-right) var(--note-padding-bottom) var(--note-padding-left);
+    /* Other styles remain unchanged */
+}
+
+.page-container {
+  position: relative;
+  width: 816px; /* Adjust based on your needs */
+  height: 1056px; /* Adjust based on your needs */
+  margin: auto; /* Center the container */
+  overflow: hidden; /* Keep everything contained */
+}
+
+
+/* Header Image */
+.header-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Footer Image */
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Flex container for holding the image and text */
+.split-container {
+    display: flex;
+    flex-direction: row; /* Default direction */
+    width: 100%;
+    min-height: 100vh; /* Minimum height to cover the viewport */
+}
+
+/* Flex item for images */
+.image-container {
+    flex: 1; /* Takes up 50% of the flex container */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: stretch; /* Stretch image to fill the container height */
+    overflow: hidden; /* Hide parts of the image that overflow */
+}
+
+/* Styling for the image */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container without distorting the image */
+}
+
+/* Flex item for text */
+.text-container {
+    flex: 1; /* Takes up the remaining 50% of the flex container */
+    padding: 20px; /* Add some padding around the text */
+}
+
+/* Additional styling for aligning the image to the right */
+.right-aligned-image .image-container {
+    order: 2; /* Moves the image to the right */
+}
+
+/* Ensure the container takes up at least the height of the viewport */
+.split-container {
+    min-height: 100vh;
+}
+
+/* Container for two-column layout */
+.two-column-container {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: row; /* Aligns children horizontally */
+    width: 100%; /* Full width of its parent */
+}
+
+/* Style for each column */
+.column {
+    flex: 1; /* Distributes space equally between columns */
+    padding: 10px; /* Optional: Adds some space inside each column */
+    box-sizing: border-box; /* Includes padding in the element's total width */
+}
+
+
+/* This changes the border on the top of the markdown container*/
+div#blurb {
+    border-top: none !important;
+    border-color: 
+   
+
+}
 
