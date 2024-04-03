@@ -1,5 +1,5 @@
 # What is goblinthemes?
-Goblin themes are my CSS theme modifications for the aweson goblin notebook
+Goblin themes are my CSS theme modifications for the awesome goblin notebook
 https://www.the-goblin.net/notebook
 
 ## How can I use it?
