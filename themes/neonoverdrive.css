@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&family=Audiowide&family=Expletus+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Press+Start+2P&display=swap');
 
+
+
 /* Neon city overdrive theme by sliverspell */
 
 /* Background container image */
@@ -12,16 +14,52 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   color: #ffffff; /* Adjusts default text color */
   font-family: 'Orbitron', sans-serif; /* Default font for all text */
-  min-height: 100vh; /* Cover the entire viewport */
+  height: auto; /* Temporarily switch to auto to test behavior */
+  min-height: 100vh; /* Ensure it covers at least the viewport height */
+  border: 1px solid transparent;
+  padding: 20px 25px 20px 20px;
+
+}
+/* Removing border under h2 and h3 headings */
+.markdown-container h2,
+.markdown-container h3 {
+    border-bottom: none;
 }
 
-.markdown-container {
-    border: 1px!important; /* Removes all borders */
-    padding-left: 20px;
-    border-top: none; !important;
-    padding-top: 20px;
-  
+/* Adjusting font size and line height for elements in markdown-container, excluding headings */
+.markdown-container *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-size: 1.2em;
+    line-height: 1.1em;
 }
+
+.markdown-container p {
+    padding-top: 10px; /* Adds space above each paragraph */
+    padding-bottom: 10px; /* Adds space below each paragraph */
+    padding-left: 10px; /* Adds space to the left of each paragraph */
+    padding-right: 10px; /* Corrected typo, adds space to the right */
+    font-size: 1.2em; /* Adjusts font size for better readability */
+    line-height: 1.1em; /* Improves spacing between lines */
+    letter-spacing: 0.02em; /* Slightly increases spacing between letters */
+}
+
+/* Specific h1 styling within markdown-container */
+.markdown-container h1 {
+    border-bottom: 4px solid #51735f; /* This line replaces the conflicting h1 styles */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.markdown-container *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-size: 1.2em;
+    line-height: 1.1em;
+    border: 1px !important; /* Removes all borders */
+    padding-left: 20px;
+    border-top: none !important; /* Removes top border */
+    padding-top: 20px; /* Added padding-top property */
+}
+
 
 .markdown-container *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 12px !important;
@@ -29,33 +67,32 @@
     line-height: 1.2em !important;
 }
 
-
-.markdown-container h2, .markdown-container h3 {
-    border-bottom: none !important; /* Removes any border underneath h2 and h3 */
-}
-
 /* Text glow effect */
 .text-glow {
   text-shadow: 0 0 8px #04d1ff; /* Blue glow */
 }
 
-/* Specific styles for markdown header */
+/* Adjusting the blurb container's border */
+div#blurb {
+    border-top: none;
+    border-bottom: none;
+}
+* Specific styles for markdown header */
 .markdown-header {
   border-bottom: 4px solid #00ff00; /* Neon Green color */
 }
 
-/* Markdown divider --- */
-.markdown-container hr {
-  border: none !important;
-  height: 4px !important;
-  background-image: linear-gradient(to right, transparent, #0f0, transparent) !important;
-  margin: 16px 0 !important;
-  width: 100% !important;
-  display: block !important;
-  overflow: hidden !important;
+div.markdown-container hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: none;
+    height: 2px;
+    background-color: #d1ff04; /* Fallback color */
+    background-image: url('URL_TO_YOUR_IMAGE');
+    background-repeat: repeat-x;
+    background-size: 100% 2px; /* Example to stretch horizontally */
+    box-sizing: border-box;
 }
-
-
 
 
 /* Headers styling */
@@ -63,15 +100,17 @@ h1 {
     font-family: 'Zen Dots', cursive;
     font-size: 30px; /* Example size, adjust as needed */
     color: #d1ff04; /* Example color, adjust as needed */
+    border-bottom: 8px solid #d1ff04;
     text-align: center;
 }
 
 h2 {
     font-family: 'Audiowide', cursive;
     font-size: 24px; /* Example size, adjust as needed */
-    color: #04d1ff; /* Example color, adjust as needed */
+    color: #04d1ff !important; /* Example color, adjust as needed */
     text-align: center;
 }
+
 
 h3, h4 {
     font-family: 'Expletus Sans', cursive;
@@ -115,8 +154,49 @@ h6 {
 .note2 { background-color: #04d1ff; }
 .note3 { background-color: #ff04d1; }
 .note4 { background-color: #04ffb0; }
+.note5 { background-color: #white; }
 
+.note5 {
+    background-color: black; /* Black background */
+    border: 5px solid gold; /* Gold edges */
+    width: 250px; /* Default width */
+    height: 250px; /* Default height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures no part of the image spills over the container edges */
+    box-sizing: border-box;
+    position: relative; /* For positioning the inner image */
+}
 
+/* Modifier class for making notes round and aligning text */
+.noteround {
+    border-radius: 50%; /* Maintains circular shape */
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Ensure width and height are equal for a perfect circle */
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Aligns children vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Ensures text is centered within each child element */
+    padding: 20px; /* Adds padding inside the circle, reducing the effective 
+    area for text */
+    box-sizing: border-box; /* Ensures padding does not add to the overall dimensions */
+    background-size: cover;
+    background-position: center;
+    border: none; /* Or adjust as needed */
+    box-shadow: none; /* Or adjust as needed */
+}
+
+.note5.noteround {
+    border: 5px solid gold; /* Reinforces gold border for round notes */
+    border-radius: 50%; /* Ensures the element remains circular */
+}
+.note5 img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute; /* Allows for adjustment within the container */
+}
 
 /* Table styling for neon theme */
 table {
@@ -262,11 +342,5 @@ tr:nth-child(even) {
 }
 
 
-/* This changes the border on the top of the markdown container*/
-div#blurb {
-    border-top: none !important;
-    border-color: 
-   
 
-}
 
