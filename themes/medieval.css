@@ -5,7 +5,7 @@
 
 /* Medieval theme by sliverspell */
 
-/* Background container iamge */
+/* Background container image. Her eyou change the background color or image for the object journal, or also known as markdown container */
 .markdown-container {
   background-image: url('https://watercolors.giantsoup.com/templates/phb_background_base.png');
   background-size: cover; /* Cover the entire container */
@@ -17,20 +17,18 @@
   min-height: 100vh;
   border: 1px solid transparent;
   padding: 20px 25px 20px 20px;
-
 }
 
+/* Adjusting the blurb container's border, in other words removing the borders on top and bottom of the markdown container */
+div#blurb {
+    border-top: none;
+    border-bottom: none;
+}
 
 /* Removing border under h2 and h3 headings */
 .markdown-container h2,
 .markdown-container h3 {
     border-bottom: none;
-}
-
-/* Adjusting font size and line height for elements in markdown-container, excluding headings */
-.markdown-container *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-    font-size: 1.2em;
-    line-height: 1.1em;
 }
 
 .markdown-container p {
@@ -43,27 +41,24 @@
     letter-spacing: 0.02em; /* Slightly increases spacing between letters */
 }
 
+/* Adjusting font size and line height for elements in markdown-container, excluding headings */
+.markdown-container *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-size: 1.2em;
+    line-height: 1.1em;
+}
 
+/*This changes the markdown horizontal line, using --- in markdown */
 div.markdown-container hr {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border: none;
-    height: 2px;
-    background-color: #51735f; /* Fallback color */
-    background-image: url('URL_TO_YOUR_IMAGE');
-    background-repeat: repeat-x;
-    background-size: 100% 2px; /* Example to stretch horizontally */
-    box-sizing: border-box;
+    margin-top: 1em; /* Adds space above the <hr> */
+    margin-bottom: 1em; /* Adds space below the <hr> */
+    border: none; /* Removes the default border */
+    height: 2px; /* Sets the height of the <hr> to 2 pixels */
+    background-color: #51735f; /* Sets a fallback background color */
+    background-image: url('URL_TO_YOUR_IMAGE'); /* Sets a background image */
+    background-repeat: repeat-x; /* Repeats the background image horizontally */
+    background-size: 100% 2px; /* Stretches the background image to cover the <hr> width fully and sets its height */
+    box-sizing: border-box; /* Ensures the height calculation includes any border and padding */
 }
-
-
-/* Adjusting the blurb container's border */
-div#blurb {
-    border-top: none;
-    border-bottom: none;
-}
-
-
 
 /* Headers Styling */
 h1 {
