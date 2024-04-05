@@ -14,7 +14,6 @@
   overflow-y: auto; /* Focus on the scrolling issue */
   height: auto; /* Temporarily switch to auto to test behavior */
   min-height: 100vh; /* Ensure it covers at least the viewport height */
-  min-height: 100vh;
   border: 1px solid transparent;
   padding: 20px 25px 20px 20px;
 }
@@ -66,7 +65,7 @@ h1 {
     color: rgba(86, 15, 0, 1);
     text-align: center;
     font-size: 30px;
-    border-bottom: 8px solid rgba(86, 15, 0, 1);!important;
+    border-bottom: 8px solid rgba(86, 15, 0, 1) !important;
     border-top: none;
     padding-bottom: 0.5em;
 }
