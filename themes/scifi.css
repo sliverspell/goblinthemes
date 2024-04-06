@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra&family=Cardo&family=Cinzel&family=IM+Fell+DW+Pica&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* Scifi theme by sliverspell */
+
+/*ALL CODING FROM HERE IS COMMON for all themes*/
+/* Background container image. Here you change the background color or image for the object journal, or also known as markdown container */
+.markdown-container {
+  background-image: url('');
+  background-color: black;
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  overflow-y: auto; /* Focus on the scrolling issue */
+  height: auto; /* Temporarily switch to auto to test behavior */
+  min-height: 100vh; /* Ensure it covers at least the viewport height */
+  border: 1px solid transparent;
+  border: 1px solid transparent;
+  padding: 20px 25px 20px 20px;
+}
+
+/* Adjusting the blurb container's border, in other words removing the borders on top and bottom of the markdown container */
+div#blurb {
+    border-top: none;
+    border-bottom: none;
+}
+/* Removing border under h2 and h3 headings */
+.markdown-container h2,
+.markdown-container h3 {
+    border-bottom: none;
+}
+
+.markdown-header {
+    border-bottom: 4px solid #00ff00; /* Neon Green color */
+}
+
+.markdown-container p {
+    padding-top: 10px; /* Adds space above each paragraph */
+    padding-bottom: 10px; /* Adds space below each paragraph */
+    padding-left: 10px; /* Adds space to the left of each paragraph */
+    padding-right: 10px; /* adds space to the right */
+    font-size: 1.2em; /* Adjusts font size for better readability */
+    line-height: 1.1em; /* Improves spacing between lines */
+    letter-spacing: 0.02em; /* Slightly increases spacing between letters */
+}
+
+/* Adjusting font size and line height for elements in markdown-container, excluding headings */
+.markdown-container *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-size: 1.2em;
+    line-height: 1.1em;
+}
+/* Floating classes */
+.float-left {
+    float: left;
+    margin-right: 20px; /* Adds spacing to the right */
+}
+
+.float-right {
+    float: right;
+    margin-left: 20px; /* Adds spacing to the left */
+}
+
+/* Clearfix class */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both; /* Clears floats, ensuring container encompasses floated children */
+}
+
+/* Border roundness toggle */
+.square-border {
+    border-radius: 0; /* Makes borders square */
+}
+
+.note {
+    /* Default padding values */
+    --note-padding-top: 0;
+    --note-padding-bottom: 0;
+    --note-padding-left: 0;
+    --note-padding-right: 0;
+    padding: var(--note-padding-top) var(--note-padding-right) var(--note-padding-bottom) var(--note-padding-left);
+    /* Other styles remain unchanged */
+}
+
+.page-container {
+  position: relative;
+  width: 816px; /* Adjust based on your needs */
+  height: 1200px; /* Adjust based on your needs */
+  margin: auto; /* Center the container */
+  overflow: hidden; /* Keep everything contained */
+}
+
+/* Container holding the content and images */
+.markdown-container {
+    position: relative; /* Essential for positioning children */
+    width: 100%; /* Container width */
+    min-height: 100vh; /* Minimum height */
+    overflow: hidden; /* Prevents overflow */
+}
+
+/* Header Image */
+.header-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Footer Image */
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Right Placed Image */
+.right-placed-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Left Placed Image */
+.left-placed-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+ .responsive-image-container {
+    width: 100%; /* Makes the container take the full width of the screen */
+  }
+
+  .responsive-image-container img {
+    width: 100% !important; /* Makes the image expand to the full width of its container */
+    height: auto !important; /* Ensures the image height adjusts to maintain the aspect ratio */
+}
+/* EVERYTHING UNDER HERE IS SPECIFIC TO THIS THEME */
+
+/*This changes the markdown horizontal line, using --- in markdown */
+.markdown-container hr {
+    border: none !important;
+    height: 4px !important;
+    background-image: linear-gradient(to right, transparent, #0f0, transparent) !important;
+    margin: 16px 0 !important;
+    width: 100% !important;
+    display: block !important;
+    overflow: hidden !important;
+}
+
+/* General text color adjustment for paragraphs */
+.markdown-container p {
+  color: rgb(57, 255, 20); /* Neon green for paragraph text */
+}
+
+/* Headers Styling */
+h1, h2, h3, h5 {
+  font-family: 'Orbitron', sans-serif;
+  color: #0f0; /* Neon green for a sci-fi vibe */
+  text-align: center;
+}
+
+/* Adjustments for specific headers */
+h1 {
+    font-family: 'Cinzel', serif;
+    color: rgb(57, 255, 20);
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 8px solid rgb(57, 255, 20) !important;
+    border-top: none;
+    padding-bottom: 0.5em;
+}
+
+
+h2 { font-size: 26px; background: rgba(15, 139, 141, 0.2); color: #ffffff; padding: 10px; margin: 20px auto; /* Centering h2 with margin */ max-width: 80%; /* Maximum width with auto margin for centering */ border: 1px solid #0f8b8d; /* Neon border */ } 
+
+h3 { 
+  font-size: 20px; 
+  background-color: #333; /* Sci-fi themed box for h3 */
+  padding: 10px; /* Padding for background box */
+  width: 100%; /* Full width for the container's alignment */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+h4 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    padding: 5px;
+    width: 100%;
+    color: black;
+    background: linear-gradient(135deg, #EFEFEF, #555555); /* Example gradient */
+}
+
+
+
+
+
+/* Table Styling */
+table, th, td {
+  border-collapse: collapse;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #b1ffe9; /* Futuristic font color */
+}
+
+th {
+  background: #012e34; /* Deep space blue */
+  color: #00ffcc; /* Bright cyan */
+}
+
+tr:nth-child(odd) {
+  background: #013e44;
+}
+
+tr:nth-child(even) {
+  background: #012e34;
+}
+
+thead {
+  background: #014e54;
+  color: #00ffcc;
+}
+
