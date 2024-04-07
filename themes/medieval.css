@@ -29,7 +29,7 @@ div#blurb {
 /* Removing border under h2 and h3 headings */
 .markdown-container h2,
 .markdown-container h3 {
-    border-bottom: none;
+border-bottom: none; !important
 }
 
 .markdown-container p {
@@ -191,13 +191,15 @@ h2 {
     margin: 20px 0; /* Spacing above and below the h2 */
     border-bottom: none;
     padding-bottom: 1px;
+    padding-top: 10px;
+    line-height: 1.2;
 }
 
 h2::before,
 h2::after {
     content: "";
     flex-grow: 1; /* Allows lines to fill available space */
-    background: #890900; /* Red line color */
+    background: #890900; /*  line color */
     height: 0.7px; /* Line thickness */
     margin: 0 10px; /* Spacing between the text and the lines */
 }
