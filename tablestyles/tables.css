@@ -17,18 +17,22 @@ th, td {
 
 /* Medieval Table Style */
 .table-medieval th, .table-medieval td {
-    font-family: 'Almendra', serif;
-    background-color: #f4e4bc;
-    color: #453C38;
-    border: 1px solid #a48767;
+    font-family: 'Almendra', serif; /* Medieval theme font */
+    color: #453C38; /* Text color fitting the medieval theme */
+    border: 1px solid #a48767; /* Border color fitting the medieval theme */
 }
 
-.table-medieval tr:nth-child(odd) {
-    background-color: #f4e4bc;
+.table-medieval th {
+    background-color: #a48767; /* Darker shade for header background */
+    color: white; /* White text for better readability */
 }
 
-.table-medieval tr:nth-child(even) {
-    background-color: #e8dfc9;
+.table-medieval tr:nth-child(odd) td {
+    background-color: #f4e4bc; /* Lighter row background color */
+}
+
+.table-medieval tr:nth-child(even) td {
+    background-color: #e8dfc9; /* Alternate row background color */
 }
 
 /* Neon Table Style */

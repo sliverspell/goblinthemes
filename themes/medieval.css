@@ -33,6 +33,11 @@ div.markdown-container hr {
     box-sizing: border-box; /* Ensures the height calculation includes any border and padding */
 }
 
+div.markdown-container h2 {
+    border-bottom: none !important;
+}
+
+
 /* Headers Styling */
 h1 {
     font-family: 'Cinzel', serif;

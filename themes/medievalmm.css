@@ -53,12 +53,16 @@ div.markdown-container hr {
 /* Headers Styling */
 h1 {
     font-family: 'Cinzel', serif;
-    color: #808080;
+    color: rgba(195, 190, 33 );
     text-align: center;
     font-size: 30px;
-    border-bottom: 10px solid rgba(86, 15, 0, 1);
+    border-bottom: 8px solid rgba(195, 190, 33 );!important;
     border-top: none;
     padding-bottom: 0.5em;
+}
+
+div.markdown-container h2 {
+    border-bottom: none !important;
 }
 
 h2 {
