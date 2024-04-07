@@ -57,11 +57,11 @@ th, td {
 }
 
 .table-phb tr:nth-child(odd) {
-    background-color: #f0e6d6;
+    background-color: #e1e4c1;
 }
 
 .table-phb tr:nth-child(even) {
-    background-color: #e8dabc;
+    background-color: #eae5ca;
 }
 
 /* Cyberpunk Table Style */
