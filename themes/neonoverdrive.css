@@ -19,6 +19,8 @@
     border: 1px solid transparent;
     border: 1px solid transparent;
     padding: 20px 25px 20px 20px;
+    color: #ffffff; /* Adjusts default text color */
+    font-family: 'Orbitron', sans-serif; /* Default font for all text */
   }
   
   /* Adjusting the blurb container's border, in other words removing the borders on top and bottom of the markdown container */
@@ -219,6 +221,7 @@ h2 {
     font-family: 'Audiowide', cursive;
     font-size: 24px; /* Example size, adjust as needed */
     color: #04d1ff !important; /* Example color, adjust as needed */
+    border-bottom: 2px solid #04d1ff;
     text-align: center;
 }
 
