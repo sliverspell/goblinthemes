@@ -12,13 +12,7 @@
 }
 
 /* Basic Reset */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: var(--font-family-default);
-    color: var(--text-color);
-    background-color: #ffffff;
-}
+
 
 /* Flexbox Layouts */
 .flex-row, .two-column-layout {
