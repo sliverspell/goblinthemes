@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&family=Audiowide&family=Expletus+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Press+Start+2P&display=swap');
 
-
-
 /* Neon city overdrive theme by sliverspell */
 
 /* Background container image */
@@ -18,83 +16,11 @@
   min-height: 100vh; /* Ensure it covers at least the viewport height */
   border: 1px solid transparent;
   padding: 20px 25px 20px 20px;
-
 }
-/* Removing border under h2 and h3 headings */
-.markdown-container h2,
-.markdown-container h3 {
-    border-bottom: none;
-}
-
-/* Adjusting font size and line height for elements in markdown-container, excluding headings */
-.markdown-container *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-    font-size: 1.2em;
-    line-height: 1.1em;
-}
-
-.markdown-container p {
-    padding-top: 10px; /* Adds space above each paragraph */
-    padding-bottom: 10px; /* Adds space below each paragraph */
-    padding-left: 10px; /* Adds space to the left of each paragraph */
-    padding-right: 10px; /* Corrected typo, adds space to the right */
-    font-size: 1.2em; /* Adjusts font size for better readability */
-    line-height: 1.1em; /* Improves spacing between lines */
-    letter-spacing: 0.02em; /* Slightly increases spacing between letters */
-}
-
-/* Specific h1 styling within markdown-container */
-.markdown-container h1 {
-    border-bottom: 4px solid #51735f; /* This line replaces the conflicting h1 styles */
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.markdown-container *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-    font-size: 1.2em;
-    line-height: 1.1em;
-    border: 1px !important; /* Removes all borders */
-    padding-left: 20px;
-    border-top: none !important; /* Removes top border */
-    padding-top: 20px; /* Added padding-top property */
-}
-
-
-.markdown-container *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-    font-size: 12px !important;
-    font-family: 'Audiowide', cursive;
-    line-height: 1.2em !important;
-}
-
 /* Text glow effect */
 .text-glow {
   text-shadow: 0 0 8px #04d1ff; /* Blue glow */
 }
-
-/* Adjusting the blurb container's border */
-div#blurb {
-    border-top: none;
-    border-bottom: none;
-}
-* Specific styles for markdown header */
-.markdown-header {
-  border-bottom: 4px solid #00ff00; /* Neon Green color */
-}
-
-div.markdown-container hr {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border: none;
-    height: 2px;
-    background-color: #d1ff04; /* Fallback color */
-    background-image: url('URL_TO_YOUR_IMAGE');
-    background-repeat: repeat-x;
-    background-size: 100% 2px; /* Example to stretch horizontally */
-    box-sizing: border-box;
-}
-
-
 /* Headers styling */
 h1 {
     font-family: 'Zen Dots', cursive;
@@ -133,47 +59,4 @@ h6 {
 }
 
 
-/* Base styles for all notes */
-.note, .note2, .note3, .note4 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #000; /* Black text for all notes */
-    /* Default padding and font size, which can be overridden by inline styles */
-    padding: var(--note-padding, 10px); 
-    font-size: var(--note-font-size, 12px); /* Adjust default font size here if needed */
-    width: auto; 
-    height: auto;
-    box-sizing: border-box;
-    display: block;
-    overflow: hidden;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-
-/* Table styling for neon theme */
-table {
-  border-collapse: collapse;
-  width: 100%;
-  color: #04d1ff; /* Neon blue for text */
-}
-
-th, td {
-  border: 1px solid #ff04d1; /* Neon pink borders */
-  padding: 8px;
-  text-align: left;
-}
-
-th {
-  background-color: #292834; /* Dark background for headers */
-  color: #04ffb0; /* Neon teal for header text */
-}
-
-tr:nth-child(odd) {
-  background-color: #1e1e2f; /* Slightly lighter dark shade for odd rows */
-}
-
-tr:nth-child(even) {
-  background-color: #292834; /* Consistent with header background */
-}
 
