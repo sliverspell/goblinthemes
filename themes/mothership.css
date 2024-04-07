@@ -1,1 +1,80 @@
 
+/* Mothership theme by sliverspell */
+
+/* Background container image */
+.markdown-container {
+    background-image: url('');
+    background-color: #ffffff;
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    color: #000000; /* Adjusts default text color */
+    font-family: 'Orbitron', sans-serif; /* Default font for all text */
+    height: auto; /* Temporarily switch to auto to test behavior */
+    min-height: 100vh; /* Ensure it covers at least the viewport height */
+    border: 1px solid transparent;
+    padding: 20px 25px 20px 20px;
+  
+  }
+
+  /* Removing border under h2 and h3 headings */
+.markdown-container h2,
+.markdown-container h3 {
+    border-bottom: none;
+}
+
+/* Adjusting font size and line height for elements in markdown-container, excluding headings */
+.markdown-container *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-size: 1.2em;
+    line-height: 1.1em;
+}
+
+.markdown-container p {
+    padding-top: 10px; /* Adds space above each paragraph */
+    padding-bottom: 10px; /* Adds space below each paragraph */
+    padding-left: 10px; /* Adds space to the left of each paragraph */
+    padding-right: 10px; /* Corrected typo, adds space to the right */
+    font-size: 1.2em; /* Adjusts font size for better readability */
+    line-height: 1.1em; /* Improves spacing between lines */
+    letter-spacing: 0.02em; /* Slightly increases spacing between letters */
+}
+
+
+
+/* Specific h1 styling within markdown-container */
+.markdown-container h1 {
+    border-bottom: 4px solid #000000; /* This line replaces the conflicting h1 styles */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+}
+
+div.markdown-container hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: none;
+    height: 2px;
+    background-color: #000000; /* Fallback color */
+    background-image: url('URL_TO_YOUR_IMAGE');
+    background-repeat: repeat-x;
+    background-size: 100% 2px; /* Example to stretch horizontally */
+    box-sizing: border-box;
+}
+
+
+/* Adjusting the blurb container's border */
+div#blurb {
+    border-top: none;
+    border-bottom: none;
+}
+
+/* Headers Styling */
+h1 {
+    font-family: 'Cinzel', serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 8px solid rgb(0, 0, 0);
+    border-top: none;
+    padding-bottom: 0.5em;
+}
