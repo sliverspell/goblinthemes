@@ -5,7 +5,6 @@
 
 /* Scifi theme by sliverspell */
 
-/*ALL CODING FROM HERE IS COMMON for all themes*/
 /* Background container image. Here you change the background color or image for the object journal, or also known as markdown container */
 .markdown-container {
   background-image: url('');
@@ -19,23 +18,8 @@
   border: 1px solid transparent;
   border: 1px solid transparent;
   padding: 20px 25px 20px 20px;
+  
 }
-
-/* Adjusting the blurb container's border, in other words removing the borders on top and bottom of the markdown container */
-div#blurb {
-    border-top: none;
-    border-bottom: none;
-}
-/* Removing border under h2 and h3 headings */
-.markdown-container h2,
-.markdown-container h3 {
-    border-bottom: none;
-}
-
-.markdown-header {
-    border-bottom: 4px solid #00ff00; /* Neon Green color */
-}
-
 .markdown-container p {
     padding-top: 10px; /* Adds space above each paragraph */
     padding-bottom: 10px; /* Adds space below each paragraph */
@@ -51,109 +35,7 @@ div#blurb {
     font-size: 1.2em;
     line-height: 1.1em;
 }
-/* Floating classes */
-.float-left {
-    float: left;
-    margin-right: 20px; /* Adds spacing to the right */
-}
 
-.float-right {
-    float: right;
-    margin-left: 20px; /* Adds spacing to the left */
-}
-
-/* Clearfix class */
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both; /* Clears floats, ensuring container encompasses floated children */
-}
-
-/* Border roundness toggle */
-.square-border {
-    border-radius: 0; /* Makes borders square */
-}
-
-.note {
-    /* Default padding values */
-    --note-padding-top: 0;
-    --note-padding-bottom: 0;
-    --note-padding-left: 0;
-    --note-padding-right: 0;
-    padding: var(--note-padding-top) var(--note-padding-right) var(--note-padding-bottom) var(--note-padding-left);
-    /* Other styles remain unchanged */
-}
-
-.page-container {
-  position: relative;
-  width: 816px; /* Adjust based on your needs */
-  height: 1200px; /* Adjust based on your needs */
-  margin: auto; /* Center the container */
-  overflow: hidden; /* Keep everything contained */
-}
-
-/* Container holding the content and images */
-.markdown-container {
-    position: relative; /* Essential for positioning children */
-    width: 100%; /* Container width */
-    min-height: 100vh; /* Minimum height */
-    overflow: hidden; /* Prevents overflow */
-}
-
-/* Header Image */
-.header-top {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 150px; /* Adjust the height as needed */
-    background-size: cover;
-    background-position: center;
-}
-
-/* Footer Image */
-.footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 150px; /* Adjust the height as needed */
-    background-size: cover;
-    background-position: center;
-}
-
-/* Right Placed Image */
-.right-placed-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-}
-
-/* Left Placed Image */
-.left-placed-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-}
-
-
- .responsive-image-container {
-    width: 100%; /* Makes the container take the full width of the screen */
-  }
-
-  .responsive-image-container img {
-    width: 100% !important; /* Makes the image expand to the full width of its container */
-    height: auto !important; /* Ensures the image height adjusts to maintain the aspect ratio */
-}
-/* EVERYTHING UNDER HERE IS SPECIFIC TO THIS THEME */
 
 /*This changes the markdown horizontal line, using --- in markdown */
 .markdown-container hr {
@@ -214,28 +96,4 @@ h4 {
 
 
 
-/* Table Styling */
-table, th, td {
-  border-collapse: collapse;
-  font-family: 'Roboto Condensed', sans-serif;
-  color: #b1ffe9; /* Futuristic font color */
-}
-
-th {
-  background: #012e34; /* Deep space blue */
-  color: #00ffcc; /* Bright cyan */
-}
-
-tr:nth-child(odd) {
-  background: #013e44;
-}
-
-tr:nth-child(even) {
-  background: #012e34;
-}
-
-thead {
-  background: #014e54;
-  color: #00ffcc;
-}
 

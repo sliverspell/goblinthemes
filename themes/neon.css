@@ -1,64 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&family=Audiowide&family=Expletus+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
-/* Neon city overdrive theme by sliverspell */
+body {
+  background-image: url('https://watercolors.giantsoup.com/templates/sword_meow_background_base.png');
+  font-family: 'Orbitron', sans-serif; /* Setting the default font for the body */
+}
 
-/* Background container image */
+/* Ensuring .markdown-container styles are enforced */
 .markdown-container {
-  background-image: url('');
-  background-color: #4d1f5f;
-  background-size: cover; /* Cover the entire container */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  color: #ffffff; /* Adjusts default text color */
-  font-family: 'Orbitron', sans-serif; /* Default font for all text */
-  height: auto; /* Temporarily switch to auto to test behavior */
+  background-color: #4d1f5f !important; /* Force background color */
+  color: #ffffff !important; /* Force text color */
   min-height: 100vh; /* Ensure it covers at least the viewport height */
   border: 1px solid transparent;
   padding: 20px 25px 20px 20px;
 }
+
 /* Text glow effect */
 .text-glow {
   text-shadow: 0 0 8px #04d1ff; /* Blue glow */
 }
-/* Headers styling */
-h1 {
-    font-family: 'Zen Dots', cursive;
-    font-size: 30px; /* Example size, adjust as needed */
-    color: #d1ff04; /* Example color, adjust as needed */
-    border-bottom: 8px solid #d1ff04;
-    text-align: center;
+
+/* Headers styling with specificity */
+.markdown-container h1 {
+  font-family: 'Zen Dots', cursive !important;
+  font-size: 30px !important;
+  color: #d1ff04 !important; /* Force color */
+  text-align: center;
+  border-bottom: 8px solid #d1ff04 !important;
 }
 
-h2 {
-  font-size: 26px;
-  background: rgba(15, 139, 141, 0.2);
-  color: #ffffff;
-  padding: 10px;
-  margin: 20px auto; /* Centering h2 with margin */
-  max-width: 80%; /* Maximum width with auto margin for centering */
-  border: 1px solid #0f8b8d; /* Neon border */
+.markdown-container h2 {
+  font-family: 'Audiowide', cursive !important;
+  font-size: 24px !important;
+  color: #04d1ff !important; /* Force color */
+  background: rgba(15, 139, 141, 0.2) !important; /* Force background */
+  text-align: center;
+  padding: 10px 0 !important;
+  width: 100% !important;
 }
 
-h3 {
-  font-size: 24px;
-  color: #ccf381; /* Keeping the neon green */
+.markdown-container h3, .markdown-container h4 {
+  font-family: 'Expletus Sans', cursive !important;
+  color: #ff04d1 !important; /* Force color for h3 and h4 */
 }
 
-h4 {
-  font-size: 20px;
-  background: rgba(204, 243, 129, 0.2); /* Semi-transparent neon green background */
+.markdown-container h3 {
+  font-size: 20px !important;
+}
+
+.markdown-container h4 {
+  font-size: 18px !important;
+  background: rgba(204, 243, 129, 0.2) !important; /* Semi-transparent neon green background */
   padding: 5px;
   width: 100%;
 }
-h5 {
-    font-size: 14px; /* Smaller size for h5 */
-    color: white; /* Example color, adjust as needed */
-}
-h6 {
-    font-size: 12px; /* Smaller size for h6 */
-    color: white; /* Example color, adjust as needed */
+
+/* Additional headers if needed */
+.markdown-container h5, .markdown-container h6 {
+  font-size: 14px !important; /* Adjusted for h5 */
+  color: #ffffff !important; /* White color for better readability */
 }
 
+/* Overriding and ensuring other styles */
+.markdown-container li, .markdown-container div {
+  font-size: 12px !important; /* Ensuring paragraph and list items font size */
+  color: #ffffff !important; /* Ensuring text color */
+}
 
-
+/* Overriding and ensuring paragraph styles for better readability */
+.markdown-container p {
+    font-family: 'Orbitron', sans-serif; /* Maintaining theme consistency */
+    font-size: 12px !important; /* Slightly larger for readability */
+    color: #E0E0E0 !important; /* A light grey for high contrast but less harsh than pure white */
+    line-height: 1.6 !important; /* Increasing line height for better readability */
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.7); /* Adding a subtle shadow for depth */
+  }
+  
