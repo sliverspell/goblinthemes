@@ -1,32 +1,98 @@
-/* Table Styling */
+/* Importing Google Fonts for table styles */
+@import url('https://fonts.googleapis.com/css2?family=Almendra&family=Orbitron:wght@400;500;600;700&family=IM+Fell+DW+Pica&family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Base styles for tables */
 table {
-    border-collapse: collapse;
     width: 100%;
-    font-family: 'Cardo', serif;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
 th, td {
-    padding: 0.5em;
+    padding: 8px;
     text-align: left;
-    vertical-align: top;
+    border-bottom: 1px solid #ccc;
 }
 
-th {
-    background: #a48767;
-    color: #000;
-    font-size: 15px;
-    font-weight: bold;
+/* Medieval Table Style */
+.table-medieval th, .table-medieval td {
+    font-family: 'Almendra', serif;
+    background-color: #f4e4bc;
+    color: #453C38;
+    border: 1px solid #a48767;
 }
 
-tr:nth-child(odd) {
-    background: #f4e4bc;
+.table-medieval tr:nth-child(odd) {
+    background-color: #f4e4bc;
 }
 
-tr:nth-child(even) {
-    background: #e8dfc9;
+.table-medieval tr:nth-child(even) {
+    background-color: #e8dfc9;
 }
 
-thead {
-    background: #927d5e;
-    color: #fff;
+/* Neon Table Style */
+.table-neon th, .table-neon td {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #292834;
+    color: #04ffb0;
+    border: 1px solid #ff04d1;
+    text-shadow: 0 0 8px #04d1ff;
+}
+
+.table-neon tr:nth-child(odd) {
+    background-color: #292834;
+}
+
+.table-neon tr:nth-child(even) {
+    background-color: #1e1e2f;
+}
+
+/* Player's Handbook (D&D) Table Style */
+.table-phb th, .table-phb td {
+    font-family: 'IM Fell DW Pica', serif;
+    background-color: #f0e6d6;
+    color: #6E665A;
+    border: 1px solid #927d5e;
+}
+
+.table-phb tr:nth-child(odd) {
+    background-color: #f0e6d6;
+}
+
+.table-phb tr:nth-child(even) {
+    background-color: #e8dabc;
+}
+
+/* Cyberpunk Table Style */
+.table-cyberpunk th, .table-cyberpunk td {
+    font-family: 'Audiowide', cursive;
+    background-color: #0f0f23;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+    text-shadow: 0 0 8px #00FF00;
+}
+
+.table-cyberpunk tr:nth-child(odd) {
+    background-color: #0f0f23;
+}
+
+.table-cyberpunk tr:nth-child(even) {
+    background-color: #171733;
+}
+
+/* Elegant Table Style */
+.table-elegant th, .table-elegant td {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #ffffff;
+    color: #333;
+    border-bottom: 2px solid #666;
+}
+
+.table-elegant tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.table-elegant tr:nth-child(even) {
+    background-color: #f0f0f0;
 }

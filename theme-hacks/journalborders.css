@@ -1,0 +1,15 @@
+
+div#blurb {
+    margin: 0 !important; /* Removes margin */
+    padding: 0 !important; /* Removes padding */
+    border: none !important; /* Removes borders */
+    outline: none !important; /* Removes outlines */
+    box-shadow: none !important; /* Removes box shadows */
+    background-color: none !important; /* Makes background transparent */
+    min-height: 0 !important; /* Removes minimum height */
+    border-radius: 0 !important; /* Removes border radius */
+  
+}#blurb-text {
+	/*Your code should go under this comment*/
+  border: none !important; /* Removes borders */
+}
