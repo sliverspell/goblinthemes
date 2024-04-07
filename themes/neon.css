@@ -40,15 +40,14 @@ body {
   text-align: center;
   padding: 10px 0 !important;
   width: 100% !important;
-}
+  border-bottom: none !important; /*  removes any border */
+  border: 0; solid #0f8b8d; /* Neon border */
 
-.markdown-container h3, .markdown-container h4 {
-  font-family: 'Expletus Sans', cursive !important;
-  color: #ff04d1 !important; /* Force color for h3 and h4 */
 }
 
 .markdown-container h3 {
   font-size: 20px !important;
+  color: #ccf381; /* Keeping the neon green */
 }
 
 .markdown-container h4 {
