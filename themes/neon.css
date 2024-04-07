@@ -31,23 +31,25 @@ h1 {
 }
 
 h2 {
-    font-family: 'Audiowide', cursive;
-    font-size: 24px; /* Example size, adjust as needed */
-    color: #04d1ff !important; /* Example color, adjust as needed */
-    text-align: center;
+  font-size: 26px;
+  background: rgba(15, 139, 141, 0.2);
+  color: #ffffff;
+  padding: 10px;
+  margin: 20px auto; /* Centering h2 with margin */
+  max-width: 80%; /* Maximum width with auto margin for centering */
+  border: 1px solid #0f8b8d; /* Neon border */
 }
 
-
-h3, h4 {
-    font-family: 'Expletus Sans', cursive;
-    font-size: 20px; /* Example size for h3, adjust as needed */
-    color: #ff04d1; /* Example color, adjust as needed */
-    text-align: center;
+h3 {
+  font-size: 24px;
+  color: #ccf381; /* Keeping the neon green */
 }
 
 h4 {
-    font-size: 18px; /* Smaller size for h4 */
-    color: white; /* Example color, adjust as needed */
+  font-size: 20px;
+  background: rgba(204, 243, 129, 0.2); /* Semi-transparent neon green background */
+  padding: 5px;
+  width: 100%;
 }
 h5 {
     font-size: 14px; /* Smaller size for h5 */
