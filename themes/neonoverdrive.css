@@ -28,11 +28,7 @@
       border-top: none;
       border-bottom: none;
   }
-  /* Removing border under h2 and h3 headings */
-  .markdown-container h2,
-  .markdown-container h3 {
-      border-bottom: none;
-  }
+
   
   .markdown-header {
       border-bottom: 4px solid #00ff00; /* Neon Green color */
@@ -161,7 +157,7 @@
 
 /* Specific h1 styling within markdown-container */
 .markdown-container h1 {
-    border-bottom: 4px solid #51735f; /* This line replaces the conflicting h1 styles */
+    border-bottom: 4px solid #51735f; /* h1 heading insode the markdwon container */
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 0px;
