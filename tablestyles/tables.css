@@ -1,0 +1,32 @@
+/* Table Styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Cardo', serif;
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #a48767;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background: #f4e4bc;
+}
+
+tr:nth-child(even) {
+    background: #e8dfc9;
+}
+
+thead {
+    background: #927d5e;
+    color: #fff;
+}

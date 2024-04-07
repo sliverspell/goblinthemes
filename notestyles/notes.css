@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Your existing notes CSS */
+
+/* Ensure you update the .note classes that require specific fonts */
+
+.note9, .note10, .note11, .note12 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* If you prefer a different look for any of the notes
+
+
+/* NOTES */
+/* Base styles for all notes */
+.note, .note2, .note3, .note4, .note5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto; /* Default width to auto, can be overridden with inline styles */
+    height: auto; /* Allows height to adjust based on content */
+    box-sizing: border-box;
+    display: block; /* Ensures block-level display */
+    overflow: hidden; /* Helps contain floated elements if necessary */
+}
+
+/* Styles for .note */
+.note {
+    box-shadow: 0px 0px 20px 4px #444;
+    font-size: 1em;
+    border-image: url('https://www.gmbinder.com/images/kea0FHP.png') 30 round;
+    padding: 8px 10px 10px 10px;
+}
+
+/* Styles for .note2 */
+.note2 {
+    padding: 40px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-image: url('https://i.pinimg.com/originals/11/b2/c0/11b2c0d0d3618b138dca11b32e40999d.png');
+    border-radius: 20px;
+    border: 1px solid transparent;
+}
+
+/* Styles for .note3 */
+.note3 {
+    border-radius: 20px;
+    background-image: url('https://watercolors.giantsoup.com/templates/dmg_background_base.png');
+    padding: 10px;
+}
+
+/* Styles for .note4 */
+.note4 {
+    border-radius: 20px;
+    background-image: url('https://watercolors.giantsoup.com/templates/ice_background_base.png');
+    padding: 20px;
+}
+.note5 {
+    display: block;
+    color: #fff693;
+    padding: 15px;
+    position: relative;
+    background-color: #a33638;
+    font-style: italic;
+}
+
+.note6 {
+    background-color: black; /* Black background */
+    border: 5px solid gold; /* Gold edges */
+    width: 250px; /* Default width */
+    height: 250px; /* Default height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures no part of the image spills over the container edges */
+    box-sizing: border-box;
+    position: relative; /* For positioning the inner image */
+}
+
+.note6 img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute; /* Allows for adjustment within the container */
+}
+
+
+/* Modifier class for making notes round and aligning text */
+.noteround {
+    border-radius: 50%; /* Maintains circular shape */
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Ensure width and height are equal for a perfect circle */
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Aligns children vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Ensures text is centered within each child element */
+    padding: 20px; /* Adds padding inside the circle, reducing the effective 
+    area for text */
+    box-sizing: border-box; /* Ensures padding does not add to the overall dimensions */
+    background-size: cover;
+    background-position: center;
+    border: none; /* Or adjust as needed */
+    box-shadow: none; /* Or adjust as needed */
+}
+
+.note6.noteround {
+    border: 5px solid gold; /* Reinforces gold border for round notes */
+    border-radius: 50%; /* Ensures the element remains circular */
+}
+
+
+/* Styles for .note7 - Cyberpunk Neon Glow */
+.note7 {
+    background: linear-gradient(145deg, #ff0099, #493240);
+    color: #00fffc;
+    text-shadow: 0 0 5px #00fffc;
+    border: 1px solid #ff0099;
+    box-shadow: 0 0 10px #ff0099, inset 0 0 10px #ff0099;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-family: 'Audiowide', cursive;
+    border-radius: 5px;
+}
+
+/* Styles for .note8 - Sci-Fi Metallic */
+.note8 {
+    background: linear-gradient(145deg, #555, #bbb);
+    color: #0f0;
+    border: 1px solid #333;
+    box-shadow: 0 0 8px #0f0;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Styles for .note9 - Holographic Effect */
+.note9 {
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 15px;
+    color: #0ff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Press+Start+2P', cursive;
+    border-radius: 5px;
+}
+
+/* Styles for .note10 - Glitch Art */
+.note10 {
+    background: #000;
+    color: #0f0;
+    font-family: 'Orbitron', sans-serif;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+    animation: glitch 1s infinite;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #0f0;
+    border-radius: 5px;
+}
+
+@keyframes glitch {
+    0%, 100% {
+        clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        clip-path: polygon(0 0, 100% 0, 100% 94%, 0 85%);
+    }
+    20%, 40%, 60%, 80% {
+        clip-path: polygon(0 0, 100% 0, 100% 79%, 0 90%);
+    }
+}
+
+/* Styles for .note11 - Futuristic UI */
+.note11 {
+    background: #222;
+    border: 1px solid #08f;
+    color: #08f;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: 0 0 5px #08f, inset 0 0 5px #08f;
+    border-radius: 5px;
+}
+
+/* Styles for .note12 - Cybernetic Circuit */
+.note12 {
+    background: #333;
+    color: #0ff;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px dashed #0ff;
+    background-image: url('circuit-pattern.png');
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 5px;
+}
