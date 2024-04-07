@@ -1,0 +1,20 @@
+/*This will remove borders and margins inside the journal 
+this code can either be imported or copied into your CSS so that you you can override the css
+*/
+
+div#blurb {
+    margin: 0 !important; /* Removes margin */
+    padding: 0 !important; /* Removes padding */
+    border: none !important; /* Removes borders */
+    outline: none !important; /* Removes outlines */
+    box-shadow: none !important; /* Removes box shadows */
+    background-color: none !important; /* Makes background transparent */
+    min-height: 0 !important; /* Removes minimum height */
+    border-radius: 0 !important; /* Removes border radius */
+  
+}
+
+#blurb-text {
+	/* remove border */
+  border: none !important; /* Removes borders */
+}

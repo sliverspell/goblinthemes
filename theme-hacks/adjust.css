@@ -1,0 +1,115 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&family=Audiowide&family=Expletus+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Press+Start+2P&display=swap');
+
+/* Root Variable Definitions */
+:root {
+    --primary-color: rgba(86, 15, 0, 1);
+    --secondary-color: #890900;
+    --text-color: #ffffff;
+    --font-family-default: sans-serif; /* Neutral default font */
+    --font-family-accent: serif; /* Neutral accent font */
+}
+
+/* Basic Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-default);
+    color: var(--text-color);
+    background-color: #ffffff;
+}
+
+/* Flexbox Layouts */
+.flex-row, .two-column-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between elements */
+}
+
+.flex-column, .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px; /* Adjust for responsive breakpoints */
+}
+
+/* Alignment Helpers */
+.align-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+/* Content Container */
+.content-container {
+    max-width: 816px;
+    margin: auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Responsive Images */
+img.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Text and Header Styling */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-accent);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* Font sizes for headers */
+h1 { font-size: 30px; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+
+/* Note Styling */
+.note, .note2, .note3, .note4 {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* Image Wrapping */
+.image-wrapper {
+    float: left; /* Adjust 'float: right;' for alternative wrapping */
+    margin-right: 20px;
+    width: 50%;
+}
+
+/* Clearfix Solution */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .flex-row, .two-column-layout, .flex-column {
+        flex-direction: column;
+    }
+    .image-wrapper {
+        float: none;
+        margin: 0 auto 20px;
+        width: 100%;
+    }
+}
