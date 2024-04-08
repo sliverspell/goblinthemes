@@ -78,17 +78,16 @@ h2, div.markdown-container h2 {
     width: 100%; /* Ensure full width to distribute space for lines */
     overflow: hidden; /* Keep everything contained */
     margin: 20px 0; /* Spacing above and below the h2 */
-    border-bottom: none;
     padding-bottom: 1px;
 }
 
-h2::before, div.markdown-container h2::before,
-h2::after, div.markdown-container h2::after {
+h2:before, div.markdown-container h2:before,
+h2:after, div.markdown-container h2:after {
     content: "";
-    flex-grow: 1; /* Allows lines to fill available space */
+    flex-grow: 1;
     background: #890900; /* Red line color */
     height: 0.7px; /* Line thickness */
-    margin: 0 10px; /* Spacing between the text and the lines */
+    margin: 0 20px; /* Adjusting spacing for visual consistency */
 }
 
 h3, div.markdown-container h3 {
