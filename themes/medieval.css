@@ -20,10 +20,10 @@
   box-sizing: border-box; /* Include padding and border in the element's total dimensions */
   border: none !important; /* Ensure no border is applied, overriding other styles if necessary */
 }
-}
+
 
 div#planner:not(div.task-bar) div#note-content {
-    padding: none;!important;
+    padding: none; !important;
 }
 
 /*This changes the markdown horizontal line, using --- in markdown */
