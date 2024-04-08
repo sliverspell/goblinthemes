@@ -72,28 +72,30 @@ h1, div.markdown-container h1 {
 }
 
 h2, div.markdown-container h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Using flexbox to manage the space */
+    justify-content: center; /* Center the text (flex item) horizontally */
+    align-items: center; /* Align the text (flex item) vertically */
     font-family: 'Almendra', serif;
-    color: rgba(86, 15, 0, 1);
+    color: #000000; /* Setting text color to pitch black */
     font-size: 24px;
     position: relative;
     text-align: center;
-    width: 100%;
-    margin: 20px 0;
-    border-bottom: none;
-    padding-bottom: 1px;
+    width: 100%; /* Ensure full width to distribute space for lines */
+    overflow: hidden; /* Keep everything contained */
+    margin: 20px 0; /* Spacing above and below the h2 */
+    padding-top: 10px; /* Adjusted padding to prevent text cutoff */
+    padding-bottom: 10px; /* Additional padding to ensure spacing */
 }
 
 h2::before, div.markdown-container h2::before,
 h2::after, div.markdown-container h2::after {
     content: "";
-    flex-grow: 1;
-    background: #890900;
-    height: 0.7px;
-    margin: 0 10px;
+    flex-grow: 1; /* Allows lines to fill available space */
+    background: #890900; /* Red line color */
+    height: 0.7px; /* Line thickness */
+    margin: 0 10px; /* Spacing between the text and the lines */
 }
+
 
 h3, div.markdown-container h3 {
     font-family: 'Lora', serif;
