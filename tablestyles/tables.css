@@ -131,7 +131,6 @@ t.phb-table {
 /* Elegant Table Style */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap');
 
-<style>
 .elegant-table {
   width: 100%;
   border-collapse: collapse;
@@ -160,10 +159,8 @@ t.phb-table {
 .elegant-table tr:nth-child(even) {
   background-color: #f0f0f0; /* Slightly off-white for even rows, providing a subtle stripe effect */
 }
-</style>
 
 /* Grey Table Style */
-<style>
 .grey-table {
   width: 100%;
   border-collapse: collapse;
@@ -227,7 +224,6 @@ t.phb-table {
   background-color: #551414; /* A muted red for hover effect */
   transition: background-color 0.3s ease;
 }
-</style>
 
 /* Steampunk Adventure Table Style */
 .steampunk-table {
