@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Almendra&family=Orbitron:wght@400;500;600;700&family=IM+Fell+DW+Pica&family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 27d57c2d454bc1147a92001d8a6d6518385fcad1
 /* Medieval Table Style */
 table.table-medieval th, table.table-medieval td {
     font-family: 'Almendra', serif; /* Medieval theme font */
