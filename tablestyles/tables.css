@@ -187,10 +187,7 @@ t.phb-table {
   background-color: #c9c9c9; /* Dark grey when hovering */
   transition: background-color 0.3s ease;
 }
-</style>
 
-
-<style>
 /* Horror Table Style */
 .horror-table {
   width: 100%;
