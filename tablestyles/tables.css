@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Bubblegum+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&display=swap');
+
 
 /* Medieval Table Style */
 .medieval-table {
@@ -432,7 +436,7 @@ t.phb-table {
 .phbgreen-table {
     width: 100%;
     border-collapse: collapse;
-    font-family: 'Calibri', sans-serif;
+    font-family: 'Carlito', sans-serif;
     font-size: 9.84pt;
   }
   
