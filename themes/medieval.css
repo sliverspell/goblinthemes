@@ -1,150 +1,113 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Almendra&family=Cardo&family=Cinzel&family=IM+Fell+DW+Pica&family=Lora&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 /* Medieval theme by sliverspell */
+/* Common coding for all themes */
 
-/*ALL CODING FROM HERE IS COMMON for all themes*/
-/* Background container image. Here you change the background color or image for the object journal, or also known as markdown container */
+/* Background container image */
 .markdown-container {
   background-image: url('https://watercolors.giantsoup.com/templates/phb_background_base.png');
   background-color: black;
-  background-size: cover; /* Cover the entire container */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  overflow-y: auto; /* Focus on the scrolling issue */
-  height: auto; /* Temporarily switch to auto to test behavior */
-  min-height: 100vh; /* Ensure it covers at least the viewport height */
-  padding: 20px 25px 20px 20px;
-  box-sizing: border-box; /* Include padding and border in the element's total dimensions */
-  border: none !important; /* Ensure no border is applied, overriding other styles if necessary */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-y: auto;
+  height: auto;
+  min-height: 100vh;
+  padding: 20px 25px;
+  box-sizing: border-box;
+  border: none !important;
 }
 
-
+/* Styling adjustments for planner and note content */
 div#planner:not(div.task-bar) div#note-content {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
-/*This changes the markdown horizontal line, using --- in markdown */
+/* Styling for markdown horizontal line */
 div.markdown-container hr {
-    margin-top: 1em; /* Adds space above the <hr> */
-    margin-bottom: 1em; /* Adds space below the <hr> */
-    border: none; /* Removes the default border */
-    height: 2px; /* Sets the height of the <hr> to 2 pixels */
-    background-color: #51735f; /* Sets a fallback background color */
-    background-image: url('URL_TO_YOUR_IMAGE'); /* Sets a background image */
-    background-repeat: repeat-x; /* Repeats the background image horizontally */
-    background-size: 100% 2px; /* Stretches the background image to cover the <hr> width fully and sets its height */
-    box-sizing: border-box; /* Ensures the height calculation includes any border and padding */
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: none;
+  height: 2px;
+  background-color: #51735f;
+  background-image: linear-gradient(to right, #51735f, #a67b5b);
+  background-repeat: repeat-x;
+  background-size: 100% 2px;
 }
+
+/* Paragraph styling within markdown-container */
 .markdown-container p {
-    padding-top: 10px; /* Adds space above each paragraph */
-    padding-bottom: 10px; /* Adds space below each paragraph */
-    padding-left: 10px; /* Adds space to the left of each paragraph */
-    padding-right: 10px; /* Corrected typo, adds space to the right */
-    font-size: 1.2em; /* Adjusts font size for better readability */
-    line-height: 1.1em; /* Improves spacing between lines */
-    letter-spacing: 0.02em; /* Slightly increases spacing between letters */
+  padding: 10px;
+  font-size: 1.2em;
+  line-height: 1.1em;
+  letter-spacing: 0.02em;
 }
-div.markdown-container h2 {
-    border-bottom: none !important;
+
+/* Removing borders under h2 and h3 headings */
+.markdown-container h2, .markdown-container h3 {
+  border-bottom: none !important;
 }
-/* Adjusting font size and line height for elements in markdown-container, excluding headings */
+
+/* Adjusting font size and line height, excluding headings */
 .markdown-container *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-    font-size: 1.3em;
-    line-height: 1.1em;
+  font-size: 1.3em;
+  line-height: 1.1em;
 }
 
-/* Removing border under h2 and h3 headings */
-.markdown-contabody, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevent horizontal overflow */
-  }
-  
-/* Headers Styling */
-.markdown-container h1 {
-    font-family: 'Cinzel', serif;
-    color: rgba(164, 135, 103, 1); /* Added alpha value (opacity) */
-    text-align: center;
-    font-size: 30px;
-    border-bottom: 8px solid rgba(164, 135, 103, 1) !important; /* Corrected placement of !important */
-    border-top: 0; /* Corrected value for removing border-top */
-    padding-bottom: 0.5em;
+/* Headers Styling for both inside and outside markdown-container */
+h1, .markdown-container h1 {
+  font-family: 'Cinzel', serif;
+  color: rgba(164, 135, 103, 1);
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 8px solid rgba(164, 135, 103, 1) !important;
+  padding-bottom: 0.5em;
 }
 
-
-.markdown-container h2 {
-    display: flex; /* Using flexbox to manage the space */
-    justify-content: center; /* Center the text (flex item) horizontally */
-    align-items: center; /* Align the text (flex item) vertically */
-    font-family: 'Almendra', serif;
-    color: rgb(76, 50, 44);
-    font-size: 24px;
-    position: relative;
-    text-align: center;
-    width: 100%; /* Ensure full width to distribute space for lines */
-    overflow: hidden; /* Keep everything contained */
-    margin: 20px 0; /* Spacing above and below the h2 */
-    border-bottom: none;
-    padding-bottom: 1px;
-    padding-top: 10px;
-    line-height: 1.2;
+h2, .markdown-container h2 {
+  font-family: 'Almendra', serif;
+  color: rgb(76, 50, 44);
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 1px;
+  padding-top: 10px;
+  line-height: 1.2;
+  margin: 20px 0;
 }
 
-h2::before,
-h2::after {
-    content: "";
-    flex-grow: 1; /* Allows lines to fill available space */
-    background: rgb(76, 50, 44); /*  line color */
-    height: 0.7px; /* Line thickness */
-    margin: 0 10px; /* Spacing between the text and the lines */
+h3, .markdown-container h3 {
+  font-family: 'Lora', serif;
+  color: rgb(149, 75, 60);
+  text-align: center;
+  font-size: 20px;
+  border-bottom: 1px solid rgb(149, 75, 60);
+  padding-left: 10px;
 }
 
-
-
-.markdown-container h3 {
-    font-family: 'Lora', serif;
-    color: rgb(149, 75, 60);
-    text-align: center;
-    font-size: 20px;
-    border-bottom: 1px solid rgb(149, 75, 60); /* Adding red underline */
-    display: inline-block;
-    padding-left: 10px;
+h4, .markdown-container h4 {
+  font-family: 'Lora', serif;
+  color: rgb(149, 75, 60);
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 1px solid rgb(149, 75, 60);
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-.markdown-container h4 {
-    font-family: 'Lora', serif;
-    color: rgb(149, 75, 60);
-    text-align: center;
-    font-size: 16px;
-    border-bottom: 1px solid rgb(149, 75, 60);; /* Adding underline border */
-    display: inline-block;
-    padding-left: 10px;
-    padding-bottom: 10px; /* Creates space between the text and the border */
-    margin-bottom: 10px; /* Pushes down content that follows the h4 */
+/* Additional styles for h5, h6 if needed */
+
+/* Custom styles for blockquote */
+blockquote, .markdown-container blockquote {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-left: 5px solid #ccc;
 }
 
-/* Custom styles for blockquote elements */
-blockquote {
-    margin: 10px 0; /* Adds margin around the quote for spacing */
-    padding: 10px; /* Adds padding inside the quote for content spacing */
-    background-color: #f9f9f9; /* Light background for the quote block */
-    border-left: 5px solid #ccc; /* Typical quote block style */
-    box-sizing: border-box; /* Includes padding and border in the element's 
-    total width and height */
-    display: block; /* Ensures block-level display */
-    overflow: hidden; /* Helps contain floated elements if necessary */
-    width: auto; /* Adjusts width based on the parent container */
-    padding-right: 10px;
-}
-
-/* Optional: Adjustments for responsive design or specific placement */
+/* Responsive design adjustments */
 @media (max-width: 768px) {
-    blockquote {
-        /* Adjust styles for smaller screens or specific scenarios */
-    }
+  /* Adjustments for smaller screens */
 }
-
-
