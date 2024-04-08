@@ -86,7 +86,16 @@ h2, div.markdown-container h2 {
     padding-top: 10px; /* Adjusted padding to prevent text cutoff */
     padding-bottom: 10px; /* Additional padding to ensure spacing */
 }
-
+div.markdown-container h2 {
+    color: rgb(0, 0, 0) !important;
+    font-family: "Scaly Sans Caps" !important;
+    border-bottom: 0 solid rgb(137, 9, 0) !important;
+    font-weight: normal !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.3em !important;
+    font-size: 1.2em !important;
+    line-height: 1.35em;
+}
 h2::before, div.markdown-container h2::before,
 h2::after, div.markdown-container h2::after {
     content: "";
