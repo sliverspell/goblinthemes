@@ -75,34 +75,27 @@ h2, div.markdown-container h2 {
     display: flex; /* Using flexbox to manage the space */
     justify-content: center; /* Center the text (flex item) horizontally */
     align-items: center; /* Align the text (flex item) vertically */
-    font-family: 'Almendra', serif;
-    color: #000000; /* Setting text color to pitch black */
-    font-size: 24px;
-    position: relative;
-    text-align: center;
-    width: 100%; /* Ensure full width to distribute space for lines */
-    overflow: hidden; /* Keep everything contained */
-    margin: 20px 0; /* Spacing above and below the h2 */
+    font-family: 'Almendra', serif; /* Ensuring font family consistency */
+    color: #000000 !important; /* Setting text color to pitch black, ensuring it applies */
+    font-size: 24px; /* Setting font size */
+    position: relative; /* For positioning pseudo-elements */
+    text-align: center; /* Center align text */
+    width: 100%; /* Full width to accommodate lines on sides */
+    overflow: hidden; /* Prevent overflow */
+    margin: 20px 0; /* Margin above and below */
     padding-top: 10px; /* Adjusted padding to prevent text cutoff */
-    padding-bottom: 10px; /* Additional padding to ensure spacing */
+    padding-bottom: 10px; /* Ensuring space below */
+    line-height: 1.35em; /* Adjusting line height for better readability */
+    border-bottom: none !important; /* Explicitly removing any border */
 }
-div.markdown-container h2 {
-    color: rgb(0, 0, 0) !important;
-    font-family: "Scaly Sans Caps" !important;
-    border-bottom: 0 solid rgb(137, 9, 0) !important;
-    font-weight: normal !important;
-    margin-top: 0.5em !important;
-    margin-bottom: 0.3em !important;
-    font-size: 1.2em !important;
-    line-height: 1.35em;
-}
+
 h2::before, div.markdown-container h2::before,
 h2::after, div.markdown-container h2::after {
-    content: "";
-    flex-grow: 1; /* Allows lines to fill available space */
-    background: #890900; /* Red line color */
+    content: ""; /* Necessary for the lines */
+    flex-grow: 1; /* Flexbox grow to fill available space */
+    background: #890900; /* Setting line color */
     height: 0.7px; /* Line thickness */
-    margin: 0 10px; /* Spacing between the text and the lines */
+    margin: 0 10px; /* Space between lines and text */
 }
 
 
