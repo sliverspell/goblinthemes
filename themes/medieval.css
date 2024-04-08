@@ -56,46 +56,48 @@ div.markdown-container hr {
   line-height: 1.1em;
 }
 
-/* Headers Styling for both inside and outside markdown-container */
-h1, .markdown-container h1 {
-  font-family: 'Cinzel', serif;
-  color: rgba(164, 135, 103, 1);
-  text-align: center;
-  font-size: 30px;
-  border-bottom: 8px solid rgba(164, 135, 103, 1) !important;
-  padding-bottom: 0.5em;
-}
-
-h2, .markdown-container h2 {
-  font-family: 'Almendra', serif;
-  color: rgb(76, 50, 44);
-  font-size: 24px;
-  text-align: center;
-  padding-bottom: 1px;
-  padding-top: 10px;
-  line-height: 1.2;
-  margin: 20px 0;
-}
-
-h3, .markdown-container h3 {
-  font-family: 'Lora', serif;
-  color: rgb(149, 75, 60);
-  text-align: center;
-  font-size: 20px;
-  border-bottom: 1px solid rgb(149, 75, 60);
-  padding-left: 10px;
-}
-
-h4, .markdown-container h4 {
-  font-family: 'Lora', serif;
-  color: rgb(149, 75, 60);
-  text-align: center;
-  font-size: 16px;
-  border-bottom: 1px solid rgb(149, 75, 60);
-  padding-left: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-}
+/* Styling headers globally */
+h1, div.markdown-container h1 {
+    font-family: 'Cinzel', serif;
+    color: rgba(164, 135, 103, 1);
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 8px solid rgba(164, 135, 103, 1) !important;
+    padding-bottom: 0.5em;
+  }
+  
+  h2, div.markdown-container h2 {
+    font-family: 'Almendra', serif;
+    color: rgb(76, 50, 44);
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+    border-bottom: none !important;
+  }
+  
+  h3, div.markdown-container h3 {
+    font-family: 'Lora', serif;
+    color: rgb(149, 75, 60);
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(149, 75, 60);
+  }
+  
+  h4, div.markdown-container h4 {
+    font-family: 'Lora', serif;
+    color: rgb(149, 75, 60);
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid rgb(149, 75, 60);
+  }
+  
+  h5, div.markdown-container h5 {
+    font-family: 'Cardo', serif;
+    color: rgba(86, 15, 0, 1);
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(86, 15, 0, 1);
+  }
 
 /* Additional styles for h5, h6 if needed */
 
