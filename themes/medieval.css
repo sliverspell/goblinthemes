@@ -16,8 +16,14 @@
   overflow-y: auto; /* Focus on the scrolling issue */
   height: auto; /* Temporarily switch to auto to test behavior */
   min-height: 100vh; /* Ensure it covers at least the viewport height */
-  border: 1px solid transparent;
   padding: 20px 25px 20px 20px;
+  box-sizing: border-box; /* Include padding and border in the element's total dimensions */
+  border: none !important; /* Ensure no border is applied, overriding other styles if necessary */
+}
+}
+
+div#planner:not(div.task-bar) div#note-content {
+    padding: none;!important;
 }
 
 /*This changes the markdown horizontal line, using --- in markdown */
@@ -32,19 +38,38 @@ div.markdown-container hr {
     background-size: 100% 2px; /* Stretches the background image to cover the <hr> width fully and sets its height */
     box-sizing: border-box; /* Ensures the height calculation includes any border and padding */
 }
-
+.markdown-container p {
+    padding-top: 10px; /* Adds space above each paragraph */
+    padding-bottom: 10px; /* Adds space below each paragraph */
+    padding-left: 10px; /* Adds space to the left of each paragraph */
+    padding-right: 10px; /* Corrected typo, adds space to the right */
+    font-size: 1.2em; /* Adjusts font size for better readability */
+    line-height: 1.1em; /* Improves spacing between lines */
+    letter-spacing: 0.02em; /* Slightly increases spacing between letters */
+}
 div.markdown-container h2 {
     border-bottom: none !important;
 }
+/* Adjusting font size and line height for elements in markdown-container, excluding headings */
+.markdown-container *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-size: 1.3em;
+    line-height: 1.1em;
+}
 
-
+/* Removing border under h2 and h3 headings */
+.markdown-contabody, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
 /* Headers Styling */
 h1 {
     font-family: 'Cinzel', serif;
-    color: rgba(86, 15, 0, 1);
+    color: rgba(164,135,103);
     text-align: center;
     font-size: 30px;
-    border-bottom: 8px solid rgba(86, 15, 0, 1) !important;
+    border-bottom: 8px solid rgba(164,135,103 );!important;
     border-top: none;
     padding-bottom: 0.5em;
 }
@@ -54,7 +79,7 @@ h2 {
     justify-content: center; /* Center the text (flex item) horizontally */
     align-items: center; /* Align the text (flex item) vertically */
     font-family: 'Almendra', serif;
-    color: rgba(86, 15, 0, 1);
+    color: rgb(76, 50, 44);
     font-size: 24px;
     position: relative;
     text-align: center;
@@ -71,7 +96,7 @@ h2::before,
 h2::after {
     content: "";
     flex-grow: 1; /* Allows lines to fill available space */
-    background: #890900; /*  line color */
+    background: rgb(76, 50, 44); /*  line color */
     height: 0.7px; /* Line thickness */
     margin: 0 10px; /* Spacing between the text and the lines */
 }
@@ -80,20 +105,20 @@ h2::after {
 
 h3 {
     font-family: 'Lora', serif;
-    color: rgba(86, 15, 0, 1);
+    color: rgb(149, 75, 60);
     text-align: center;
     font-size: 20px;
-    border-bottom: 1px solid #890900; /* Adding red underline */
+    border-bottom: 1px solid rgb(149, 75, 60); /* Adding red underline */
     display: inline-block;
     padding-left: 10px;
 }
 
 h4 {
     font-family: 'Lora', serif;
-    color: rgba(86, 15, 0, 1);
+    color: rgb(149, 75, 60);
     text-align: center;
     font-size: 16px;
-    border-bottom: 1px solid #890900; /* Adding underline border */
+    border-bottom: 1px solid rgb(149, 75, 60);; /* Adding underline border */
     display: inline-block;
     padding-left: 10px;
     padding-bottom: 10px; /* Creates space between the text and the border */
