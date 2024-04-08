@@ -93,9 +93,10 @@ h2::before, div.markdown-container h2::before,
 h2::after, div.markdown-container h2::after {
     content: ""; /* Necessary for the lines */
     flex-grow: 1; /* Flexbox grow to fill available space */
-    background: #890900; /* Setting line color */
+    background: #909399;; /* Setting line color */
     height: 0.7px; /* Line thickness */
     margin: 0 10px; /* Space between lines and text */
+  
 }
 
 
