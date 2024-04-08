@@ -23,7 +23,7 @@
 
 
 div#planner:not(div.task-bar) div#note-content {
-    padding: none; !important;
+    padding: 0 !important;
 }
 
 /*This changes the markdown horizontal line, using --- in markdown */
@@ -64,17 +64,18 @@ div.markdown-container h2 {
   }
   
 /* Headers Styling */
-h1 {
+.markdown-container h1 {
     font-family: 'Cinzel', serif;
-    color: rgba(164,135,103);
+    color: rgba(164, 135, 103, 1); /* Added alpha value (opacity) */
     text-align: center;
     font-size: 30px;
-    border-bottom: 8px solid rgba(164,135,103 );!important;
-    border-top: none;
+    border-bottom: 8px solid rgba(164, 135, 103, 1) !important; /* Corrected placement of !important */
+    border-top: 0; /* Corrected value for removing border-top */
     padding-bottom: 0.5em;
 }
 
-h2 {
+
+.markdown-container h2 {
     display: flex; /* Using flexbox to manage the space */
     justify-content: center; /* Center the text (flex item) horizontally */
     align-items: center; /* Align the text (flex item) vertically */
@@ -103,7 +104,7 @@ h2::after {
 
 
 
-h3 {
+.markdown-container h3 {
     font-family: 'Lora', serif;
     color: rgb(149, 75, 60);
     text-align: center;
@@ -113,7 +114,7 @@ h3 {
     padding-left: 10px;
 }
 
-h4 {
+.markdown-container h4 {
     font-family: 'Lora', serif;
     color: rgb(149, 75, 60);
     text-align: center;
