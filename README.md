@@ -128,8 +128,35 @@ any otther names that are on this github. Then you will see the style of the tab
 
 ```
 
+### How many table styles do you have?
+You can find all table styles and names here:
+https://github.com/sliverspell/goblinthemes/blob/main/tablestyles/tables.css
+But for now we have:
+You can then change the example above to any of these
+
+<div class="medieval-table">
+<div class="neon-table">
+<div class="phb-table">
+<div class="cyberpunk-table">
+<div class="elegant-table">
+<div class="grey-table">
+<div class="horror-table">
+<div class="steampunk-table">
+<div class="space-table">
+<div class="underwater-table">
+<div class="enchanted-forest-table">
+<div class="digital-cybernetics-table">
+<div class="phbgreen-table">
+<div class="newspaper-table">
+<div class="desert-table">
+<div class="mothership-table">
+
+#### Are you aware that something is wrong in some of the tables?
+Yep, will soon be fixed when I got time. All tables are constantly updated.
+
+
 ## What is notes hacks?
-In markdwon we have the quote
+In markdown we have the quote
 > Which is shown like this 
 
 But I have taken this way further. You can now add different styles for notes.
@@ -140,14 +167,46 @@ You can also override it inside the edit, so you can change borders, colors, gra
 But the main styles is changed easily just changing the number behind the note.
 
 So as an example, this is note2
-/* Styles for .note2 */
+Now you can change the title . note2, to .note3, .note 4 and so on, and then you can see that it changes style of the note.
+
+There is also a few other tricks you can do here. Read the notes behind the code
+```
 .note2 {
     padding: 40px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     background-image: url('https://i.pinimg.com/originals/11/b2/c0/11b2c0d0d3618b138dca11b32e40999d.png');
+    background-color: transparent; /* Placeholder for no initial background color */
+    color: rgba(0, 0, 0, 0); /* Fully transparent black as a placeholder */
     border-radius: 20px;
     border: 1px solid transparent;
+    border-color: black; /* Keeping border color as black */
 }
 
+```
+### Description of Border Styles
+CSS borders have several style properties that determine the look of the border drawn around an element. Here are some of the most common border-style values:
+
+solid: A single solid line.
+dotted: A series of dots.
+dashed: A series of short dashes.
+double: Two solid lines. The sum of the two lines and the space between them equals the border-width value.
+groove: Appears 3D, as though it were carved into the page (the effect depends on the border-color value).
+ridge: The opposite of groove, giving the appearance of a 3D ridge around the page.
+inset: Makes the box appear embedded in the page.
+outset: The opposite of inset, making the box stand out from the page.
+none: No border is drawn (this will override any border-width or border-color values).
+hidden: Similar to none, but specifically used in table borders.
+
+## What are snippets?
+Inside goblin notebook you can add snippets.
+Snippets are markdwon or html code that can be inserted into a notebook.
+So if you have read all the above, you can make snippets for themes, tables, and notes.
+Example:
+If you make 1 snippet for each and call it, paste in the link into the snippet and save.
+Style theme: <link rel="stylesheet" href="https://sliverspell.github.io/goblinthemes/themes/medieval.css"> , change then /medieval.css to any other theme
+Style notes: look above for an example of code, then just change .note2. to .note3 and so on
+Style tables: see examples in the markdwon table and html table above, and adjust as wanted
+
+Then inside your notebook , add this on the TOP of your notebook from the snippets menu
 
 
