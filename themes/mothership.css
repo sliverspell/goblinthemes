@@ -22,19 +22,19 @@ body {
 }
 
 /* Removing borders under h2 and h3 headings */
-.markdown-container h2, .markdown-container h3 {
+div.markdown-container h2, .markdown-container h3 {
   border-bottom: none; /* Removing the bottom border */
 }
 
 /* Styling for paragraphs to enhance readability */
-.markdown-container p {
+div.markdown-container p {
   font-size: 1.2em; /* Larger font size for paragraph text */
   line-height: 1.5em; /* Increased line height for better readability */
   padding: 5px 0; /* Padding above and below paragraphs */
 }
 
 /* Headers Styling */
-h1, .markdown-container h1 {
+h1, div.markdown-container h1 {
   font-family: 'Roboto Mono', monospace;
   color: #000000; /* Black color for headers */
   text-align: center;
@@ -43,7 +43,7 @@ h1, .markdown-container h1 {
   padding-bottom: 10px; /* Padding below the header */
 }
 
-h2, .markdown-container h2 {
+h2, div.markdown-container h2 {
   font-family: 'Roboto Mono', monospace;
   color: #000000; /* Black color for secondary headers */
   text-align: center;
@@ -52,7 +52,7 @@ h2, .markdown-container h2 {
   padding: 10px 0; /* Padding for a balanced appearance */
 }
 
-h3, .markdown-container h3, h4, .markdown-container h4, h5, .markdown-container h5 {
+h3, div.markdown-container h3, h4, div.markdown-container h4, h5, div.markdown-container h5 {
   font-family: 'Roboto Mono', monospace;
   color: #000000; /* Black color for tertiary headers */
   text-align: center;
@@ -62,7 +62,7 @@ h3, .markdown-container h3, h4, .markdown-container h4, h5, .markdown-container 
 /* Divider line adjustments */
 div.markdown-container hr {
   border: none;
-  height: 2px; /* Slightly thicker line for division */
+  height: 4px; /* Slightly thicker line for division */
   background-color: #D3D3D3; /* Grey line for a subtle divider */
   margin: 20px 0; /* Margin for spacing around the divider */
 }
