@@ -61,10 +61,7 @@ This will instantly change the theme
 To make it even easier you can add this link as a snippet:
 Then when you are on any page you can just add the snippet, and change to the theme you want.
 
-
-
 https://github.com/sliverspell/goblinthemes/assets/10817448/3822cae2-056c-429d-8609-b3c2bed99769
-
 
 
 # Table Styles
@@ -91,6 +88,12 @@ Styles and instructions available at Table Styles on GitHub.
 ### How do add and use a tablestyle?
 First add this link on TOP in ANY note:
 <link rel="stylesheet" href="https://sliverspell.github.io/goblinthemes/tablestyles/tables.css">
+
+
+
+https://github.com/sliverspell/goblinthemes/assets/10817448/8eebf525-72cd-4f4a-a40b-5140f4b9874d
+
+
 
 You can either use HTML tables divs or markdown tables.
 There are different ways for both.
