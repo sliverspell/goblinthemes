@@ -385,36 +385,51 @@ t.phb-table {
     color: #ffffff;
     cursor: pointer;
   }
-  /* Digital Cybernetics Table Style */
+ /* Digital Cybernetics Table Style */
 .digital-cybernetics-table {
-    width: 100%;
+    max-width: 100%; /* Ensures table does not exceed the container width */
+    width: auto; /* Adjusts width based on content up to max-width */
     border-collapse: collapse;
     font-family: 'Roboto Mono', monospace; /* Monospaced, techy font */
     color: #0AFFEF; /* Bright cyan text, reminiscent of neon lights */
     background: #121212; /* Deep, dark background */
-  }
-  
-  .digital-cybernetics-table th, .digital-cybernetics-table td {
+    margin: auto; /* Centers table in the container */
+}
+
+.digital-cybernetics-table th, .digital-cybernetics-table td {
     padding: 10px;
     text-align: left;
     border: 1px solid #2A2A2A; /* Slightly lighter dark border */
-  }
-  
-  .digital-cybernetics-table th {
+}
+
+.digital-cybernetics-table th {
     background: #0A0A0A; /* Darker header background */
     color: #00FFC6; /* Neon green text color for headers */
     border-bottom: 2px solid #00FFC6; /* Emphasizing header with a neon border */
-  }
-  
-  .digital-cybernetics-table tr:nth-child(odd) {
+}
+
+.digital-cybernetics-table tr:nth-child(odd) {
     background-color: #1A1A1A; /* Slightly lighter for odd rows, like dimmed lights in the dark */
-  }
-  
-  .digital-cybernetics-table tr:nth-child(even) {
+}
+
+.digital-cybernetics-table tr:nth-child(even) {
     background-color: #131313; /* Keeping even rows darker, maintaining the deep, digital ambiance */
-  }
-  
-  /* Optional: Adding a hover effect for rows to enhance interactivity */
+}
+
+/* Adding a hover effect for rows */
+.digital-cybernetics-table tr:hover {
+    background-color: #242424; /* Lightens on hover */
+    color: #1DFEFE; /* Adjusting text color for better visibility */
+}
+
+/* Hover effect for headers */
+.digital-cybernetics-table th:hover {
+    background: #020202; /* Dark hover effect for headers */
+    color: #FFFFFF; /* Bright white text for contrast */
+    cursor: pointer;
+}
+
+/* Optional: Adding a hover effect for rows to enhance interactivity */
   .digital-cybernetics-table tr:hover {
     background-color: #242424; /* Lightens on hover, mimicking a highlight in a user interface */
     color: #1DFEFE; /* Adjusting text color for better visibility */
@@ -447,7 +462,7 @@ t.phb-table {
   
   /* Alternating row background for readability */
   .phbgreen-table tr:nth-child(odd) {
-    background-color: #f2f2f2;
+    background-color: #e0e5c1;
   }
   
   /* Ensuring even rows have no background for a clean, alternating look */
@@ -458,7 +473,8 @@ t.phb-table {
 
 /* Vintage Newspaper Table Style */
 .newspaper-table {
-    width: 100%;
+    max-width: 100%; /* Ensures table does not exceed the container width */
+    width: auto; /* Adjusts width based on content up to max-width */
     border-collapse: collapse;
     font-family: 'Old Standard TT', serif; /* Classic font for a vintage look */
     background: url('https://i.pinimg.com/originals/dc/c3/09/dcc30928f7de36cb88eeba49122cac3a.jpg'); /* Placeholder for actual newspaper texture background */
@@ -508,6 +524,11 @@ t.phb-table {
     font-weight: bold;
     border-bottom: 2px solid #a67b5b; /* Sandy brown for separation */
   }
+  /* Data cells styling */
+  .desert-table td {
+    font-size: 16px; /* Adjust this value as needed for data cells */
+    /* Other styling remains unchanged */
+}
   
   /* Alternating row backgrounds for a dynamic desert feel */
   .desert-table tr:nth-child(odd) {
