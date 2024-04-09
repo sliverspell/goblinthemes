@@ -52,11 +52,18 @@ settings, css, edit and add the links:
 # Using Themes
 Themes can be utilized by adding a theme stylesheet from this github.
 So first just add this link into any page:
+
+```
 <link rel="stylesheet" href="https://sliverspell.github.io/goblinthemes/themes/medieval.css">
+
+```
 you can then change to any theme I have in here by simply changing its name /themes/neon.css
 Like this
+
+```
 <link rel="stylesheet" href="https://sliverspell.github.io/goblinthemes/themes/neon.css">
 
+```
 This will instantly change the theme
 To make it even easier you can add this link as a snippet:
 Then when you are on any page you can just add the snippet, and change to the theme you want.
