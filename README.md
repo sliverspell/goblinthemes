@@ -34,17 +34,20 @@ For changes or add-on suggestions, reach out via Goblin's Notebook Discord or DM
 ## Supporting GoblinThemes
 
 To support my work, consider a donation through [Ko-Fi](https://ko-fi.com/sliverspell).
-<iframe id='kofiframe' src='https://ko-fi.com/sliverspell/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:100%;padding:4px;background:#f9f9f9;' height='712' title='sliverspell'></iframe>
+Or here directly
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N8IAAPM)
+
+
 
 ## ThemeHacks
 
-Enhancements for text, images, columns, etc. Import with:
+ Enhancements for text, images, columns, etc. Import with:
 
-```css
+```
 @import url('https://cdn.jsdelivr.net/gh/sliverspell/goblinthemes/theme-hacks/layout.css');
 @import url('https://cdn.jsdelivr.net/gh/sliverspell/goblinthemes/theme-hacks/responsive.css');
 @import url('https://cdn.jsdelivr.net/gh/sliverspell/goblinthemes/theme-hacks/container.css');
-
+```
 # Using Themes
 Themes can be utilized by subscribing on Patreon and editing CSS in settings. Import the desired stylesheet to apply a theme.
 
@@ -82,8 +85,7 @@ to
 <table class="elegant-table">
 or
 <table class="neon-table">
-or 
-any otther names that are on this github. Then you will see the style of the table changes automagically. ;)
+or any otther names that are on this github. Then you will see the style of the table changes automagically. ;)
 
 
 
