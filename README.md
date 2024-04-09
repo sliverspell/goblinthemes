@@ -49,6 +49,9 @@ settings, css, edit and add the links:
 @import url('https://cdn.jsdelivr.net/gh/sliverspell/goblinthemes/theme-hacks/responsive.css');
 @import url('https://cdn.jsdelivr.net/gh/sliverspell/goblinthemes/theme-hacks/container.css');
 ```
+
+You can also add all hacks into the CSS of goblin notebook, and just refer to the in div styles, covered later in this tutorial.
+
 # Using Themes
 Themes can be utilized by adding a theme stylesheet from this github.
 So first just add this link into any page:
@@ -177,13 +180,20 @@ or any otther names that are on this github. Then you will see the style of the 
 # Note Styles
 Add styles to your notes:
 Add this on TOP in ANY note:
-<link rel="stylesheet" href="https://sliverspell.github.io/goblinthemes/notestyles/notes.css">
 
+```
+<link rel="stylesheet" href="https://sliverspell.github.io/goblinthemes/notestyles/notes.css">
+```
 ---
+Or use CDN
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sliverspell/goblinthemes@main/notestyles/notes.css
+```
 !NOTE This can sometimes take some time to update due to how CDN delivery works.
 So sometimes when things are updated it can take a few minutes, but sometimes even hours, or up to a day. This depends on the worlds CDN servers.
 
-There is also a few other tricks you can do here. Read the notes behind the code
+There is also a few other tricks you can do here. Read the notes behind the code.
+Add shit code as an example:
 ```
 .note2 {
     padding: 40px;
@@ -197,6 +207,12 @@ There is also a few other tricks you can do here. Read the notes behind the code
 }
 
 ```
+
+
+https://github.com/sliverspell/goblinthemes/assets/10817448/87837de4-2f63-4120-9fd0-9472a302cd56
+
+
+
 ### Description of Border Styles
 CSS borders have several style properties that determine the look of the border drawn around an element. Here are some of the most common border-style values:
 
@@ -211,6 +227,8 @@ outset: The opposite of inset, making the box stand out from the page.
 none: No border is drawn (this will override any border-width or border-color values).
 hidden: Similar to none, but specifically used in table borders.
 
+
+
 # Snippets
 
 Inside goblin notebook you can add snippets.
@@ -218,7 +236,11 @@ Snippets are markdwon or html code that can be inserted into a notebook.
 So if you have read all the above, you can make snippets for themes, tables, and notes.
 Example:
 If you make 1 snippet for each and call it, paste in the link into the snippet and save.
-Style theme: <link rel="stylesheet" href="https://sliverspell.github.io/goblinthemes/themes/medieval.css"> , change then /medieval.css to any other theme
+Style theme: 
+```
+<link rel="stylesheet" href="https://sliverspell.github.io/goblinthemes/themes/medieval.css"> 
+```
+change then /medieval.css to any other theme
 Style notes: look above for an example of code, then just change .note2. to .note3 and so on
 Style tables: see examples in the markdwon table and html table above, and adjust as wanted
 
