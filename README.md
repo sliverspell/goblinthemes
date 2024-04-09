@@ -33,8 +33,7 @@ For changes or add-on suggestions, reach out via Goblin's Notebook Discord or DM
 
 ## Supporting GoblinThemes
 
-To support my work, consider a donation through [Ko-Fi](https://ko-fi.com/sliverspell).
-Or here directly
+To support my work, consider a donation through
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N8IAAPM)
 
 
