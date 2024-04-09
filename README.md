@@ -1,61 +1,78 @@
-# What is goblinthemes?
-Goblin themes are my CSS theme style modifications for the awesome goblin notebook
-https://www.the-goblin.net/notebook
+# GoblinThemes
 
-## What will change with the CSS themes? 
-Some themes change the background and font on both main page, as well as container for markdown. Some change more than others
+Custom CSS themes for the Goblin Notebook, offering aesthetic enhancements across backgrounds, fonts, and markdown containers.
 
-### Will there be any updates?
-Oh yes, we are constantly adding new themes, new hacks, new tables and new notes.
+**Explore more**: [Goblin Notebook](https://www.the-goblin.net/notebook)
 
-#### Can I suggest changes or sugest addons? and how can I contact you?
-For sure, you can hit me up at discord in the goblins notebook discord, or DM me @sliverspell
+## Table of Contents
 
-## How can I support your work?
-If you find my work of use, and you want to support me, simply donate here.
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N8IAAPM)
+- [Introduction](#introduction)
+- [Updates](#updates)
+- [Contact and Suggestions](#contact-and-suggestions)
+- [Supporting GoblinThemes](#supporting-goblinthemes)
+- [ThemeHacks](#themehacks)
+- [Using Themes](#using-themes)
+- [Table Styles](#table-styles)
+- [Note Styles](#note-styles)
+- [Snippets](#snippets)
+- [FAQ](#faq)
 
-### What are themehacks and how can I import it?
-Themehacks makes different changes on default theme, and it adds different improvements on how text, iamges, columns, wrap text around pictures and so on works. That means when you add pictures it makes it possible to wrap text.
-You can add these into your CSS
-Go to settings
-Allow custom CSS
-Edit CSS
-Add the follwoing lines:
+---
+
+## Introduction
+
+GoblinThemes offers a range of CSS modifications for the Goblin Notebook, including background and font changes.
+
+## Updates
+
+Stay tuned for new themes, hacks, and notes additions.
+
+## Contact and Suggestions
+
+For changes or add-on suggestions, reach out via Goblin's Notebook Discord or DM [@sliverspell](https://discord.com/channels/885441039538745374/channel-browser).
+
+## Supporting GoblinThemes
+
+To support my work, consider a donation through [Ko-Fi](https://ko-fi.com/sliverspell).
+<iframe id='kofiframe' src='https://ko-fi.com/sliverspell/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:100%;padding:4px;background:#f9f9f9;' height='712' title='sliverspell'></iframe>
+
+## ThemeHacks
+
+Enhancements for text, images, columns, etc. Import with:
+
+```css
 @import url('https://cdn.jsdelivr.net/gh/sliverspell/goblinthemes/theme-hacks/layout.css');
 @import url('https://cdn.jsdelivr.net/gh/sliverspell/goblinthemes/theme-hacks/responsive.css');
 @import url('https://cdn.jsdelivr.net/gh/sliverspell/goblinthemes/theme-hacks/container.css');
 
-!NOTE This can sometimes take some time to update due to how CDN delivery works.
-So sometimes when things are updated it can take a few minutes, but sometimes even hours, or up to a day. This depends on the worlds CDN servers.
+# Using Themes
+Themes can be utilized by subscribing on Patreon and editing CSS in settings. Import the desired stylesheet to apply a theme.
 
-### Where can I find the themes
-In my githib under goblinthemes
-Inside themes there are several css files. Each have a nameofthetheme.css infront.
+# Table Styles
+Discover a variety of table styles:
 
-### Do I have to know CSS to use this?
-Noop not at all, all you need todo is to import what is called a stylesheet into your container.
-You can paste this code inside any page:
-<link rel="stylesheet" href="https://sliverspell.github.io/goblinthemes/themes/medieval.css">
-If you want to change theme, simply change the name of the theme. 
-Like this, this now uses the mothership css styles.
-<link rel="stylesheet" href="https://sliverspell.github.io/goblinthemes/themes/mothership.css">
-
-## How can I use it?
-You need to subscribe on the patreon to be able to edit the CSS. And I highly suggest that you do.
-When you do you can then go to edit css in the settings and add the CSS.
-
-## Can I use it other ways?
-Hmm well yes, you can actually add different themes directly inside the markdwon container box on any object.
-I would suggest you make a snippet inside goblin themes.
-Then add one stylesheet for themes, and one for tables
-
-## What are table hacks?
-I also made lots of different tables.
-You can import these styles in any page by using this link:
-<link rel="stylesheet" href="https://sliverspell.github.io/goblinthemes/tablestyles/tables.css">
+medieval-table
+neon-table
+phb-table
+cyberpunk-table
+elegant-table
+grey-table
+horror-table
+steampunk-table
+space-table
+underwater-table
+enchanted-forest-table
+digital-cybernetics-table
+phbgreen-table
+newspaper-table
+desert-table
+mothership-table
+Styles and instructions available at Table Styles on GitHub.
 
 ### How do add and use a tablestyle?
+First add this link on TOP in ANY note:
+<link rel="stylesheet" href="https://sliverspell.github.io/goblinthemes/tablestyles/tables.css">
+
 You can either use HTML tables divs or markdown tables.
 There are different ways for both.
 If you paste this inside a page where you have added the style, you can simply change the name of the class to those that are available.
@@ -128,46 +145,15 @@ any otther names that are on this github. Then you will see the style of the tab
 
 ```
 
-### How many table styles do you have?
-You can find all table styles and names here:
-https://github.com/sliverspell/goblinthemes/blob/main/tablestyles/tables.css
-But for now we have:
-You can then change the example above to any of these
 
-<div class="medieval-table">
-<div class="neon-table">
-<div class="phb-table">
-<div class="cyberpunk-table">
-<div class="elegant-table">
-<div class="grey-table">
-<div class="horror-table">
-<div class="steampunk-table">
-<div class="space-table">
-<div class="underwater-table">
-<div class="enchanted-forest-table">
-<div class="digital-cybernetics-table">
-<div class="phbgreen-table">
-<div class="newspaper-table">
-<div class="desert-table">
-<div class="mothership-table">
-
-#### Are you aware that something is wrong in some of the tables?
-Yep, will soon be fixed when I got time. All tables are constantly updated.
-
-
-## What is notes hacks?
-In markdown we have the quote
-> Which is shown like this 
-
-But I have taken this way further. You can now add different styles for notes.
-You can import these styles into any goblin notebook by simply pasting this into your note:
+# Note Styles
+Add styles to your notes:
+Add this on TOP in ANY note:
 <link rel="stylesheet" href="https://sliverspell.github.io/goblinthemes/notestyles/notes.css">
 
-You can also override it inside the edit, so you can change borders, colors, gradients and so on.
-But the main styles is changed easily just changing the number behind the note.
-
-So as an example, this is note2
-Now you can change the title . note2, to .note3, .note 4 and so on, and then you can see that it changes style of the note.
+---
+!NOTE This can sometimes take some time to update due to how CDN delivery works.
+So sometimes when things are updated it can take a few minutes, but sometimes even hours, or up to a day. This depends on the worlds CDN servers.
 
 There is also a few other tricks you can do here. Read the notes behind the code
 ```
@@ -197,7 +183,8 @@ outset: The opposite of inset, making the box stand out from the page.
 none: No border is drawn (this will override any border-width or border-color values).
 hidden: Similar to none, but specifically used in table borders.
 
-## What are snippets?
+# Snippets
+
 Inside goblin notebook you can add snippets.
 Snippets are markdwon or html code that can be inserted into a notebook.
 So if you have read all the above, you can make snippets for themes, tables, and notes.
@@ -207,6 +194,8 @@ Style theme: <link rel="stylesheet" href="https://sliverspell.github.io/goblinth
 Style notes: look above for an example of code, then just change .note2. to .note3 and so on
 Style tables: see examples in the markdwon table and html table above, and adjust as wanted
 
-Then inside your notebook , add this on the TOP of your notebook from the snippets menu
+
+# FAQ
+Regular updates and fixes are applied to all tables and styles.
 
 
