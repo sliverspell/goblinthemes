@@ -1,21 +1,23 @@
 
 /* Mothership theme by sliverspell */
 
+/*Change the background and the font of the main box*/
+body {
+    background-color: #000000; /* Black background as a base */
+    font-family: 'Roboto', sans-serif; /* Setting the default font for the body */
+    color: #FFFFFF; /* White text color for contrast */
+    font-size: 16px; /* Base font size */
+  }
+
 /* Background container image */
 .markdown-container {
-    background-image: url('');
-    background-color: #ffffff;
-    background-size: cover; /* Cover the entire container */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    color: #000000; /* Adjusts default text color */
-    font-family: 'Orbitron', sans-serif; /* Default font for all text */
-    height: auto; /* Temporarily switch to auto to test behavior */
-    min-height: 100vh; /* Ensure it covers at least the viewport height */
-    border: 1px solid transparent;
-    padding: 20px 25px 20px 20px;
-  
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text for contrast */
+    font-family: 'Roboto Mono', monospace; /* Monospaced font for a typewritten feel */
+    padding: 20px;
+    border: 1px solid #FFFFFF; /* Border for the markdown container */
   }
+  
 
   /* Removing border under h2 and h3 headings */
 .markdown-container h2,
@@ -29,15 +31,6 @@
     line-height: 1.1em;
 }
 
-.markdown-container p {
-    padding-top: 10px; /* Adds space above each paragraph */
-    padding-bottom: 10px; /* Adds space below each paragraph */
-    padding-left: 10px; /* Adds space to the left of each paragraph */
-    padding-right: 10px; /* Corrected typo, adds space to the right */
-    font-size: 1.2em; /* Adjusts font size for better readability */
-    line-height: 1.1em; /* Improves spacing between lines */
-    letter-spacing: 0.02em; /* Slightly increases spacing between letters */
-}
 
 
 
@@ -68,13 +61,56 @@ div#blurb {
     border-bottom: none;
 }
 
-/* Headers Styling */
-h1 {
-    font-family: 'Cinzel', serif;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 30px;
-    border-bottom: 8px solid rgb(0, 0, 0);
-    border-top: none;
-    padding-bottom: 0.5em;
+* Headers Styling */
+h1, .markdown-container h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 4px solid #FFFFFF; /* White border for bottom */
+  padding-bottom: 10px;
+}
+
+h2, .markdown-container h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0; /* Spacing for top and bottom */
+  padding: 10px 0; /* Padding for top and bottom */
+}
+
+h3, .markdown-container h3 {
+  font-family: 'Roboto Mono', monospace;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+}
+
+h4, .markdown-container h4 {
+  font-family: 'Roboto Mono', monospace;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+}
+
+h5, .markdown-container h5 {
+  font-family: 'Roboto Mono', monospace;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+}
+/* Adjusting font size and line height for paragraph elements */
+.markdown-container p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding: 5px 0; /* Adding a bit of padding for top and bottom */
+}
+
+/* Divider markdwon color, using --- */
+div.markdown-container hr {
+  border: none;
+  height: 1px;
+  background-color: #FFFFFF; /* White line */
+  margin: 20px 0; /* Adding some margin for top and bottom */
 }

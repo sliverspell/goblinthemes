@@ -517,4 +517,35 @@ t.phb-table {
   .desert-table tr:nth-child(even) {
     background-color: rgba(255, 255, 230, 0.9); /* Lighter shade for even rows */
   }
-  
+  /* Mothership Table Style */
+.mothership-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Roboto Mono', monospace; /* Monospaced font for a utilitarian, readable feel */
+  color: #FFFFFF; /* White text for high contrast and readability */
+  background-color: #000000; /* Black background for a dark, horror theme */
+}
+
+.mothership-table th,
+.mothership-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #FFFFFF; /* White borders for separation */
+}
+
+/* Styling for header row */
+.mothership-table th {
+  font-family: 'Orbitron', sans-serif; /* Futuristic font for headers */
+  background-color: #121212; /* Slightly lighter black for headers */
+  color: #FF5555; /* Horror-inspired accent color */
+}
+
+/* Styling for odd rows */
+.mothership-table tr:nth-child(odd) {
+  background-color: #191919; /* Dark grey for odd rows */
+}
+
+/* Styling for even rows */
+.mothership-table tr:nth-child(even) {
+  background-color: #000000; /* Black for even rows, maintaining the dark theme */
+}
