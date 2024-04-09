@@ -522,6 +522,7 @@ t.phb-table {
   width: 100%;
   border-collapse: collapse;
   font-family: 'Roboto Mono', monospace; /* Monospaced font for a utilitarian, readable feel */
+  font-size: 12px;
   color: #FFFFFF; /* White text for high contrast and readability */
   background-color: #000000; /* Black background for a dark, horror theme */
 }
