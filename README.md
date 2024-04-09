@@ -40,7 +40,9 @@ To support my work, consider a donation through
 
 ## ThemeHacks
 
- Enhancements for text, images, columns, etc. Import with:
+Enhancements for text, images, columns, etc. 
+These can be added into the CSS 
+settings, css, edit and add the links:
 
 ```
 @import url('https://cdn.jsdelivr.net/gh/sliverspell/goblinthemes/theme-hacks/layout.css');
@@ -48,7 +50,22 @@ To support my work, consider a donation through
 @import url('https://cdn.jsdelivr.net/gh/sliverspell/goblinthemes/theme-hacks/container.css');
 ```
 # Using Themes
-Themes can be utilized by subscribing on Patreon and editing CSS in settings. Import the desired stylesheet to apply a theme.
+Themes can be utilized by adding a theme stylesheet from this github.
+So first just add this link into any page:
+<link rel="stylesheet" href="https://sliverspell.github.io/goblinthemes/themes/medieval.css">
+you can then change to any theme I have in here by simply changing its name /themes/neon.css
+Like this
+<link rel="stylesheet" href="https://sliverspell.github.io/goblinthemes/themes/neon.css">
+
+This will instantly change the theme
+To make it even easier you can add this link as a snippet:
+Then when you are on any page you can just add the snippet, and change to the theme you want.
+
+
+
+https://github.com/sliverspell/goblinthemes/assets/10817448/3822cae2-056c-429d-8609-b3c2bed99769
+
+
 
 # Table Styles
 Discover a variety of table styles:
