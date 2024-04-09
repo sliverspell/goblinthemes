@@ -8,8 +8,8 @@
 body {
   background-color: #ffffff; /* Setting the background color to white */
   font-family: 'Roboto Mono', monospace; /* Using 'Roboto Mono' for a techy feel */
-  font-size: 16px; /* Default font size */
-  color: #000000; /* Default text color set to black for contrast */
+  font-size: 14px; /* Default font size */
+  color: #FFFFFF; /* Default text color set to black for contrast */
 }
 
 /* Markdown container adjustments for consistency with the body */
