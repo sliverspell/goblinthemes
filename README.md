@@ -69,8 +69,9 @@ or
 any otther names that are on this github. Then you will see the style of the table changes automagically. ;)
 
 
-/*CODE*/
+
 **HTML TABLE EXAMPLE**
+```
 <div>
   <table class="medieval-table">
     <tr>
@@ -100,12 +101,12 @@ any otther names that are on this github. Then you will see the style of the tab
 
   </table>
 </div>
-/*CODE*/
 
+```
 
 **MARKDWON TABLE EXAPMLE**
 
-/*CODE*/
+```
 <div class="digital-cybernetics-table">
 
 ##### The Concierge
@@ -125,7 +126,7 @@ any otther names that are on this github. Then you will see the style of the tab
 
 </div>
 
-/*CODE*/
+```
 
 ## What is notes hacks?
 In markdwon we have the quote
