@@ -81,6 +81,7 @@
     overflow: hidden; /* Ensures no part of the image spills over the container edges */
     box-sizing: border-box;
     position: relative; /* For positioning the inner image */
+    color: yellow; /*text inside the box*/
 }
 
 .note6 img {
