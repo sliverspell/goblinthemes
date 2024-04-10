@@ -688,21 +688,22 @@ t.phb-table {
 .savagelight-table td {
     padding: 10px;
     text-align: left;
-    border: 1px solid #dcdcdc; /* Light border for distinction */
+    border: 1px solid #dcdcdc; /* Consistent light border for both headers and cells */
 }
 
 .savagelight-table th {
-    background-color: #a70001;
-    color: #ffffff;
+    background-color: #a70001; /* Red for header background */
+    color: #ffffff; /* White text for contrast */
+    font-size: 18px; /* Increased font size for header */
 }
 
 .savagelight-table tr:nth-child(odd) {
-    background-color: #ffffff; /* White row */
+    background-color: #f1eae6; /* Lighter shade for odd rows, now swapped */
+    color: #000000; /* Black text for readability */
 }
 
 .savagelight-table tr:nth-child(even) {
-    background-color: #a70001; /* Red row */
-    color: #ffffff;
+    background-color: #ffffff; /* White for even rows, now swapped */
 }
 
 /* Savage Dark Table Styles */
@@ -714,16 +715,23 @@ t.phb-table {
 }
 
 .savagedark-table th {
-    background-color: #000000;
-    color: #ffffff;
+  background-color: #000000; /* Black for header background */
+  color: #ffffff; /* White text for contrast */
+  font-size: 18px; /* Increased font size for header */
+}
+
+.savagedark-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #222; /* Dark border for distinction */
 }
 
 .savagedark-table tr:nth-child(odd) {
-    background-color: #a70001; /* Red row */
-    color: #ffffff;
+  background-color: #f1eae6; /* Lighter shade for odd rows, ensuring distinction, previously even */
+  color: #000000; /* Black text for readability */
 }
 
 .savagedark-table tr:nth-child(even) {
-    background-color: #000000; /* Black row */
-    color: #ffffff;
+  background-color: #a70001; /* Red for even rows, previously odd */
+  color: #ffffff; /* White text for contrast */
 }
