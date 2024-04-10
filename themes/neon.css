@@ -5,8 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
 body {
-  background-image: url('https://watercolors.giantsoup.com/templates/sword_meow_background_base.png');
+  background-image: url('/*placeholder*/');
   font-family: 'Orbitron', sans-serif; /* Setting the default font for the body */
+  background-color: #4d1f5f;
 }
 
 /* Ensuring .markdown-container styles are enforced */

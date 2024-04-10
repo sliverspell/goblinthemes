@@ -23,8 +23,6 @@ body {
   border: none !important;
 }
 
-
-
 /* Styling adjustments for planner and note content */
 div#planner:not(div.task-bar) div#note-content {
   padding: 0 !important;

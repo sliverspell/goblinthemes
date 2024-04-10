@@ -572,39 +572,42 @@ t.phb-table {
   background-color: #000000; /* Black for even rows, maintaining the dark theme */
 }
 
-/* Revised Ravenloft Light Table Style */
+/* Raventheme Light Table Style for Improved Readability */
 .raventhemelight-table {
   width: 100%;
   border-collapse: collapse;
-  font-family: 'Lora', serif; /* Maintaining consistency with the theme's body font */
+  font-family: 'Lora', serif; /* Consistent with the theme's body font */
 }
 
-.raventhemelight-table th,
-.raventhemelight-table td {
+.raventhemelight-table th, .raventhemelight-table td {
   padding: 10px;
   text-align: left;
   border: 1px solid #7B4B94; /* Soft moonlight purple for borders */
-  color: #FFFFFF; /* Ensuring text within cells is white for contrast */
+}
+
+/* Enhancing contrast for text in all cells */
+.raventhemelight-table td {
+  color: #403D3D; /* Darker color for better readability on light backgrounds */
 }
 
 /* Styling for header row with a blood-red popping header */
 .raventhemelight-table th {
-  background: linear-gradient(to right, #8A0707, #AA1010); /* Gradient for dynamic visual effect */
+  background: linear-gradient(to right, #8A0707, #AA1010); /* Dynamic gradient effect */
   color: #FFFFFF; /* White text for readability */
 }
 
 /* Styling for odd rows with a horror light grey color */
 .raventhemelight-table tr:nth-child(odd) {
-  background: linear-gradient(to right, #F8F8F2, #E0E0E0); /* Light grey gradient for a ghostly effect */
+  background: linear-gradient(to right, #F8F8F2, #E0E0E0); /* Light grey gradient */
 }
 
 /* Styling for even rows with a light moonlight purple */
 .raventhemelight-table tr:nth-child(even) {
-  background: linear-gradient(to right, #9F8AA2, #897796); /* Soft purple gradient mimicking moonlight */
+  background: linear-gradient(to right, #9F8AA2, #897796); /* Soft purple gradient */
 }
 
 
-/* Ravenloft Dark Table Style */
+/* Raventheme Dark Table Style */
 .raventhemedark-table {
   width: 100%;
   border-collapse: collapse;
