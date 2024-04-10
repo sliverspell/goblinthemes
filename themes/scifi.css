@@ -61,7 +61,7 @@ h1, h2, h3, h5 {
 }
 
 /* Adjustments for specific headers */
-h1 {
+h1, div.markdown-container h1 {
     font-family: 'Cinzel', serif;
     color: rgb(57, 255, 20);
     text-align: center;
@@ -72,9 +72,9 @@ h1 {
 }
 
 
-h2 { font-size: 26px; background: rgba(15, 139, 141, 0.2); color: #ffffff; padding: 10px; margin: 20px auto; /* Centering h2 with margin */ max-width: 80%; /* Maximum width with auto margin for centering */ border: 1px solid #0f8b8d; /* Neon border */ } 
+h2, div.markdown-container h2 { font-size: 26px; background: rgba(15, 139, 141, 0.2); color: #ffffff; padding: 10px; margin: 20px auto; /* Centering h2 with margin */ max-width: 80%; /* Maximum width with auto margin for centering */ border: 1px solid #0f8b8d; /* Neon border */ } 
 
-h3 { 
+h3, div.markdown-container h3 {
   font-size: 20px; 
   background-color: #333; /* Sci-fi themed box for h3 */
   padding: 10px; /* Padding for background box */
@@ -83,7 +83,7 @@ h3 {
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
 
-h4 {
+h4, div.markdown-container h4 {
     font-family: 'Roboto Mono', monospace;
     font-size: 20px;
     padding: 5px;

@@ -25,7 +25,7 @@ body {
 }
 
 /* Headers styling with specificity */
-.markdown-container h1 {
+h1, div.markdown-container h1 {
   font-family: 'Zen Dots', cursive !important;
   font-size: 30px !important;
   color: #d1ff04 !important; /* Force color */
@@ -33,7 +33,7 @@ body {
   border-bottom: 8px solid #d1ff04 !important;
 }
 
-.markdown-container h2 {
+h2, div.markdown-container h2 {
   font-family: 'Audiowide', cursive !important;
   font-size: 24px !important;
   color: #04d1ff !important; /* Force color */
@@ -46,12 +46,12 @@ body {
 
 }
 
-.markdown-container h3 {
+h3, div.markdown-container h3 {
   font-size: 20px !important;
   color: #ccf381; /* Keeping the neon green */
 }
 
-.markdown-container h4 {
+h4, div.markdown-container h4 {
   font-size: 18px !important;
   background: rgba(204, 243, 129, 0.2) !important; /* Semi-transparent neon green background */
   padding: 5px;
