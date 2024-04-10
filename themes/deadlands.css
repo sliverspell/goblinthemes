@@ -29,7 +29,7 @@ body {
     color: #000000; !important;
   }
 /* Header Styles with Gradients and Color Adjustments */
-h1, .markdown-container h1 {
+h1, div.markdown-container h1 {
     background: linear-gradient(to right, #642e1e 0%, #d2b16c 100%);
     color: white;
     font-family: 'Cormorant Garamond', serif;
@@ -38,7 +38,7 @@ h1, .markdown-container h1 {
     font-size: 36px; /* Largest header, most prominent */
 }
 
-h2, .markdown-container h2 {
+h2, div.markdown-container h2 {
     background: linear-gradient(to right, #000000 0%, #d2b16c 100%);
     color: white;
     font-family: 'Cormorant Garamond', serif;
@@ -47,7 +47,7 @@ h2, .markdown-container h2 {
     font-size: 30px; /* Slightly smaller than h1 for hierarchy */
 }
 
-h3, .markdown-container h3 {
+h3, div.markdown-container h3 {
     background-color: #900208;
     color: white;
     font-family: 'Cormorant Garamond', serif;
@@ -56,7 +56,7 @@ h3, .markdown-container h3 {
     font-size: 24px; /* Mid-size, for important but not top-level headings */
 }
 
-h4, .markdown-container h4 {
+h4, div.markdown-container h4 {
     background: linear-gradient(to right, #900208 50%, #642e1e 50%);
     color: white;
     font-family: 'Cormorant Garamond', serif;
@@ -65,7 +65,7 @@ h4, .markdown-container h4 {
     font-size: 20px; /* Smaller, for sub-sections or detailed headings */
 }
 
-h5, .markdown-container h5 {
+h5, div.markdown-container h5 {
     background-color: #642e1e;
     color: white;
     font-family: 'Cormorant Garamond', serif;

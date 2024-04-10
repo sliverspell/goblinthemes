@@ -120,7 +120,7 @@ h4, div.markdown-container h4 {
     margin-bottom: 10px; /* Pushes down content that follows the h4 */
 }
 
-  h5, div.markdown-container h5 {
+h5, div.markdown-container h5 {
     font-family: 'Cardo', serif;
     color: rgba(86, 15, 0, 1);
     text-align: center;
