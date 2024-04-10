@@ -34,7 +34,7 @@ div.markdown-container hr {
   margin-top: 1em;
   margin-bottom: 1em;
   border: none;
-  height: 2px;
+  height: 3px;
   background-color: #8A0707; /* Darker red to simulate dried blood */
   background-image: linear-gradient(to right, #8A0707, #FF0000); /* Gradient for a fresh blood effect */
   background-repeat: repeat-x;
@@ -47,6 +47,7 @@ div.markdown-container hr {
   font-size: 1.2em;
   line-height: 1.1em;
   letter-spacing: 0.02em;
+  color: #dcdcdc;
 }
 
 /* Global Headers Styling */
