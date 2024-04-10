@@ -31,7 +31,7 @@ div.markdown-container p {
   font-size: 1.2em;
   line-height: 1.1em;
   letter-spacing: 0.02em;
-  color: #ffffff; /* White text for contrast */
+  color: #000000; /* Text color */
 }
 
 /* Header Styles with Font Assignments and Correct div Usage */
@@ -42,6 +42,7 @@ h1, div.markdown-container h1 {
   text-align: center;
   font-size: 36px; /* Largest header, most prominent */
   background-color: #000000; /* Black background */
+  border-bottom: none; !important;
 }
 
 h2, div.markdown-container h2 {
