@@ -634,3 +634,49 @@ t.phb-table {
 .raventhemedark-table tr:nth-child(even) {
   background-color: #504950; /* A deep, dark grayish-purple */
 }
+
+/* Deadlands Light Table Style */
+.deadlandslight-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Cormorant Garamond', serif;
+}
+.deadlandslight-table th,
+.deadlandslight-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #d2b16c; /* Light gold for a refined look */
+}
+.deadlandslight-table th {
+  background-color: #efece1; /* Light background for headers */
+  color: #642e1e; /* Dark brown text for contrast */
+}
+.deadlandslight-table tr:nth-child(odd) {
+  background-color: #f8f9f7; /* Very light base background for odd rows */
+}
+.deadlandslight-table tr:nth-child(even) {
+  background-color: #dad2b9; /* Slightly darker for even rows, for subtle contrast */
+}
+
+/* Deadlands Dark Table Style */
+.deadlandsdark-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Cormorant Garamond', serif;
+}
+.deadlandsdark-table th,
+.deadlandsdark-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #900208; /* Deep red for a striking look */
+}
+.deadlandsdark-table th {
+  background-color: #642e1e; /* Dark brown for headers */
+  color: white; /* For clear readability */
+}
+.deadlandsdark-table tr:nth-child(odd) {
+  background-color: #d2b16c; /* Light gold for odd rows */
+}
+.deadlandsdark-table tr:nth-child(even) {
+  background-color: #900208; /* Deep red for even rows, creating a bold contrast */
+}

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Deadlands Theme - Backgrounds */
+
+body {
+  background-color: #f8f9f7; /* Light base background as specified */
+  font-family: 'Roboto Condensed', sans-serif; /* Main text font */
+}
+
+.markdown-container {
+  background-color: #f8f9f7; /* Deep red for significant elements */
+  overflow-y: auto;
+  padding: 20px 25px;
+  box-sizing: border-box;
+  border: none !important;
+}
+
+/* Header Styles with Gradients and Color Adjustments */
+h1 {
+  background: linear-gradient(to right, #642e1e 0%, #d2b16c 100%); /* Dark brown to gold */
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+  background: linear-gradient(to right, #000000 0%, #d2b16c 100%); /* Black to gold */
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  padding: 10px;
+  text-align: center;
+}
+
+h3 {
+  background-color: #900208; /* Deep red for character sheets, etc. */
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  padding: 10px;
+  text-align: center;
+}
+
+h5 {
+  background-color: #642e1e; /* Darker brown for alternate headers */
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Adjusting styles for readability and thematic consistency */
+div.markdown-container hr {
+  border: none;
+  height: 2px;
+  background-image: linear-gradient(to right, #642e1e, #d2b16c);
+}
+
+div.markdown-container p {
+  color: #efece1; /* Adjusting for contrast and readability */
+}
+
+/* Additional styles for blockquotes, tables, and responsive design */
