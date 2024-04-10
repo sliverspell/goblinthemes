@@ -781,5 +781,5 @@ t.phb-table {
 
 .mork-table tr:nth-child(even) {
   background-color: #777777; /* Even Darker Grey for even rows, for contrast */
-  color: #FFD700; /* White text for contrast */
+  color: #FFD700; /* yellow text for contrast */
 }
