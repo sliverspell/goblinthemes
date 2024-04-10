@@ -48,7 +48,7 @@ h2, div.markdown-container h2 {
 
 h3, div.markdown-container h3 {
   font-size: 20px !important;
-  color: #ccf381; /* Keeping the neon green */
+  color: #ccf381; /* neon green */
 }
 
 h4, div.markdown-container h4 {
@@ -56,6 +56,7 @@ h4, div.markdown-container h4 {
   background: rgba(204, 243, 129, 0.2) !important; /* Semi-transparent neon green background */
   padding: 5px;
   width: 100%;
+  color: white;
 }
 
 /* Additional headers if needed */
