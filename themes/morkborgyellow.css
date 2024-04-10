@@ -10,12 +10,32 @@
 
 /* MÖRK BORG Theme - For Goblin notebook by Sliverspell*/
 
+/*Changes color of the main container*/
 body {
   background-color: #FFE900; /* Bright yellow background */
   font-family: 'Inconsolata', monospace; /* Main text font */
   color: #FFE900; 
   font-style: normal;
-  font-family: Metamorphous;
+  font-family: 'Metamorphous', cursive;
+  font-size: 13px; /*font size of objects within the container*/
+}
+div.note-object > div.object-heading {
+  font-family: 'Metamorphous', cursive;
+}
+
+div.obj-status-0 {
+  color: #FFE900;
+}
+
+/*Changes the background color on objects*/
+div.object {
+  border-bottom: 1px solid #555;
+  border-left: 4px solid #555555;
+  background-color: #000000;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  height: 2em;
 }
 
 div.markdown-container h2 {
@@ -23,6 +43,10 @@ div.markdown-container h2 {
 }
 /* Background container image. Here you change the background color or image for the object journal, 
 or also known as markdown container */
+
+div#timeline-tabs {
+background-color: #FFE900;
+}
 .markdown-container {
   background-color: #FFE900; /* Black background for markdown container */
   overflow-y: auto;
