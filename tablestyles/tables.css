@@ -745,8 +745,8 @@ t.phb-table {
 }
 
 .morklight-table th {
-  background-color: #FFD700; /* Golden Yellow for header background, matching MÖRK BORG theme */
-  color: #000000; /* Black text for contrast */
+  background-color: #000000; /* Golden Yellow for header background, matching MÖRK BORG theme */
+  color: #FF3EB5; /* Black text for contrast */
   font-size: 18px; /* Maintaining font size for header */
 }
 
@@ -781,5 +781,5 @@ t.phb-table {
 
 .mork-table tr:nth-child(even) {
   background-color: #777777; /* Even Darker Grey for even rows, for contrast */
-  color: #ffffff; /* White text for contrast */
+  color: #FFD700; /* White text for contrast */
 }
