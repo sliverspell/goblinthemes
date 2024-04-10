@@ -735,3 +735,51 @@ t.phb-table {
   background-color: #a70001; /* Red for even rows, previously odd */
   color: #ffffff; /* White text for contrast */
 }
+
+/* Morklight Table Styles */
+.morklight-table th,
+.morklight-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #4e4e4e; /* Slightly lighter border for distinction against yellow */
+}
+
+.morklight-table th {
+  background-color: #FFD700; /* Golden Yellow for header background, matching MÖRK BORG theme */
+  color: #000000; /* Black text for contrast */
+  font-size: 18px; /* Maintaining font size for header */
+}
+
+.morklight-table tr:nth-child(odd) {
+  background-color: #FFFACD; /* Lemon Chiffon for a lighter row, subtle against the theme background */
+  color: #000000; /* Black text for readability */
+}
+
+.morklight-table tr:nth-child(even) {
+  background-color: #FFD700; /* Golden Yellow for even rows, cohesive with MÖRK BORG's aesthetic */
+  color: #000000; /* Black text for contrast */
+}
+
+/* Mork Table (Dark) Styles */
+.mork-table th,
+.mork-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #222; /* Dark border for distinction */
+}
+
+.mork-table th {
+  background-color: #333333; /* Dark Grey for header background, for a more subdued look */
+  color: #ffffff; /* White text for contrast */
+  font-size: 18px; /* Increased font size for header */
+}
+
+.mork-table tr:nth-child(odd) {
+  background-color: #555555; /* Darker Grey for odd rows, ensuring distinction */
+  color: #ffffff; /* White text for readability */
+}
+
+.mork-table tr:nth-child(even) {
+  background-color: #777777; /* Even Darker Grey for even rows, for contrast */
+  color: #ffffff; /* White text for contrast */
+}

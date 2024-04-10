@@ -54,12 +54,11 @@ div.markdown-container hr {
 /* Headers Styling */
 h1, div.markdown-container h1 {
     font-family: 'Cinzel', serif;
-    color: rgba(195, 190, 33 );
+    color: rgba(195, 190, 33, 1); /* Corrected RGBA with alpha value */
     text-align: center;
     font-size: 30px;
-    border-bottom: 8px solid rgba(195, 190, 33 );!important;
-    border-top: none;
-    padding-bottom: 0.5em;
+    border-bottom: 8px solid rgba(195, 190, 33, 1) !important; /* Corrected placement of !important */
+    border-top: none
 }
 
 div.markdown-container h2 {
@@ -125,14 +124,14 @@ h5, div.markdown-container h5 {
     padding-bottom: 10px; /* Creates space between the text and the border */
     margin-bottom: 10px; /* Pushes down content that follows the h4 */
 }
-/* Styling for markdown horizontal line in Monstertheme */
+/* Styling for markdown horizontal line in Monster Theme */
 div.markdown-container hr {
     margin-top: 1em;
     margin-bottom: 1em;
     border: none;
     height: 7px; /* Line height */
-    background-color: rgba(195, 190, 33 ); /* Base color in case the gradient doesn't load */
-    background-image: linear-gradient(to right, rgba(195, 190, 33 );, ##0000); /* Gradient from dark brown to desert yellow */
+    background-color: rgba(195, 190, 33, 1); /* Base color with corrected RGBA */
+    background-image: linear-gradient(to right, rgba(195, 190, 33, 1), rgba(0, 0, 0, 0)); /* Corrected gradient from yellow to transparent */
     background-repeat: no-repeat;
-    background-size: 100% 5px; /* Ensures the gradient covers the entire height of the line */
-  }
+    background-size: 100% 7px; /* Ensures the gradient covers the entire height of the line, corrected to match the line height */
+}

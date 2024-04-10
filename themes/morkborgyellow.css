@@ -8,12 +8,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
 
-/* MÖRK BORG Theme - Precisely Formatted for Goblin Notebook */
+/* MÖRK BORG Theme - For Goblin notebook by Sliverspell*/
 
 body {
   background-color: #FFE900; /* Bright yellow background */
   font-family: 'Inconsolata', monospace; /* Main text font */
-  color: #000000; /* Black text for readability */
+  color: #FFE900; 
+  font-style: normal;
+  font-family: Metamorphous;
+}
+
+div.markdown-container h2 {
+  border-bottom: none !important;
 }
 /* Background container image. Here you change the background color or image for the object journal, 
 or also known as markdown container */
@@ -42,7 +48,7 @@ h1, div.markdown-container h1 {
   text-align: center;
   font-size: 36px; /* Largest header, most prominent */
   background-color: #000000; /* Black background */
-  border-bottom: none; !important;
+  border-bottom: none !important;
 }
 
 h2, div.markdown-container h2 {
@@ -79,4 +85,18 @@ h5, div.markdown-container h5 {
   text-align: center;
   font-size: 16px; /* Smallest header, still significant */
   background-color: #000000; /* Keeping it consistently black for H5 */
+}
+
+
+/*This changes the markdown horizontal line, using --- in markdown */
+div.markdown-container hr {
+  margin-top: 1em; /* Adds space above the <hr> */
+  margin-bottom: 1em; /* Adds space below the <hr> */
+  border: none; /* Removes the default border */
+  height: 3px; /* Sets the height of the <hr> to 2 pixels */
+  background-color: #000000; /* Sets a fallback background color */
+  background-image: url('URL_TO_YOUR_IMAGE'); /* Sets a background image */
+  background-repeat: repeat-x; /* Repeats the background image horizontally */
+  background-size: 100% 2px; /* Stretches the background image to cover the <hr> width fully and sets its height */
+  box-sizing: border-box; /* Ensures the height calculation includes any border and padding */
 }
