@@ -2,13 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* Raventheme theme by sliverspell , Ravenloft is a trademark name for wizards of the coast*/
+
+/*body container background*/
 body {
-  background-image: url('https://lh3.googleusercontent.com/drive-viewer/AKGpihY3Tkb95VK1WaBVBgtE8q9zuaX2RCcwVnoMneM61SuEBV_9XYYW3i_NS1wBNfaPWeRmWiRfQnmsNpY5uCrhjDSJGXt3cS6FZCw=s1600-v0'); /* Replace with your Gothic landscape image */
+  background-image: url('https://lh3.googleusercontent.com/drive-viewer/AKGpihY3Tkb95VK1WaBVBgtE8q9zuaX2RCcwVnoMneM61SuEBV_9XYYW3i_NS1wBNfaPWeRmWiRfQnmsNpY5uCrhjDSJGXt3cS6FZCw=s1600-v0'); /* Replace with your direct image link */
+  /* Fallback color */
+  background-color: #0a0a0a !important; /* Deep, dark background color as a fallback */
   font-family: 'Lora', serif;
   color: #dcdcdc; /* Soft white for general text, enhancing readability */
   font-size: 16px;
-  background-color: #0a0a0a; /* Deep, dark background color */
+  /* Ensure the image covers the background fully and is centered */
+  background-size: cover !important;
+  background-position: center !important;
 }
+
 
 /* Background container styling */
 .markdown-container {
@@ -60,8 +67,8 @@ h1, div.markdown-container h1 {
   text-align: center;
   font-size: 2.5em;
   background-color: #8A0707; /* Dark red background for dramatic emphasis */
-  padding-top: 30px; /* Increased top padding for vertical centering */
-  padding-bottom: 10px; /* Matching bottom padding to maintain balance */
+  padding-top: 0; /* Increased top padding for vertical centering */
+  padding-bottom: 0; /* Matching bottom padding to maintain balance */
   margin-bottom: 1em; /* Space after the heading */
 }
 
@@ -75,13 +82,15 @@ h2, div.markdown-container h2 {
   padding-bottom: 0.3em;
 }
 
-/* Additional headings follow a similar pattern but with adjustments to font size and color as needed */
+/* Global Headers Styling adjustment for h3 */
 h3, div.markdown-container h3 {
   font-family: 'Lora', serif;
-  color: rgba(86, 15, 0, 1); /* Deep red for a subtle, yet distinct look */
+  color: #F8F8F2; /* A light, almost white, grey for better readability */
   text-align: center;
-  font-size: 1.75em;
-  padding-bottom: 0.3em;
+  font-size: 20px;
+  /* Retain other styling properties as they were */
+}
+
 }
 
 h4, div.markdown-container h4 {
