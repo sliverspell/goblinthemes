@@ -22,6 +22,7 @@ body {
   padding: 20px 25px;
   box-sizing: border-box;
   border: none !important;
+  color: #ffffff !important; /* Force text color */
 }
 
 /* Styling adjustments for planner and note content */
