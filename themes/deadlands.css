@@ -7,6 +7,10 @@ body {
   background-color: #f8f9f7; /* Light base background as specified */
   font-family: 'Roboto Condensed', sans-serif; /* Main text font */
 }
+/* Removing borders under h2 and h3 headings */
+.markdown-container h2, .markdown-container h3 {
+    border-bottom: none !important;
+  }
 
 .markdown-container {
   background-color: #f8f9f7; /* Deep red for significant elements */
@@ -16,6 +20,14 @@ body {
   border: none !important;
 }
 
+/* Paragraph styling within markdown-container */
+.markdown-container p {
+    padding: 10px;
+    font-size: 1.2em;
+    line-height: 1.1em;
+    letter-spacing: 0.02em;
+    color: #000000; !important;
+  }
 /* Header Styles with Gradients and Color Adjustments */
 h1, .markdown-container h1 {
     background: linear-gradient(to right, #642e1e 0%, #d2b16c 100%);
@@ -23,52 +35,57 @@ h1, .markdown-container h1 {
     font-family: 'Cormorant Garamond', serif;
     padding: 10px;
     text-align: center;
-  }
+    font-size: 36px; /* Largest header, most prominent */
+}
 
-  h2, .markdown-container h2 {
+h2, .markdown-container h2 {
     background: linear-gradient(to right, #000000 0%, #d2b16c 100%);
     color: white;
     font-family: 'Cormorant Garamond', serif;
     padding: 10px;
     text-align: center;
-  }
+    font-size: 30px; /* Slightly smaller than h1 for hierarchy */
+}
 
-  h3, .markdown-container h3 {
+h3, .markdown-container h3 {
     background-color: #900208;
     color: white;
     font-family: 'Cormorant Garamond', serif;
     padding: 10px;
     text-align: center;
-  }
+    font-size: 24px; /* Mid-size, for important but not top-level headings */
+}
 
-  h4, .markdown-container h4 {
+h4, .markdown-container h4 {
     background: linear-gradient(to right, #900208 50%, #642e1e 50%);
     color: white;
     font-family: 'Cormorant Garamond', serif;
     padding: 10px;
     text-align: center;
-  }
+    font-size: 20px; /* Smaller, for sub-sections or detailed headings */
+}
 
-  h5, .markdown-container h5 {
+h5, .markdown-container h5 {
     background-color: #642e1e;
     color: white;
     font-family: 'Cormorant Garamond', serif;
     padding: 10px;
     text-align: center;
-  }
+    font-size: 16px; /* Smallest, for the least prominent but still significant headings */
+}
 
-/* Adjusting styles for readability and thematic consistency */
+/* Styling for markdown horizontal line in Deadlands Theme */
 div.markdown-container hr {
-  border: none;
-  height: 2px;
-  background-image: linear-gradient(to right, #642e1e, #d2b16c);
-}
-
-div.markdown-container p {
-  color: #efece1; /* Adjusting for contrast and readability */
-}
-
-/* Additional styles for blockquotes, tables, and responsive design */
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: none;
+    height: 5px; /* Line height */
+    background-color: #642e1e; /* Base color in case the gradient doesn't load */
+    background-image: linear-gradient(to right, #642e1e, #d2b16c); /* Gradient from dark brown to desert yellow */
+    background-repeat: no-repeat;
+    background-size: 100% 5px; /* Ensures the gradient covers the entire height of the line */
+  }
+  
 
 /* Custom styles for blockquote in Deadlands Theme */
 blockquote, .markdown-container blockquote {
