@@ -13,6 +13,7 @@
 /*Changes color of the main container*/
 body {
   background-color: #FFE900; /* Bright yellow background */
+  background-image: url('https://lh3.googleusercontent.com/drive-viewer/AKGpihZ24OLzKq6U4jpoXkLsAAKoo5qzvfKfnfe6QU-Hb9UruOuYilQpHgaMj8mqCRuOfvorFDN2c0Me3m8KrnYx2t6o-cucMKhbnl8=s1600-v0');
   font-family: 'Inconsolata', monospace; /* Main text font */
   color: #FFE900; 
   font-style: normal;
