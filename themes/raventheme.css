@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* Ravenloft theme by sliverspell */
+/* Raventheme theme by sliverspell , Ravenloft is a trademark name for wizards of the coast*/
 body {
   background-image: url('https://lh3.googleusercontent.com/drive-viewer/AKGpihY3Tkb95VK1WaBVBgtE8q9zuaX2RCcwVnoMneM61SuEBV_9XYYW3i_NS1wBNfaPWeRmWiRfQnmsNpY5uCrhjDSJGXt3cS6FZCw=s1600-v0'); /* Replace with your Gothic landscape image */
   font-family: 'Lora', serif;
@@ -22,8 +23,9 @@ body {
   padding: 20px 25px;
   box-sizing: border-box;
   border: none !important;
-  color: #ffffff !important; /* Force text color */
+  color: #dcdcdc !important; /* Ensuring text color overrides other styles */
 }
+
 
 /* Styling adjustments for planner and note content */
 div#planner:not(div.task-bar) div#note-content {
@@ -54,13 +56,15 @@ div.markdown-container hr {
 /* Global Headers Styling */
 h1, div.markdown-container h1 {
   font-family: 'Almendra', serif;
-  color: #FFFFFF; /* Pure white text */
+  color: #FFFFFF; /* Pure white text for high contrast */
   text-align: center;
   font-size: 2.5em;
-  background-color: #8A0707; /* Dark red background for emphasis */
-  padding: 0.3em 0; /* Padding for visual space */
+  background-color: #8A0707; /* Dark red background for dramatic emphasis */
+  padding-top: 20px; /* Increased top padding for vertical centering */
+  padding-bottom: 20px; /* Matching bottom padding to maintain balance */
   margin-bottom: 1em; /* Space after the heading */
 }
+
 
 h2, div.markdown-container h2 {
   font-family: 'Almendra', serif;

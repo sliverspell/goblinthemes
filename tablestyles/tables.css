@@ -571,3 +571,55 @@ t.phb-table {
 .mothership-table tr:nth-child(even) {
   background-color: #000000; /* Black for even rows, maintaining the dark theme */
 }
+
+/* Ravenloft Light Table Style */
+.raventhemelight-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Lora', serif; /* Consistent with the theme's body font */
+}
+.raventhemelight-table th,
+.raventhemelight-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #64485c; /* Darker purple for subtle contrast */
+}
+/* Styling for header row */
+.raventhemelight-table th {
+  background-color: #755D68; /* Dark lavender */
+  color: #FFF; /* White text for readability */
+}
+/* Styling for odd rows */
+.raventhemelight-table tr:nth-child(odd) {
+  background-color: #837D88; /* Lighter gray-purple, for contrast against dark background */
+}
+/* Styling for even rows */
+.raventhemelight-table tr:nth-child(even) {
+  background-color: #726C77; /* Slightly darker shade of gray-purple */
+}
+
+/* Ravenloft Dark Table Style */
+.raventhemedark-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Lora', serif; /* Consistent with the theme's body font */
+}
+.raventhemedark-table th,
+.raventhemedark-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #403040; /* Even darker for a more subtle look */
+}
+/* Styling for header row */
+.raventhemedark-table th {
+  background-color: #564D56; /* Muted dark purple */
+  color: #FFF; /* White text for contrast */
+}
+/* Styling for odd rows */
+.raventhemedark-table tr:nth-child(odd) {
+  background-color: #645564; /* A darker, richer purple for visibility on black */
+}
+/* Styling for even rows */
+.raventhemedark-table tr:nth-child(even) {
+  background-color: #504950; /* A deep, dark grayish-purple */
+}
