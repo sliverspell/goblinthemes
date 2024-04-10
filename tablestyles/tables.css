@@ -572,28 +572,30 @@ t.phb-table {
   background-color: #000000; /* Black for even rows, maintaining the dark theme */
 }
 
-/* Raventheme Light Table Style for Improved Readability */
+/* Revised Ravenloft Light Table Style with Distinct Font Sizes for Headers and Rows */
 .raventhemelight-table {
   width: 100%;
   border-collapse: collapse;
-  font-family: 'Lora', serif; /* Consistent with the theme's body font */
+  font-family: 'Lora', serif; /* Consistency with the theme's body font */
 }
 
-.raventhemelight-table th, .raventhemelight-table td {
+/* Styling for headers with a larger font size */
+.raventhemelight-table th {
   padding: 10px;
   text-align: left;
   border: 1px solid #7B4B94; /* Soft moonlight purple for borders */
-}
-
-/* Enhancing contrast for text in all cells */
-.raventhemelight-table td {
-  color: #403D3D; /* Darker color for better readability on light backgrounds */
-}
-
-/* Styling for header row with a blood-red popping header */
-.raventhemelight-table th {
-  background: linear-gradient(to right, #8A0707, #AA1010); /* Dynamic gradient effect */
   color: #FFFFFF; /* White text for readability */
+  background: linear-gradient(to right, #8A0707, #AA1010); /* Dynamic gradient effect */
+  font-size: 16px; /* Larger font size for headers */
+}
+
+/* Styling for table data  */
+.raventhemelight-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #7B4B94; /* Soft moonlight purple for borders */
+  color: #505050; /* Dark grey for strong contrast */
+  font-size: 12px; /* Smaller font size for table data */
 }
 
 /* Styling for odd rows with a horror light grey color */
