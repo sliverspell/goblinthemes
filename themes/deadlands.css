@@ -17,37 +17,45 @@ body {
 }
 
 /* Header Styles with Gradients and Color Adjustments */
-h1 {
-  background: linear-gradient(to right, #642e1e 0%, #d2b16c 100%); /* Dark brown to gold */
-  color: white;
-  font-family: 'Cormorant Garamond', serif;
-  padding: 10px;
-  text-align: center;
-}
+h1, .markdown-container h1 {
+    background: linear-gradient(to right, #642e1e 0%, #d2b16c 100%);
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 10px;
+    text-align: center;
+  }
 
-h2 {
-  background: linear-gradient(to right, #000000 0%, #d2b16c 100%); /* Black to gold */
-  color: white;
-  font-family: 'Cormorant Garamond', serif;
-  padding: 10px;
-  text-align: center;
-}
+  h2, .markdown-container h2 {
+    background: linear-gradient(to right, #000000 0%, #d2b16c 100%);
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 10px;
+    text-align: center;
+  }
 
-h3 {
-  background-color: #900208; /* Deep red for character sheets, etc. */
-  color: white;
-  font-family: 'Cormorant Garamond', serif;
-  padding: 10px;
-  text-align: center;
-}
+  h3, .markdown-container h3 {
+    background-color: #900208;
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 10px;
+    text-align: center;
+  }
 
-h5 {
-  background-color: #642e1e; /* Darker brown for alternate headers */
-  color: white;
-  font-family: 'Cormorant Garamond', serif;
-  padding: 10px;
-  text-align: center;
-}
+  h4, .markdown-container h4 {
+    background: linear-gradient(to right, #900208 50%, #642e1e 50%);
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 10px;
+    text-align: center;
+  }
+
+  h5, .markdown-container h5 {
+    background-color: #642e1e;
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 10px;
+    text-align: center;
+  }
 
 /* Adjusting styles for readability and thematic consistency */
 div.markdown-container hr {
@@ -61,3 +69,14 @@ div.markdown-container p {
 }
 
 /* Additional styles for blockquotes, tables, and responsive design */
+
+/* Custom styles for blockquote in Deadlands Theme */
+blockquote, .markdown-container blockquote {
+    margin: 10px 0;
+    padding: 10px;
+    color: #dcdcdc; /* Adjusted text color for readability */
+    font-family: 'Cormorant Garamond', serif; /* Consistent with theme's typography */
+    background-image: linear-gradient(to right, #642e1e 50%, #d2b16c 50%);
+    border-left: 5px solid #900208; /* Deep red border to tie in with theme's accent color */
+  }
+  
