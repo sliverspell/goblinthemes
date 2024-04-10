@@ -8,7 +8,8 @@ body {
   font-family: 'Cormorant', sans-serif; /* Setting the default font for the body */
   font-size: 13px;
 }
-/* Background container image */
+/* Background container image. Here you change the background color or image for the object journal, 
+or also known as markdown container */
 .markdown-container {
   background-image: url('https://watercolors.giantsoup.com/templates/phb_background_base.png');
   background-color: black;

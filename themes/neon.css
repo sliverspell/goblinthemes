@@ -10,7 +10,8 @@ body {
   background-color: #4d1f5f;
 }
 
-/* Ensuring .markdown-container styles are enforced */
+/* Background container image. Here you change the background color or image for the object journal, 
+or also known as markdown container */
 .markdown-container {
   background-color: #4d1f5f !important; /* Force background color */
   color: #ffffff !important; /* Force text color */
@@ -42,13 +43,13 @@ h2, div.markdown-container h2 {
   padding: 10px 0 !important;
   width: 100% !important;
   border-bottom: none !important; /*  removes any border */
-  border: 0; solid #0f8b8d; /* Neon border */
+  border: 0; solid : #0f8b8d; /* Neon border */
 
 }
 
 h3, div.markdown-container h3 {
   font-size: 20px !important;
-  color: #ccf381; /* neon green */
+  color: #ccf381; /* Keeping the neon green */
 }
 
 h4, div.markdown-container h4 {
@@ -56,7 +57,7 @@ h4, div.markdown-container h4 {
   background: rgba(204, 243, 129, 0.2) !important; /* Semi-transparent neon green background */
   padding: 5px;
   width: 100%;
-  color: white;
+
 }
 
 /* Additional headers if needed */

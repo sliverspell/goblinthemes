@@ -3,9 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-/* Medieval theme by sliverspell */
+/* Medieval monster theme by sliverspell */
 
-/* Background container image. Her eyou change the background color or image for the object journal, or also known as markdown container */
+/* Background container image. Here you change the background color or image for the object journal, 
+or also known as markdown container */
 .markdown-container {
   background-image: url('https://watercolors.giantsoup.com/templates/mm_background_base.png');
   background-size: cover; /* Cover the entire container */
@@ -51,7 +52,7 @@ div.markdown-container hr {
 }
 
 /* Headers Styling */
-h1 {
+h1, div.markdown-container h1 {
     font-family: 'Cinzel', serif;
     color: rgba(195, 190, 33 );
     text-align: center;
@@ -65,7 +66,7 @@ div.markdown-container h2 {
     border-bottom: none !important;
 }
 
-h2 {
+h2, div.markdown-container h2 {
     display: flex; /* Using flexbox to manage the space */
     justify-content: center; /* Center the text (flex item) horizontally */
     align-items: center; /* Align the text (flex item) vertically */
@@ -81,8 +82,8 @@ h2 {
     padding-bottom: 1px;
 }
 
-h2::before,
-h2::after {
+h2::before, div.markdown-container h2::before,
+h2::after, div.markdown-container h2::after {
     content: "";
     flex-grow: 1; /* Allows lines to fill available space */
     background: #890900; /* Red line color */
@@ -90,7 +91,7 @@ h2::after {
     margin: 0 10px; /* Spacing between the text and the lines */
 }
 
-h3 {
+h3, div.markdown-container h3 {
     font-family: 'Lora', serif;
     color: rgba(86, 15, 0, 1);
     text-align: center;
@@ -100,7 +101,7 @@ h3 {
     padding-left: 10px;
 }
 
-h4 {
+h4, div.markdown-container h4 {
     font-family: 'Lora', serif;
     color: rgba(86, 15, 0, 1);
     text-align: center;
@@ -112,4 +113,26 @@ h4 {
     margin-bottom: 10px; /* Pushes down content that follows the h4 */
 }
 
-
+h5, div.markdown-container h5 {
+    font-family: 'Lora', serif;
+    color: rgb(29, 27, 26);
+    background-color: #808080;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #890900; /* Adding underline border */
+    display: inline-block;
+    padding-left: 10px;
+    padding-bottom: 10px; /* Creates space between the text and the border */
+    margin-bottom: 10px; /* Pushes down content that follows the h4 */
+}
+/* Styling for markdown horizontal line in Monstertheme */
+div.markdown-container hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: none;
+    height: 7px; /* Line height */
+    background-color: rgba(195, 190, 33 ); /* Base color in case the gradient doesn't load */
+    background-image: linear-gradient(to right, rgba(195, 190, 33 );, ##0000); /* Gradient from dark brown to desert yellow */
+    background-repeat: no-repeat;
+    background-size: 100% 5px; /* Ensures the gradient covers the entire height of the line */
+  }

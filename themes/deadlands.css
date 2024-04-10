@@ -4,16 +4,23 @@
 /* Deadlands Theme - Backgrounds */
 
 body {
-  background-color: #f8f9f7; /* Light base background as specified */
   font-family: 'Roboto Condensed', sans-serif; /* Main text font */
+  background-image: url('https://lh3.googleusercontent.com/drive-viewer/AKGpihaUzcAo2TkkFQk9GHADIvg63diXKKJ2cXuaLsnYsNknY9Psb0U37TQEtzhdLqQjGwhElw16CH7wRpm2pAJpvphIUTQWwFbGzQ=s1600-rw-v1');
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-color: #642e1e; /* Fallback color*/
+}
 }
 /* Removing borders under h2 and h3 headings */
 .markdown-container h2, .markdown-container h3 {
     border-bottom: none !important;
   }
+/* Background container image. Here you change the background color or image for the object journal, 
+or also known as markdown container */
 
 .markdown-container {
-  background-color: #f8f9f7; /* Deep red for significant elements */
+  background-color: #f4e4c1; /* Deep red for significant elements */
   overflow-y: auto;
   padding: 20px 25px;
   box-sizing: border-box;
@@ -22,12 +29,14 @@ body {
 
 /* Paragraph styling within markdown-container */
 .markdown-container p {
-    padding: 10px;
-    font-size: 1.2em;
-    line-height: 1.1em;
-    letter-spacing: 0.02em;
-    color: #000000; !important;
-  }
+  padding: 10px;
+  font-size: 1em;
+  line-height: 1.1em;
+  letter-spacing: 0.02em;
+  color: #000000 !important;
+  font-weight: normal;
+}
+
 /* Header Styles with Gradients and Color Adjustments */
 h1, div.markdown-container h1 {
     background: linear-gradient(to right, #642e1e 0%, #d2b16c 100%);

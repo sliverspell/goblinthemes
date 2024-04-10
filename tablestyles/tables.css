@@ -477,7 +477,7 @@ t.phb-table {
     width: auto; /* Adjusts width based on content up to max-width */
     border-collapse: collapse;
     font-family: 'Old Standard TT', serif; /* Classic font for a vintage look */
-    background: url('https://i.pinimg.com/originals/dc/c3/09/dcc30928f7de36cb88eeba49122cac3a.jpg'); /* Placeholder for actual newspaper texture background */
+    background: url('imgplaceholder'); /* Placeholder for actual newspaper texture background */
     color: black; /* Black text for that classic newspaper feel */
   }
   
@@ -669,6 +669,7 @@ t.phb-table {
   padding: 10px;
   text-align: left;
   border: 1px solid #900208; /* Deep red for a striking look */
+  
 }
 .deadlandsdark-table th {
   background-color: #642e1e; /* Dark brown for headers */
@@ -679,4 +680,50 @@ t.phb-table {
 }
 .deadlandsdark-table tr:nth-child(even) {
   background-color: #900208; /* Deep red for even rows, creating a bold contrast */
+  color: #EFECE1; /* Lighter color for better readability */
+}
+
+/* Savage Light Table Styles */
+.savagelight-table th,
+.savagelight-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #dcdcdc; /* Light border for distinction */
+}
+
+.savagelight-table th {
+    background-color: #a70001;
+    color: #ffffff;
+}
+
+.savagelight-table tr:nth-child(odd) {
+    background-color: #ffffff; /* White row */
+}
+
+.savagelight-table tr:nth-child(even) {
+    background-color: #a70001; /* Red row */
+    color: #ffffff;
+}
+
+/* Savage Dark Table Styles */
+.savagedark-table th,
+.savagedark-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #222; /* Dark border for distinction */
+}
+
+.savagedark-table th {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.savagedark-table tr:nth-child(odd) {
+    background-color: #a70001; /* Red row */
+    color: #ffffff;
+}
+
+.savagedark-table tr:nth-child(even) {
+    background-color: #000000; /* Black row */
+    color: #ffffff;
 }
