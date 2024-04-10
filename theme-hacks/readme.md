@@ -29,6 +29,6 @@ To apply these styling techniques in your notebook:
 2. **Creating Columns**: Use a div with `style="display: flex;"` and include child divs for each column.
 3. **Responsive Images**: Ensure images are responsive by setting their width to `100%` and height to `auto`.
 
-### Conclusion
 
-The Goblin Notebook's styling is designed to be flexible, responsive, and visually engaging. By combining CSS properties like float and Flexbox with responsive design principles, we create layouts that are both beautiful and functional.
+
+The Goblin Notebook's styling is designed to be flexible, responsive, and visually engaging. By combining CSS properties like float and Flexbox with responsive design principles, to create layouts that are both beautiful and functional.
