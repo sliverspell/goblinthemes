@@ -3,6 +3,19 @@
 
 This guide provides an overview of the CSS and HTML styling used in the Goblin Notebook to create visually appealing and functional layouts.
 
+### To import all design "hacks at once"
+
+If you want to use all theme hacks at once you can simply import them all at once inside your CSS.
+
+```
+@import url('https://cdn.jsdelivr.net/gh/sliverspell/goblinthemes/theme-hacks/layout.css');
+@import url('https://cdn.jsdelivr.net/gh/sliverspell/goblinthemes/theme-hacks/responsive.css');
+@import url('https://cdn.jsdelivr.net/gh/sliverspell/goblinthemes/theme-hacks/container.css');
+
+```
+
+Keep in mind here that these are CDN (content deliver network) links, that means that sometimes if you add this or they get updated it takes some time due to the CDN to update acrosss the internet.
+
 ### Layout and Design Features
 
 - **Floating Images**: Images are floated to the left or right to allow text content to wrap around, providing a magazine-like layout. This effect is achieved using the CSS `float` property.
