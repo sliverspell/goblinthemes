@@ -3,6 +3,9 @@
 
 This guide provides an overview of the CSS and HTML styling used in the Goblin Notebook to create visually appealing and functional layouts.
 
+## "Overriding" themes
+
+
 ### To import all design "hacks at once"
 
 If you want to use all theme hacks at once you can simply import them all at once inside your CSS.
@@ -15,6 +18,9 @@ If you want to use all theme hacks at once you can simply import them all at onc
 ```
 
 Keep in mind here that these are CDN (content deliver network) links, that means that sometimes if you add this or they get updated it takes some time due to the CDN to update acrosss the internet.
+
+### Container CSS
+The container is the area of the text 
 
 ### Layout and Design Features
 
