@@ -72,7 +72,7 @@
   
 
 /* Player's Handbook (D&D) Table Style */
-t.phb-table {
+.phb-table {
     width: 100%;
     border-collapse: collapse;
     font-family: 'IM Fell DW Pica', serif;
