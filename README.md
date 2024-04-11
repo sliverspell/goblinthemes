@@ -242,7 +242,7 @@ Style theme:
 ```
 change then /medieval.css to any other theme
 Style notes: look above for an example of code, then just change .note2. to .note3 and so on
-Style tables: see examples in the markdwon table and html table above, and adjust as wanted
+Style tables: see examples in the markdown table and html table above, and adjust as wanted
 
 
 # FAQ
