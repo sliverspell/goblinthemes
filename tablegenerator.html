@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Generator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+
+    <main>
+        <div class="toggle-container">
+            <button class="toggle-button">Press here to show how to Use the Goblin Table Generator</button>
+            <div class="toggle-content">
+                <p>This generator generates both HTML and Markdown tables. You can either choose a style from the dropdown, this will generate a class from my CSS tables, which you can find <a href="https://github.com/sliverspell/goblinthemes/blob/main/tablestyles/tables.css" target="_blank">here</a>.</p>
+                <p>Or you can press "Include Styling" that will bring up styling for your table. The colors you choose will reflect in the output when you press "Generate Table".</p>
+                <p>Also, remember to choose the number of columns and rows you want.
+                <p> you are happy with your table, simply press "Copy HTML" for HTML or "Copy Markdown" for Markdown. Then paste it where you want it.</p>
+                <p>If you are going to use GoblinTheme CSS table styles, make sure to paste this link above your table:</p>
+                <code>&lt;link rel="stylesheet" href="https://sliverspell.github.io/goblinthemes/tablestyles/tables.css"&gt;</code>
+            </div>
+        </div>
+        
+    <br>
+   <form id="tableForm">
+    <label for="styleSelect">Choose a table Style:</label>
+            <select id="styleSelect">
+                <option value="">None</option> 
+                <option value="medieval-table">Medieval</option>
+                <option value="neon-table">Neon</option>
+                <option value="phb-table">PHP</option>
+                <option value="cyberpunk-table">Cyberpunk</option>
+                <option value="elegant-table">Elegant</option>
+                <option value="grey-table">Grey</option>
+                <option value="horror-table">Horror</option>
+                <option value="steampunk-table">Steampunk</option>
+                <option value="space-table">Space</option>
+                <option value="underwater-table">Underwater</option>
+                <option value="enchanted-forest-table">Enchanted Forest</option>
+                <option value="digital-cybernetics-table">Digital Cybernetics</option>
+                <option value="phbgreen-table">PHB Green</option>
+                <option value="newspaper-table">Newspaper</option>
+                <option value="desert-table">Desert</option>
+                <option value="mothership-table">Mothership</option>
+                <option value="raventhemelight-table">Raven Theme Light</option>
+                <option value="raventhemedark-table">Raven Theme Dark</option>
+                <option value="deadlandslight-table">Deadlands Light</option>
+                <option value="deadlandsdark-table">Deadlands Dark</option>
+                <option value="savagelight-table">Savage Light</option>
+                <option value="savagedark-table">Savage Dark</option>
+                <option value="morklight-table">Mork Light</option>
+                <option value="mork-table">Mork</option>
+            </select>
+        
+            <label for="styling">Include Styling:</label>
+            <input type="checkbox" id="styling" name="styling" onclick="toggleStylingOptions()">
+                <div id="stylingOptions" style="display: none;">
+                    <!-- Color picker inputs for header, row (even and odd), font size, and font color -->
+                    <label for="headerColor">Header Color:</label>
+                    <input type="color" id="headerColor" name="headerColor" value="#000000">
+
+                    <label for="evenRowColor">Even Row Color:</label>
+                    <input type="color" id="evenRowColor" name="evenRowColor" value="#FFFFFF">
+                    
+                    <label for="oddRowColor">Odd Row Color:</label>
+                    <input type="color" id="oddRowColor" name="oddRowColor" value="#FFFFFF">
+
+                    <label for="rowFontColor">Row Font Color:</label>
+                    <input type="color" id="rowFontColor" name="rowFontColor" value="#000000">
+                    
+                    <label for="fontSize">Font Size:</label>
+                    <input type="number" id="fontSize" name="fontSize" min="8" max="32" value="12">
+                    
+                    <label for="fontColor">Font Color:</label>
+                    <input type="color" id="fontColor" name="fontColor" value="#000000">
+
+                    <label for="wideTable">Wide Table:</label>
+                    <input type="checkbox" id="wideTable" name="wideTable">
+
+                </div>
+                            
+            <label for="columns">Number of Columns:</label>
+            <input type="number" id="columns" name="columns" min="2" max="20" value="4">
+    
+            <label for="rows">Number of Rows:</label>
+            <input type="number" id="rows" name="rows" min="2" max="20" value="4">
+    
+            <button type="button" id="generateTableButton">Generate Table</button>
+
+            <button onclick="clearOutputs()">Clear</button>
+
+        </form>
+    
+        
+        <div class="output-container">
+            <div class="html-output">
+                <h3>HTML Table</h3>
+                <div id="tableOutput">Your generated table will appear here...</div>
+                <button onclick="copyToClipboard('tableOutput')">Copy HTML</button>
+            </div>
+            <div class="markdown-output">
+                <h3>Markdown Table Format</h3>
+                <div id="markdownOutput">Markdown version will appear here...</div>
+                <button onclick="copyToClipboard('markdownOutput')">Copy Markdown</button>
+            </div>
+        </div>
+    
+       
+        
+    </div>
+
+    </main>
+    
+    <footer>
+        <!-- Footer content -->
+    </footer>
+    <script src="tablegenerator.js"></script>
+</body>
+</html>
