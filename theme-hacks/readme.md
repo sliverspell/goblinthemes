@@ -3,6 +3,25 @@
 
 This guide provides an overview of the CSS and HTML styling used in the Goblin Notebook to create visually appealing and functional layouts.
 
+## "Overriding" themes
+
+
+### To import all design "hacks at once"
+
+If you want to use all theme hacks at once you can simply import them all at once inside your CSS.
+
+```
+@import url('https://cdn.jsdelivr.net/gh/sliverspell/goblinthemes/theme-hacks/layout.css');
+@import url('https://cdn.jsdelivr.net/gh/sliverspell/goblinthemes/theme-hacks/responsive.css');
+@import url('https://cdn.jsdelivr.net/gh/sliverspell/goblinthemes/theme-hacks/container.css');
+
+```
+
+Keep in mind here that these are CDN (content deliver network) links, that means that sometimes if you add this or they get updated it takes some time due to the CDN to update acrosss the internet.
+
+### Container CSS
+The container is the area of the text 
+
 ### Layout and Design Features
 
 - **Floating Images**: Images are floated to the left or right to allow text content to wrap around, providing a magazine-like layout. This effect is achieved using the CSS `float` property.
@@ -29,6 +48,6 @@ To apply these styling techniques in your notebook:
 2. **Creating Columns**: Use a div with `style="display: flex;"` and include child divs for each column.
 3. **Responsive Images**: Ensure images are responsive by setting their width to `100%` and height to `auto`.
 
-### Conclusion
 
-The Goblin Notebook's styling is designed to be flexible, responsive, and visually engaging. By combining CSS properties like float and Flexbox with responsive design principles, we create layouts that are both beautiful and functional.
+
+The Goblin Notebook's styling is designed to be flexible, responsive, and visually engaging. By combining CSS properties like float and Flexbox with responsive design principles, to create layouts that are both beautiful and functional.

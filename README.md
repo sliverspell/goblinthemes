@@ -37,7 +37,6 @@ To support my work, consider a donation through
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N8IAAPM)
 
 
-
 ## ThemeHacks
 
 Enhancements for text, images, columns, etc. 
@@ -51,6 +50,7 @@ settings, css, edit and add the links:
 ```
 
 You can also add all hacks into the CSS of goblin notebook, and just refer to the in div styles, covered later in this tutorial.
+Make sure you read the read me text under inside the themehacks also:
 
 # Using Themes
 Themes can be utilized by adding a theme stylesheet from this github.
@@ -107,8 +107,9 @@ https://github.com/sliverspell/goblinthemes/assets/10817448/8eebf525-72cd-4f4a-a
 
 You can either use HTML tables divs or markdown tables.
 There are different ways for both.
-If you paste this inside a page where you have added the style, you can simply change the name of the class to those that are available.
-Examples are then cahnge this
+If you paste this inside a page , you can simply change the name of the class to those tables that are available.
+Examples of this are.
+
 <table class="medieval-table">
 to
 <table class="elegant-table">
@@ -116,8 +117,7 @@ or
 <table class="neon-table">
 or any otther names that are on this github. Then you will see the style of the table changes automagically. ;)
 
-
-
+(ps! in the futire I will also add snippets to "code" your own style the easy way.
 **HTML TABLE EXAMPLE**
 ```
 <div>
@@ -242,7 +242,7 @@ Style theme:
 ```
 change then /medieval.css to any other theme
 Style notes: look above for an example of code, then just change .note2. to .note3 and so on
-Style tables: see examples in the markdwon table and html table above, and adjust as wanted
+Style tables: see examples in the markdown table and html table above, and adjust as wanted
 
 
 # FAQ

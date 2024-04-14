@@ -1,5 +1,5 @@
 /*This will remove borders and margins inside the journal 
-this code can either be imported or copied into your CSS so that you you can override the css
+this code can either be imported or copied into your CSS so that you you can override the css manually
 */
 
 div#blurb {
@@ -15,13 +15,14 @@ div#blurb {
 }
 
 #blurb-text {
-	/* remove border */
+/* remove border */
   border: none !important; /* Removes borders */
 }
 
-*/this changes the the background of the whole site,
+/*this changes the the background of the whole site,
 its set as white as default, you can change to any color,
 or you can insert an image*/
+
 body, html {
     margin: 0;
     padding: 0;
