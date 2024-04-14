@@ -1,0 +1,243 @@
+/* Reset margins and paddings for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #3A7A35; /* Goblin green background */
+    line-height: 50px; /* Adjust this to fit your design */
+    /* Control the height of the header if necessary */
+}
+
+main {
+    padding-top: 100px; /* Adjust this value to match the height of your fixed header */
+}
+
+
+/* Styling for navigation menu */
+nav {
+    /* If you want the nav to take the full width of the header, no changes are needed here */
+}
+
+/* Navigation links style */
+.nav-links {
+    list-style-type: none;
+    text-align: center;
+    padding: 0; /* Ensure there's no extra padding */
+}
+
+.nav-links li {
+    display: inline-block;
+    /* Adjust margin and padding as needed to fit the design */
+}
+
+.nav-links a, .dropbtn {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px; /* Adjust padding as needed, but keep it uniform */
+}
+
+/* Dropdown specific styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%; /* Position directly below the dropdown trigger */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Additional styles for dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* General button styling */
+button {
+    background-color: #3A7A35; /* Goblin green */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor indicates clickable item */
+    font-size: 16px; /* Increase font size for better readability */
+    margin: 5px; /* Space around buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #2D6B2F; /* A slightly darker green for hover effect */
+}
+
+/* Adjusted style for buttons to include margin for spacing */
+button {
+    margin-right: 10px; /* Adds space between buttons */
+    margin-bottom: 20px; /* Adds space below the buttons, creating separation from the following container */
+}
+
+#tableOutput {
+    margin: 20px auto; /* Center the box */
+    padding: 10px; /* Add some padding inside the box */
+    border: 2px solid #3A7A35; /* Goblin green border */
+    width: calc(100% - 40px); /* Adjust the width as needed, accounting for padding */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
+
+
+
+.html-output, .markdown-output {
+    flex: 1;
+    margin: 0 10px; /* Adjust as necessary for spacing */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
+.markdown-output {
+    height: 500px; /* Adjust the height as needed */
+    /* Add any other styles as needed */
+}
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* CSS for category boxes */
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.category-box {
+    flex: 1 0 calc(25% - 20px); /* Adjust width to fit 4 boxes per row */
+    max-width: calc(25% - 20px); /* Max width for each box */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* Styles for the textareas */
+.output-container textarea {
+    width: calc(50% - 10px); /* Adjust width and margin as needed */
+    margin: 0 5px;
+}
+
+/* Styles for the buttons */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.action-buttons button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.action-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.output-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 200px; /* Adjust the minimum height as needed */
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+}
+
+
+.snippet-output-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 200px; /* Adjust the minimum height as needed */
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+}
+
+.snippet-output {
+    width: 50%;
+    min-height: 300px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+#markdownOutput,
+#htmlOutput {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.toggle-container {
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.toggle-button {
+    width: 100%;
+    padding: 10px;
+    background: #3c763d; /* Goblin-themed background */
+    color: white;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #2b542c; /* Darker shade for hover */
+}
+
+.toggle-content {
+    display: none;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Style for the <code> element */
+code {
+    background-color: #eee;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: monospace;
+}
