@@ -175,6 +175,17 @@ or any otther names that are on this github. Then you will see the style of the 
 </div>
 
 ```
+## Table generator
+I have also created a table generator, where you can generate html and markdown tables.
+You can find it here
+https://sliverspell.github.io/goblinthemes/tablegenerator.html
+
+Here is a short video demonstrating how it works
+
+
+https://github.com/sliverspell/goblinthemes/assets/10817448/ad8672a0-8b80-486c-90b8-e5c9d72c2555
+
+
 
 
 # Note Styles
