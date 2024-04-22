@@ -36,6 +36,32 @@
   background-color: #e8dfc9; /* A slightly darker shade for even rows */
 }
 
+/* Medieval2-Table Style */
+.medieval2-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Almendra', serif; /* Utilizing 'Almendra' font */
+}
+
+.medieval2-table th, .medieval2-table td {
+  padding: 10px;
+  text-align: left;
+  background-color: #f4e4bc; /* Uniform background color for cells */
+  color: #453C38; /* Dark text color for contrast */
+  border: 1px solid #a48767; /* Border color consistent with medieval theme */
+}
+
+/* Styling for odd rows */
+.medieval2-table tr:nth-child(odd) {
+  background-color: #f4e4bc; /* Lighter shade for odd rows, matching cell background */
+}
+
+/* Styling for even rows */
+.medieval2-table tr:nth-child(even) {
+  background-color: #e8dfc9; /* Slightly darker shade for even rows */
+}
+
+
 /* Neon Table Style */
 .neon-table {
     width: 100%;
@@ -782,4 +808,32 @@
 .mork-table tr:nth-child(even) {
   background-color: #777777; /* Even Darker Grey for even rows, for contrast */
   color: #FFD700; /* yellow text for contrast */
+}
+
+/* Blackgold-Table Style */
+.blackgold-table th {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #333;
+  color: #FFD700; /* Gold text */
+  border: 2px solid #FFD700;
+}
+
+.blackgold-table td {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #111;
+  color: #FFF;
+  border: 1px solid #444;
+}
+
+.blackgold-table tr:nth-child(odd) {
+  background-color: #111; /* Slightly lighter shade for odd rows */
+}
+
+.blackgold-table tr:nth-child(even) {
+  background-color: #111; /* Dark shade for even rows */
+}
+
+.blackgold-table th, .blackgold-table td {
+  padding: 10px;
+  text-align: center;
 }
