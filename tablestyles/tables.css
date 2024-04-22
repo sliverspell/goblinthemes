@@ -43,21 +43,30 @@
   font-family: 'Almendra', serif; /* Utilizing 'Almendra' font */
 }
 
-.medieval2-table th, .medieval2-table td {
+/* Distinct styling for header row */
+.medieval2-table th {
   padding: 10px;
   text-align: left;
-  background-color: #f4e4bc; /* Uniform background color for cells */
-  color: #453C38; /* Dark text color for contrast */
+  background-color: #986F51; /* A distinct deeper brownish tone for headers */
+  color: #111; /* Gold text for a standout look */
   border: 1px solid #a48767; /* Border color consistent with medieval theme */
 }
 
+/* Styling for table cells, maintaining uniform appearance */
+.medieval2-table td {
+  padding: 10px;
+  text-align: left;
+  color: #453C38; /* Dark text color for contrast */
+  border: 1px solid #a48767;
+}
+
 /* Styling for odd rows */
-.medieval2-table tr:nth-child(odd) {
-  background-color: #f4e4bc; /* Lighter shade for odd rows, matching cell background */
+.medieval2-table tr:nth-child(odd) td {
+  background-color: #f4e4bc; /* Lighter shade for odd rows */
 }
 
 /* Styling for even rows */
-.medieval2-table tr:nth-child(even) {
+.medieval2-table tr:nth-child(even) td {
   background-color: #e8dfc9; /* Slightly darker shade for even rows */
 }
 
