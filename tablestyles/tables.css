@@ -67,7 +67,7 @@
 
 /* Styling for even rows */
 .medieval2-table tr:nth-child(even) td {
-  background-color: #e8dfc9; /* Slightly darker shade for even rows */
+  background-color: #f4e4bc; /* Slightly darker shade for even rows */
 }
 
 
