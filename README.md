@@ -125,8 +125,10 @@ There are a few different ways to apply styles to tables. Both ways will make it
 If you want to be able to style the tables just using
 <div class="digital-cybernetics-table">
 Or any other table, you can import this into the top of your main css edit:
-<link rel="stylesheet" href="https://sliverspell.github.io/goblinthemes/tablestyles/tables.css">
  
+ ```
+<link rel="stylesheet" href="https://sliverspell.github.io/goblinthemes/tablestyles/tables.css">
+ ```
 
 ### If you want pr object/page 
 If you dont paste the link into main CSS, then you need to paste the stylesheet on the top of the object
