@@ -1,0 +1,26 @@
+.footer {
+  background-color: var(--goblin-green);
+  color: var(--text-white);
+  padding: 2rem 1rem;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+  font-size: 14px;
+}
+
+.footer a {
+  color: var(--text-white);
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: var(--goblin-green-light);
+}

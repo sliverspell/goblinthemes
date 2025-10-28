@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&family=Audiowide&family=Expletus+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Press+Start+2P&display=swap');
+
+
+
+/* Neon city overdrive theme by sliverspell */
+/* Background container image. Here you change the background color or image for the object journal, or also known as markdown container */
+.markdown-container {
+    background-image: url('');
+    background-color: #4d1f5f;
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    overflow-y: auto; /* Focus on the scrolling issue */
+    height: auto; /* Temporarily switch to auto to test behavior */
+    min-height: 100vh; /* Ensure it covers at least the viewport height */
+    border: 1px solid transparent;
+    border: 1px solid transparent;
+    padding: 20px 25px 20px 20px;
+    color: #ffffff; /* Adjusts default text color */
+    font-family: 'Orbitron', sans-serif; /* Default font for all text */
+  }
+  
+  .markdown-header {
+      border-bottom: 4px solid #00ff00; /* Neon Green color */
+  }
+
+  .markdown-container p {
+      padding-top: 10px; /* Adds space above each paragraph */
+      padding-bottom: 10px; /* Adds space below each paragraph */
+      padding-left: 10px; /* Adds space to the left of each paragraph */
+      padding-right: 10px; /* adds space to the right */
+      font-size: 1.2em; /* Adjusts font size for better readability */
+      line-height: 1.1em; /* Improves spacing between lines */
+      letter-spacing: 0.02em; /* Slightly increases spacing between letters */
+  }
+  
+/* Text glow effect */
+.text-glow {
+  text-shadow: 0 0 8px #04d1ff; /* Blue glow */
+}
+
+
+* Specific styles for markdown header */
+.markdown-header {
+  border-bottom: 4px solid #00ff00; /* Neon Green color */
+}
+
+div.markdown-container hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: none;
+    height: 2px;
+    background-color: #d1ff04; /* Fallback color */
+    background-image: url('URL_TO_YOUR_IMAGE');
+    background-repeat: repeat-x;
+    background-size: 100% 2px; /* Example to stretch horizontally */
+    box-sizing: border-box;
+}
+
+
+/* Headers styling */
+h1 {
+    font-family: 'Zen Dots', cursive;
+    font-size: 30px; /* Example size, adjust as needed */
+    color: #d1ff04; /* Example color, adjust as needed */
+    border-bottom: 8px solid #d1ff04;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Audiowide', cursive;
+    font-size: 24px; /* Example size, adjust as needed */
+    color: #04d1ff !important; /* Example color, adjust as needed */
+    border-bottom: 2px solid #04d1ff;
+    text-align: center;
+}
+
+
+h3, h4 {
+    font-family: 'Expletus Sans', cursive;
+    font-size: 20px; /* Example size for h3, adjust as needed */
+    color: #ff04d1; /* Example color, adjust as needed */
+    text-align: center;
+}
+
+h4 {
+    font-size: 18px; /* Smaller size for h4 */
+    color: white; /* Example color, adjust as needed */
+}
+h5 {
+    font-size: 14px; /* Smaller size for h5 */
+    color: white; /* Example color, adjust as needed */
+}
+h6 {
+    font-size: 12px; /* Smaller size for h6 */
+    color: white; /* Example color, adjust as needed */
+}
+
+

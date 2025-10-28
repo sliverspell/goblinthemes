@@ -1,0 +1,106 @@
+/*The whole point with this code, is to make sure that images, columns, headers and images adjust accordingly.
+Meaning if you want to adjust the width of the container, the text and images adjusts accordingly
+*/
+
+
+/* Floating classes */
+.float-left {
+    float: left;
+    margin-right: 20px; /* Adds spacing to the right */
+}
+
+.float-right {
+    float: right;
+    margin-left: 20px; /* Adds spacing to the left */
+}
+
+/* Clearfix class */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both; /* Clears floats, ensuring container encompasses floated children */
+}
+
+/* Border roundness toggle */
+.square-border {
+    border-radius: 0; /* Makes borders square */
+}
+.note {
+    /* Default padding values */
+    --note-padding-top: 0;
+    --note-padding-bottom: 0;
+    --note-padding-left: 0;
+    --note-padding-right: 0;
+    padding: var(--note-padding-top) var(--note-padding-right) var(--note-padding-bottom) var(--note-padding-left);
+    /* Other styles remain unchanged */
+}
+
+.page-container {
+  position: relative;
+  width: 816px; /* Adjust based on your needs */
+  height: 1200px; /* Adjust based on your needs */
+  margin: auto; /* Center the container */
+  overflow: hidden; /* Keep everything contained */
+}
+
+/* Container holding the content and images */
+.markdown-container {
+    position: relative; /* Essential for positioning children */
+    width: 100%; /* Container width */
+    min-height: 100vh; /* Minimum height */
+    overflow: hidden; /* Prevents overflow */
+}
+
+/* Header Image */
+.header-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Footer Image */
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Right Placed Image */
+.right-placed-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Left Placed Image */
+.left-placed-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+ .responsive-image-container {
+    width: 100%; /* Makes the container take the full width of the screen */
+  }
+
+  .responsive-image-container img {
+    width: 100% !important; /* Makes the image expand to the full width of its container */
+    height: auto !important; /* Ensures the image height adjusts to maintain the aspect ratio */
+}

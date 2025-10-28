@@ -1,0 +1,36 @@
+/*This will remove borders and margins inside the journal 
+this code can either be imported or copied into your CSS so that you you can override the css manually
+*/
+
+div#blurb {
+    margin: 0 !important; /* Removes margin */
+    padding: 0 !important; /* Removes padding */
+    border: none !important; /* Removes borders */
+    outline: none !important; /* Removes outlines */
+    box-shadow: none !important; /* Removes box shadows */
+    background-color: none !important; /* Makes background transparent */
+    min-height: 0 !important; /* Removes minimum height */
+    border-radius: 0 !important; /* Removes border radius */
+  
+}
+
+#blurb-text {
+/* remove border */
+  border: none !important; /* Removes borders */
+}
+
+/*this changes the the background of the whole site,
+its set as white as default, you can change to any color,
+or you can insert an image*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-default);
+    color: var(--text-color);
+    background-color: #ffffff;
+    background-image: url('your-background-image-url.jpg'); /* Add your background image URL here */
+    background-repeat: no-repeat; /* Adjust as needed */
+    background-size: cover; /* Cover the entire page; use 'contain' to fit the image to the page */
+    background-position: center; /* Center the background image */
+}

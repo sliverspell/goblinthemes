@@ -1,0 +1,68 @@
+/* Basic Reset and Box-sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Flexbox Layout Utilities */
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between elements */
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+/* Responsive Image Setup */
+img.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Content Container for general padding and max-width */
+.content-container {
+    max-width: 1200px; /* Or your preferred max width */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Image Wrapping */
+.image-wrapper {
+    margin: 20px; /* Adjust spacing around images */
+    float: left; /* Or right, for text wrapping */
+}
+
+/* Clearfix for Floating Elements */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .flex-row, .flex-column {
+        flex-direction: column;
+    }
+}

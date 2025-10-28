@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+/* Mothership theme by sliverspell */
+
+/* Main body adjustments for a white background */
+body {
+  background-color: #ffffff; /* Setting the background color to white */
+  font-family: 'Roboto Mono', monospace; /* Using 'Roboto Mono' for a techy feel */
+  font-size: 14px; /* Default font size */
+  color: #FFFFFF; /* Default text color set to black for contrast */
+}
+
+/* Markdown container adjustments for consistency with the body */
+.markdown-container {
+  background-color: #ffffff; /* White background for the container */
+  color: #000000; /* Text color set to black for readability */
+  font-family: 'Roboto Mono', monospace; /* Consistent font usage */
+  padding: 20px; /* Padding for content within the container */
+  border: 1px solid #e0e0e0; /* Slight border for visual separation */
+}
+
+/* Removing borders under h2 and h3 headings */
+div.markdown-container h2, .markdown-container h3 {
+  border-bottom: none; /* Removing the bottom border */
+}
+
+/* Styling for paragraphs to enhance readability */
+div.markdown-container p {
+  font-size: 1.2em; /* Larger font size for paragraph text */
+  line-height: 1.5em; /* Increased line height for better readability */
+  padding: 5px 0; /* Padding above and below paragraphs */
+}
+
+/* Headers Styling */
+h1, div.markdown-container h1 {
+  font-family: 'Roboto Mono', monospace;
+  color: #000000; /* Black color for headers */
+  text-align: center;
+  font-size: 30px; /* Larger font size for primary headers */
+  border-bottom: 4px solid #D3D3D3; /* Grey border for a subtle separator */
+  padding-bottom: 10px; /* Padding below the header */
+}
+
+h2, div.markdown-container h2 {
+  font-family: 'Roboto Mono', monospace;
+  color: #000000; /* Black color for secondary headers */
+  text-align: center;
+  font-size: 24px; /* Font size for secondary headers */
+  margin: 20px 0; /* Margin above and below for spacing */
+  padding: 10px 0; /* Padding for a balanced appearance */
+}
+
+h3, div.markdown-container h3, h4, div.markdown-container h4, h5, div.markdown-container h5 {
+  font-family: 'Roboto Mono', monospace;
+  color: #000000; /* Black color for tertiary headers */
+  text-align: center;
+  font-size: 20px; /* Adjusting font size accordingly */
+}
+
+/* Divider line adjustments */
+div.markdown-container hr {
+  border: none;
+  height: 4px; /* Slightly thicker line for division */
+  background-color: #D3D3D3; /* Grey line for a subtle divider */
+  margin: 20px 0; /* Margin for spacing around the divider */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+  }
+
+  div#blurb {
+    margin: 0 !important; /* Removes margin */
+    padding: 0 !important; /* Removes padding */
+    border: none !important; /* Removes borders */
+    outline: none !important; /* Removes outlines */
+    box-shadow: none !important; /* Removes box shadows */
+    background-color: #ffffff !important; /* Makes background transparent */
+    min-height: 0 !important; /* Removes minimum height */
+    border-radius: 0 !important; /* Removes border radius */
+  
+}

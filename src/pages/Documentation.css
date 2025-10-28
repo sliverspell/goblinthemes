@@ -1,0 +1,90 @@
+.documentation {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.documentation h1 {
+  text-align: center;
+  color: var(--goblin-green);
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.doc-section {
+  background: var(--text-white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.doc-section h2 {
+  color: var(--goblin-green);
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.doc-section p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.doc-section pre {
+  background-color: var(--bg-light);
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1rem 0;
+  border: 1px solid var(--border-color);
+}
+
+.doc-section code {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.doc-section ol,
+.doc-section ul {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.doc-section li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.doc-section a {
+  color: var(--goblin-green);
+  font-weight: 600;
+}
+
+.theme-list ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+
+.theme-list li {
+  list-style: none;
+  padding: 0.5rem;
+  background-color: var(--bg-light);
+  border-radius: 4px;
+  margin-left: 0;
+}
+
+@media (max-width: 768px) {
+  .documentation h1 {
+    font-size: 2rem;
+  }
+
+  .doc-section {
+    padding: 1.5rem;
+  }
+
+  .theme-list ul {
+    grid-template-columns: 1fr;
+  }
+}

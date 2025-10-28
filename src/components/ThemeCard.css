@@ -1,0 +1,128 @@
+.theme-card {
+  background: var(--text-white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.theme-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.theme-preview {
+  height: 150px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+.color-swatches {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.color-swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-swatch:hover {
+  transform: scale(1.1);
+}
+
+.theme-info {
+  padding: 1.5rem;
+}
+
+.theme-info h3 {
+  font-size: 1.5rem;
+  color: var(--goblin-green);
+  margin-bottom: 0.5rem;
+}
+
+.theme-description {
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.theme-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  border: 1px solid var(--border-color);
+}
+
+.theme-font {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.theme-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.copy-btn {
+  flex: 1;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+}
+
+.copy-btn:hover {
+  background-color: var(--goblin-green-dark);
+}
+
+.code-preview {
+  margin-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1rem;
+}
+
+.code-preview summary {
+  cursor: pointer;
+  color: var(--goblin-green);
+  font-weight: 600;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+.code-preview summary:hover {
+  text-decoration: underline;
+}
+
+.code-preview pre {
+  margin-top: 0.5rem;
+  background-color: var(--bg-light);
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.code-preview code {
+  font-size: 0.85rem;
+  color: var(--text-dark);
+  background: none;
+  padding: 0;
+}

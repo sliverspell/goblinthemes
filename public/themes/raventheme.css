@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Raventheme theme by sliverspell , Ravenloft is a trademark name for wizards of the coast*/
+
+/*body container background*/
+body {
+  background-image: url('https://lh3.googleusercontent.com/drive-viewer/AKGpihY3Tkb95VK1WaBVBgtE8q9zuaX2RCcwVnoMneM61SuEBV_9XYYW3i_NS1wBNfaPWeRmWiRfQnmsNpY5uCrhjDSJGXt3cS6FZCw=s1600-v0'); /* Replace with your direct image link */
+  /* Fallback color */
+  background-color: #0a0a0a !important; /* Deep, dark background color as a fallback */
+  font-family: 'Lora', serif;
+  color: #dcdcdc; /* Soft white for general text, enhancing readability */
+  font-size: 14px;
+  /* Ensure the image covers the background fully and is centered */
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+
+/* Background container styling */
+.markdown-container {
+  background-image: url('https://example.com/ravenloft_inner.png'); /* Replace with your darker, moodier interior image */
+  background-color: #0a0a0a;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-y: auto;
+  height: auto;
+  min-height: 100vh;
+  padding: 20px 25px;
+  box-sizing: border-box;
+  border: none !important;
+  color: #dcdcdc !important; /* Ensuring text color overrides other styles */
+}
+
+
+/* Styling adjustments for planner and note content */
+div#planner:not(div.task-bar) div#note-content {
+  padding: 0 !important;
+}
+
+/* Styling for markdown horizontal line */
+div.markdown-container hr {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: none;
+  height: 3px;
+  background-color: #8A0707; /* Darker red to simulate dried blood */
+  background-image: linear-gradient(to right, #8A0707, #FF0000); /* Gradient for a fresh blood effect */
+  background-repeat: repeat-x;
+  background-size: 100% 2px;
+}
+
+/* Paragraph styling within markdown-container */
+.markdown-container p {
+  padding: 10px;
+  font-size: 1.2em;
+  line-height: 1.1em;
+  letter-spacing: 0.02em;
+  color: #dcdcdc;
+}
+
+/* Global Headers Styling */
+h1, div.markdown-container h1 {
+  font-family: 'Almendra', serif;
+  color: #FFFFFF; /* Pure white text for high contrast */
+  text-align: center;
+  font-size: 2.5em;
+  background-color: #8A0707; /* Dark red background for dramatic emphasis */
+  padding-top: 0; /* Increased top padding for vertical centering */
+  padding-bottom: 0; /* Matching bottom padding to maintain balance */
+  margin-bottom: 1em; /* Space after the heading */
+}
+
+
+h2, div.markdown-container h2 {
+  font-family: 'Almendra', serif;
+  color: #dcdcdc; /* Soft white, maintaining readability */
+  text-align: center;
+  font-size: 2em;
+  border-bottom: 2px solid #8A0707; /* Blood red underline for dramatic effect */
+  padding-bottom: 0.3em;
+}
+
+/* Global Headers Styling adjustment for h3 */
+h3, div.markdown-container h3 {
+  font-family: 'Lora', serif;
+  color: #F8F8F2; /* A light, almost white, grey for better readability */
+  text-align: center;
+  font-size: 20px;
+  /* Retain other styling properties as they were */
+}
+
+
+h4, div.markdown-container h4 {
+  font-family: 'Lora', serif;
+  color: #dcdcdc; /* Soft white for consistency */
+  text-align: center;
+  font-size: 1.5em;
+  padding-bottom: 0.2em;
+}
+
+h5, div.markdown-container h5 {
+  font-family: 'Lora', serif;
+  color: #FFFFFF; /* Pure white for contrast */
+  background-color: #8A0707; /* Blood red background */
+  text-align: center;
+  font-size: 1.25em;
+  padding: 0.2em 0; /* Padding for visual space */
+  margin-bottom: 1em; /* Space after the heading */
+}
+
+/* Custom styles for blockquote, lists, and other markdown elements as needed */
+/* ... */
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens, potentially modifying font sizes and padding */
+}

@@ -1,0 +1,139 @@
+.theme-store {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.store-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.store-header h1 {
+  font-size: 2.5rem;
+  color: var(--goblin-green);
+  margin-bottom: 1rem;
+}
+
+.store-header p {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.store-filters {
+  margin-bottom: 2rem;
+}
+
+.theme-type-toggle {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.theme-type-toggle button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.theme-type-toggle button.active {
+  background-color: var(--goblin-green);
+  color: var(--text-white);
+  border-color: var(--goblin-green);
+}
+
+.search-bar {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.search-bar input:focus {
+  border-color: var(--goblin-green);
+}
+
+.category-filters {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-btn {
+  padding: 8px 16px;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.category-btn:hover {
+  border-color: var(--goblin-green);
+  background-color: var(--text-white);
+}
+
+.category-btn.active {
+  background-color: var(--goblin-green);
+  color: var(--text-white);
+  border-color: var(--goblin-green);
+}
+
+.category-icon {
+  font-size: 1.2rem;
+}
+
+.theme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.no-results p {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .store-header h1 {
+    font-size: 2rem;
+  }
+
+  .theme-type-toggle {
+    flex-direction: column;
+  }
+
+  .theme-grid {
+    grid-template-columns: 1fr;
+  }
+}

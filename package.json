@@ -1,0 +1,24 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Custom CSS themes for the Goblin Notebook, offering aesthetic enhancements across backgrounds, fonts, and markdown containers.",
+  "main": "tablegenerator.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.76.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.4",
+    "vite": "^7.1.12"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.0"
+  }
+}

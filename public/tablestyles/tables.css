@@ -1,0 +1,848 @@
+/* Importing Google Fonts for table styles */
+@import url('https://fonts.googleapis.com/css2?family=Almendra&family=Orbitron:wght@400;500;600;700&family=IM+Fell+DW+Pica&family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Bubblegum+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&display=swap');
+
+
+/* Medieval Table Style */
+.medieval-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Cardo', serif; /* Example font */
+}
+.medieval-table th,
+.medieval-table td {
+  padding: 10px;
+  text-align: left;
+}
+/* Styling for header row */
+.medieval-table th {
+  background-color: #a48767; /* A medieval brown */
+  color: #FFF; /* White text for contrast */
+  border: 1px solid #a48767;
+}
+/* Styling for odd rows */
+.medieval-table tr:nth-child(odd) {
+  background-color: #f4e4bc; /* A lighter shade for odd rows */
+}
+/* Styling for even rows */
+.medieval-table tr:nth-child(even) {
+  background-color: #e8dfc9; /* A slightly darker shade for even rows */
+}
+
+/* Medieval2-Table Style */
+.medieval2-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Almendra', serif; /* Utilizing 'Almendra' font */
+}
+
+/* Distinct styling for header row */
+.medieval2-table th {
+  padding: 10px;
+  text-align: left;
+  background-color: #986F51; /* A distinct deeper brownish tone for headers */
+  color: #111; /* Gold text for a standout look */
+  border: 1px solid #a48767; /* Border color consistent with medieval theme */
+}
+
+/* Styling for table cells, maintaining uniform appearance */
+.medieval2-table td {
+  padding: 10px;
+  text-align: left;
+  color: #453C38; /* Dark text color for contrast */
+  border: 1px solid #a48767;
+}
+
+/* Styling for odd rows */
+.medieval2-table tr:nth-child(odd) td {
+  background-color: #f4e4bc; /* Lighter shade for odd rows */
+}
+
+/* Styling for even rows */
+.medieval2-table tr:nth-child(even) td {
+  background-color: #f4e4bc; /* Slightly darker shade for even rows */
+}
+
+
+/* Neon Table Style */
+.neon-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Orbitron', sans-serif; /* Using Orbitron font for the neon theme */
+  }
+  
+  .neon-table th,
+  .neon-table td {
+    padding: 10px;
+    text-align: left;
+    color: #04ffb0; /* Bright neon green text */
+    border: 1px solid #ff04d1; /* Bright pink borders */
+    background-color: #292834; /* Dark background for contrast */
+    text-shadow: 0 0 8px #04d1ff; /* Blue neon glow for text */
+  }
+  
+  .neon-table th {
+    background-image: linear-gradient(to right, #ff00ff, #00ffff); /* Gradient from magenta to cyan */
+    color: #FFD700; /* Gold text for headers */
+    border: 1px solid #ff04d1; /* Bright pink borders */
+    text-shadow: 0 0 8px #04d1ff; /* Blue neon glow for text */
+  }
+  
+  /* Styling for odd rows */
+  .neon-table tr:nth-child(odd) {
+    background-color: #292834; /* Keeping the same background as the body for odd rows */
+  }
+  
+  /* Styling for even rows */
+  .neon-table tr:nth-child(even) {
+    background-color: #1e1e2f; /* Slightly darker shade for even rows */
+  }
+  
+
+/* Player's Handbook (D&D) Table Style */
+.phb-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'IM Fell DW Pica', serif;
+  }
+  
+  .phb-table th,
+  .phb-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #927d5e; /* Border color matching the Player's Handbook theme */
+  }
+  
+  .phb-table th {
+    background-color: #f0e6d6; /* Header background color */
+    color: #6E665A; /* Header text color */
+  }
+  
+  .phb-table tr:nth-child(odd) {
+    background-color: #e1e4c1; /* Lighter shade for odd rows */
+  }
+  
+  .phb-table tr:nth-child(even) {
+    background-color: #eae5ca; /* Slightly darker shade for even rows */
+  }
+  
+
+/* Cyberpunk Table Style */
+.cyberpunk-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Audiowide', cursive; /* Futuristic font for the cyberpunk theme */
+  }
+  
+  .cyberpunk-table th,
+  .cyberpunk-table td {
+    padding: 10px;
+    text-align: left;
+    color: #00FF00; /* Neon green text color */
+    border: 1px solid #00FF00; /* Neon green border */
+    text-shadow: 0 0 8px #00FF00; /* Glowing text effect */
+  }
+  
+  .cyberpunk-table th {
+    background-color: #0f0f23; /* Dark background for the header */
+  }
+  
+  .cyberpunk-table tr:nth-child(odd) {
+    background-color: #0f0f23; /* Keeping the odd rows the same dark shade */
+  }
+  
+  .cyberpunk-table tr:nth-child(even) {
+    background-color: #171733; /* Slightly different shade for even rows */
+  }
+  
+
+/* Elegant Table Style */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap');
+
+.elegant-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.elegant-table th,
+.elegant-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Styling for header row */
+.elegant-table th {
+  background-color: #ffffff; /* White background */
+  color: #333; /* Dark text for contrast */
+  border-bottom: 2px solid #666; /* Dark bottom border for a bit of elegance */
+}
+
+/* Styling for odd rows */
+.elegant-table tr:nth-child(odd) {
+  background-color: #ffffff; /* White background for odd rows */
+}
+
+/* Styling for even rows */
+.elegant-table tr:nth-child(even) {
+  background-color: #f0f0f0; /* Slightly off-white for even rows, providing a subtle stripe effect */
+}
+
+/* Grey Table Style */
+.grey-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grey-table th, .grey-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Odd columns styling */
+.grey-table th:nth-child(odd), .grey-table td:nth-child(odd) {
+  background-color: #f2f2f2; /* Light grey for odd columns */
+  transition: background-color 0.3s ease;
+}
+
+/* Even columns styling */
+.grey-table th:nth-child(even), .grey-table td:nth-child(even) {
+  background-color: #e6e6e6; /* Slightly darker grey for even columns */
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.grey-table th:hover, .grey-table td:hover {
+  background-color: #c9c9c9; /* Dark grey when hovering */
+  transition: background-color 0.3s ease;
+}
+
+/* Horror Table Style */
+.horror-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Cormorant Garamond', serif; /* Elegant, old-style font */
+}
+
+.horror-table th {
+  background-color: #400101; /* Dark blood red for headers */
+  color: #FFF; /* White text for contrast */
+  padding: 10px;
+  text-align: left;
+  border-bottom: 3px solid #680303; /* Slightly brighter red for a sharp contrast */
+}
+
+.horror-table td {
+  padding: 10px;
+  text-align: left;
+  background-color: #190707; /* Very dark red, almost black */
+  color: #FFF; /* White text for readability */
+  border-bottom: 1px solid #300202; /* Dark red border for separation */
+}
+
+.horror-table tr:nth-child(odd) {
+  background-color: #290505; /* A slightly lighter dark red for odd rows */
+}
+
+.horror-table tr:nth-child(even) {
+  background-color: #190707; /* Keeping even rows darker */
+}
+
+.horror-table tr:hover {
+  background-color: #551414; /* A muted red for hover effect */
+  transition: background-color 0.3s ease;
+}
+
+/* Steampunk Adventure Table Style */
+.steampunk-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Aclonica', sans-serif; /* Steampunk theme font */
+    color: #333; /* Text color for readability */
+  }
+  
+  .steampunk-table th, .steampunk-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #987654; /* Brass-like border color */
+  }
+  
+  .steampunk-table th {
+    background-color: #f4e5c3; /* Sepia tone for header background */
+    color: #563d28; /* Darker text color for contrast */
+  }
+  
+  .steampunk-table tr:nth-child(odd) {
+    background-color: #fcf7e9; /* Lighter sepia tone for odd rows */
+  }
+  
+  .steampunk-table tr:nth-child(even) {
+    background-color: #ede1c9; /* Slightly darker sepia tone for even rows */
+  }
+  
+  /* Optional: Add a hover effect for rows */
+  .steampunk-table tr:hover {
+    background-color: #e8d4b3; /* Darker sepia tone when hovering over a row */
+  }
+  
+  /* Example hover effect for header */
+  .steampunk-table th:hover {
+    background-color: #dfd3b6;
+    cursor: pointer;
+  }
+
+  /* Space Exploration Table Style */
+.space-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Orbitron', sans-serif; /* Futuristic theme font */
+    color: #ccc; /* Light gray text color for readability against dark background */
+  }
+  
+  .space-table th, .space-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #555; /* Dark gray border, like distant stars */
+  }
+  
+  .space-table th {
+    background-color: #282a36; /* Deep space dark blue */
+    color: #00d1ff; /* Bright blue text color, like technology indicators */
+  }
+  
+  .space-table tr:nth-child(odd) {
+    background-color: #242630; /* Slightly lighter dark blue for odd rows */
+  }
+  
+  .space-table tr:nth-child(even) {
+    background-color: #1e2029; /* Dark background for even rows */
+  }
+  
+  /* Optional: Add a hover effect for rows */
+  .space-table tr:hover {
+    background-color: #343746; /* Slightly lighter background when hovering over a row */
+    color: #ffffff; /* Ensures text is white on hover for better readability */
+  }
+  
+  /* Enhance the table header on hover to increase interactivity */
+  .space-table th:hover {
+    background-color: #00b3ff;
+    color: #ffffff;
+    cursor: pointer; /* Change cursor to indicate clickable */
+  }
+  
+  
+
+/* Underwater Kingdom Table Style */
+.underwater-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Raleway', sans-serif; /* Sleek, modern font */
+    color: #05595b; /* Deep ocean text color */
+  }
+  
+  .underwater-table th, .underwater-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #02c8a7; /* Turquoise, like shallow Caribbean waters */
+  }
+  
+  .underwater-table th {
+    background: linear-gradient(145deg, #4fd5e6 0%, #02c8a7 100%);
+    color: #ffffff; /* White text for clarity */
+    font-family: 'Bubblegum Sans', cursive; /* Playful, bubbly font for headers */
+  }
+  
+  .underwater-table tr:nth-child(odd) {
+    background-color: #e0f7f9; /* Lighter shade for odd rows, like sunlight filtering through water */
+  }
+  
+  .underwater-table tr:nth-child(even) {
+    background-color: #b2e4e6; /* A slightly darker shade for even rows, resembling deeper waters */
+  }
+  
+  /* Optional: Add a hover effect for rows to mimic the fluidity of water */
+  .underwater-table tr:hover {
+    background-color: #82d8da; /* A vibrant turquoise for hovered rows */
+    color: #023e40; /* Darker text for contrast */
+  }
+  
+  /* Enhance headers on hover for interactivity */
+  .underwater-table th:hover {
+    background: linear-gradient(145deg, #3bcfd0 0%, #029987 100%);
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  /* Enchanted Forest Table Style */
+.enchanted-forest-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Merriweather', serif; /* Earthy, robust font */
+    color: #3e442b; /* Dark forest green text color */
+  }
+  
+  .enchanted-forest-table th, .enchanted-forest-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #809980; /* Mossy green for borders */
+  }
+  
+  .enchanted-forest-table th {
+    background: linear-gradient(145deg, #8ca985 0%, #687f68 100%);
+    color: #ffffff; /* White text for clarity */
+  }
+  
+  .enchanted-forest-table tr:nth-child(odd) {
+    background-color: #f0f5f3; /* Lighter shade for odd rows, reminiscent of dappled sunlight */
+  }
+  
+  .enchanted-forest-table tr:nth-child(even) {
+    background-color: #dce5dc; /* A slightly darker shade for even rows, like the shadowed underbrush */
+  }
+  
+  /* Optional: Add a hover effect for rows */
+  .enchanted-forest-table tr:hover {
+    background-color: #c2d1bf; /* A lively green for hovered rows, like leaves rustling in a breeze */
+    color: #405d40; /* Darker text for contrast */
+  }
+  
+  /* Enhance headers on hover for interactivity */
+  .enchanted-forest-table th:hover {
+    background: linear-gradient(145deg, #7a9470 0%, #556b54 100%);
+    color: #ffffff;
+    cursor: pointer;
+  }
+ /* Digital Cybernetics Table Style */
+.digital-cybernetics-table {
+    max-width: 100%; /* Ensures table does not exceed the container width */
+    width: auto; /* Adjusts width based on content up to max-width */
+    border-collapse: collapse;
+    font-family: 'Roboto Mono', monospace; /* Monospaced, techy font */
+    color: #0AFFEF; /* Bright cyan text, reminiscent of neon lights */
+    background: #121212; /* Deep, dark background */
+    margin: auto; /* Centers table in the container */
+}
+
+.digital-cybernetics-table th, .digital-cybernetics-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #2A2A2A; /* Slightly lighter dark border */
+}
+
+.digital-cybernetics-table th {
+    background: #0A0A0A; /* Darker header background */
+    color: #00FFC6; /* Neon green text color for headers */
+    border-bottom: 2px solid #00FFC6; /* Emphasizing header with a neon border */
+}
+
+.digital-cybernetics-table tr:nth-child(odd) {
+    background-color: #1A1A1A; /* Slightly lighter for odd rows, like dimmed lights in the dark */
+}
+
+.digital-cybernetics-table tr:nth-child(even) {
+    background-color: #131313; /* Keeping even rows darker, maintaining the deep, digital ambiance */
+}
+
+/* Adding a hover effect for rows */
+.digital-cybernetics-table tr:hover {
+    background-color: #242424; /* Lightens on hover */
+    color: #1DFEFE; /* Adjusting text color for better visibility */
+}
+
+/* Hover effect for headers */
+.digital-cybernetics-table th:hover {
+    background: #020202; /* Dark hover effect for headers */
+    color: #FFFFFF; /* Bright white text for contrast */
+    cursor: pointer;
+}
+
+/* Optional: Adding a hover effect for rows to enhance interactivity */
+  .digital-cybernetics-table tr:hover {
+    background-color: #242424; /* Lightens on hover, mimicking a highlight in a user interface */
+    color: #1DFEFE; /* Adjusting text color for better visibility */
+  }
+  
+  /* Hover effect for headers to suggest interactivity */
+  .digital-cybernetics-table th:hover {
+    background: #020202; /* Dark hover effect for headers */
+    color: #FFFFFF; /* Bright white text for contrast */
+    cursor: pointer;
+  }
+
+  /* PHBGreen Table Style */
+.phbgreen-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Carlito', sans-serif;
+    font-size: 9.84pt;
+  }
+  
+  .phbgreen-table th, .phbgreen-table td {
+    padding: 5px; /* Narrow padding for a compact look */
+    text-align: left;
+  }
+  
+  /* Removing all borders */
+  .phbgreen-table th, .phbgreen-table td {
+    border: none;
+  }
+  
+  /* Alternating row background for readability */
+  .phbgreen-table tr:nth-child(odd) {
+    background-color: #e0e5c1;
+  }
+  
+  /* Ensuring even rows have no background for a clean, alternating look */
+  .phbgreen-table tr:nth-child(even) {
+    background-color: transparent;
+  }
+  
+
+/* Vintage Newspaper Table Style */
+.newspaper-table {
+    max-width: 100%; /* Ensures table does not exceed the container width */
+    width: auto; /* Adjusts width based on content up to max-width */
+    border-collapse: collapse;
+    font-family: 'Old Standard TT', serif; /* Classic font for a vintage look */
+    background: url('imgplaceholder'); /* Placeholder for actual newspaper texture background */
+    color: black; /* Black text for that classic newspaper feel */
+  }
+  
+  .newspaper-table th, .newspaper-table td {
+    padding: 8px; /* Adequate padding for readability */
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for legibility over texture */
+  }
+  
+  /* Header row styling */
+  .newspaper-table th {
+    font-weight: bold;
+    border-bottom: 2px solid #333; /* Dark border for separation */
+  }
+  
+  /* Alternating row background for readability */
+  .newspaper-table tr:nth-child(odd) {
+    background-color: rgba(250, 250, 250, 0.9); /* Slightly off-white for odd rows */
+  }
+  
+  /* Keeping even rows a bit more transparent */
+  .newspaper-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Desert Oasis Table Style */
+.desert-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Tangerine', cursive; /* Handwritten, clean font for an adventurous feel */
+    background: url('https://example.com/sand-texture.jpg'); /* Placeholder for an actual sand texture background */
+    color: #5a4634; /* Dark brown text color for contrast and warmth */
+  }
+  
+  .desert-table th, .desert-table td {
+    padding: 10px; /* Adequate padding for ease of reading */
+    text-align: left;
+    background-color: rgba(255, 248, 220, 0.9); /* Slightly transparent background for cells to allow texture to show */
+  }
+  
+  /* Header row styling */
+  .desert-table th {
+    font-size: 20px; /* Larger font size for headers */
+    font-weight: bold;
+    border-bottom: 2px solid #a67b5b; /* Sandy brown for separation */
+  }
+  /* Data cells styling */
+  .desert-table td {
+    font-size: 16px; /* Adjust this value as needed for data cells */
+    /* Other styling remains unchanged */
+}
+  
+  /* Alternating row backgrounds for a dynamic desert feel */
+  .desert-table tr:nth-child(odd) {
+    background-color: rgba(255, 240, 185, 0.9); /* Light sandy color for odd rows */
+  }
+  
+  .desert-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 230, 0.9); /* Lighter shade for even rows */
+  }
+  /* Mothership Table Style */
+.mothership-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Roboto Mono', monospace; /* Monospaced font for a utilitarian, readable feel */
+  font-size: 12px;
+  color: #FFFFFF; /* White text for high contrast and readability */
+  background-color: #000000; /* Black background for a dark, horror theme */
+}
+
+.mothership-table th,
+.mothership-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #FFFFFF; /* White borders for separation */
+}
+
+/* Styling for header row */
+.mothership-table th {
+  font-family: 'Orbitron', sans-serif; /* Futuristic font for headers */
+  background-color: #121212; /* Slightly lighter black for headers */
+  color: #FF5555; /* Horror-inspired accent color */
+}
+
+/* Styling for odd rows */
+.mothership-table tr:nth-child(odd) {
+  background-color: #191919; /* Dark grey for odd rows */
+}
+
+/* Styling for even rows */
+.mothership-table tr:nth-child(even) {
+  background-color: #000000; /* Black for even rows, maintaining the dark theme */
+}
+
+/* Revised Ravenloft Light Table Style with Distinct Font Sizes for Headers and Rows */
+.raventhemelight-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Lora', serif; /* Consistency with the theme's body font */
+}
+
+/* Styling for headers with a larger font size */
+.raventhemelight-table th {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #7B4B94; /* Soft moonlight purple for borders */
+  color: #FFFFFF; /* White text for readability */
+  background: linear-gradient(to right, #8A0707, #AA1010); /* Dynamic gradient effect */
+  font-size: 16px; /* Larger font size for headers */
+}
+
+/* Styling for table data  */
+.raventhemelight-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #7B4B94; /* Soft moonlight purple for borders */
+  color: #505050; /* Dark grey for strong contrast */
+  font-size: 12px; /* Smaller font size for table data */
+}
+
+/* Styling for odd rows with a horror light grey color */
+.raventhemelight-table tr:nth-child(odd) {
+  background: linear-gradient(to right, #F8F8F2, #E0E0E0); /* Light grey gradient */
+}
+
+/* Styling for even rows with a light moonlight purple */
+.raventhemelight-table tr:nth-child(even) {
+  background: linear-gradient(to right, #9F8AA2, #897796); /* Soft purple gradient */
+}
+
+
+/* Raventheme Dark Table Style */
+.raventhemedark-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Lora', serif; /* Consistent with the theme's body font */
+}
+.raventhemedark-table th,
+.raventhemedark-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #403040; /* Even darker for a more subtle look */
+}
+/* Styling for header row */
+.raventhemedark-table th {
+  background-color: #564D56; /* Muted dark purple */
+  color: #FFF; /* White text for contrast */
+}
+/* Styling for odd rows */
+.raventhemedark-table tr:nth-child(odd) {
+  background-color: #645564; /* A darker, richer purple for visibility on black */
+}
+/* Styling for even rows */
+.raventhemedark-table tr:nth-child(even) {
+  background-color: #504950; /* A deep, dark grayish-purple */
+}
+
+/* Deadlands Light Table Style */
+.deadlandslight-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Cormorant Garamond', serif;
+}
+.deadlandslight-table th,
+.deadlandslight-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #d2b16c; /* Light gold for a refined look */
+}
+.deadlandslight-table th {
+  background-color: #efece1; /* Light background for headers */
+  color: #642e1e; /* Dark brown text for contrast */
+}
+.deadlandslight-table tr:nth-child(odd) {
+  background-color: #f8f9f7; /* Very light base background for odd rows */
+}
+.deadlandslight-table tr:nth-child(even) {
+  background-color: #dad2b9; /* Slightly darker for even rows, for subtle contrast */
+}
+
+/* Deadlands Dark Table Style */
+.deadlandsdark-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Cormorant Garamond', serif;
+}
+.deadlandsdark-table th,
+.deadlandsdark-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #900208; /* Deep red for a striking look */
+  
+}
+.deadlandsdark-table th {
+  background-color: #642e1e; /* Dark brown for headers */
+  color: white; /* For clear readability */
+}
+.deadlandsdark-table tr:nth-child(odd) {
+  background-color: #d2b16c; /* Light gold for odd rows */
+}
+.deadlandsdark-table tr:nth-child(even) {
+  background-color: #900208; /* Deep red for even rows, creating a bold contrast */
+  color: #EFECE1; /* Lighter color for better readability */
+}
+
+/* Savage Light Table Styles */
+.savagelight-table th,
+.savagelight-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #dcdcdc; /* Consistent light border for both headers and cells */
+}
+
+.savagelight-table th {
+    background-color: #a70001; /* Red for header background */
+    color: #ffffff; /* White text for contrast */
+    font-size: 18px; /* Increased font size for header */
+}
+
+.savagelight-table tr:nth-child(odd) {
+    background-color: #f1eae6; /* Lighter shade for odd rows, now swapped */
+    color: #000000; /* Black text for readability */
+}
+
+.savagelight-table tr:nth-child(even) {
+    background-color: #ffffff; /* White for even rows, now swapped */
+}
+
+/* Savage Dark Table Styles */
+.savagedark-table th,
+.savagedark-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #222; /* Dark border for distinction */
+}
+
+.savagedark-table th {
+  background-color: #000000; /* Black for header background */
+  color: #ffffff; /* White text for contrast */
+  font-size: 18px; /* Increased font size for header */
+}
+
+.savagedark-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #222; /* Dark border for distinction */
+}
+
+.savagedark-table tr:nth-child(odd) {
+  background-color: #f1eae6; /* Lighter shade for odd rows, ensuring distinction, previously even */
+  color: #000000; /* Black text for readability */
+}
+
+.savagedark-table tr:nth-child(even) {
+  background-color: #a70001; /* Red for even rows, previously odd */
+  color: #ffffff; /* White text for contrast */
+}
+
+/* Morklight Table Styles */
+.morklight-table th,
+.morklight-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #4e4e4e; /* Slightly lighter border for distinction against yellow */
+}
+
+.morklight-table th {
+  background-color: #000000; /* Golden Yellow for header background, matching MÖRK BORG theme */
+  color: #FF3EB5; /* Black text for contrast */
+  font-size: 18px; /* Maintaining font size for header */
+}
+
+.morklight-table tr:nth-child(odd) {
+  background-color: #FFFACD; /* Lemon Chiffon for a lighter row, subtle against the theme background */
+  color: #000000; /* Black text for readability */
+}
+
+.morklight-table tr:nth-child(even) {
+  background-color: #FFD700; /* Golden Yellow for even rows, cohesive with MÖRK BORG's aesthetic */
+  color: #000000; /* Black text for contrast */
+}
+
+/* Mork Table (Dark) Styles */
+.mork-table th,
+.mork-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #222; /* Dark border for distinction */
+}
+
+.mork-table th {
+  background-color: #333333; /* Dark Grey for header background, for a more subdued look */
+  color: #ffffff; /* White text for contrast */
+  font-size: 18px; /* Increased font size for header */
+}
+
+.mork-table tr:nth-child(odd) {
+  background-color: #555555; /* Darker Grey for odd rows, ensuring distinction */
+  color: #ffffff; /* White text for readability */
+}
+
+.mork-table tr:nth-child(even) {
+  background-color: #777777; /* Even Darker Grey for even rows, for contrast */
+  color: #FFD700; /* yellow text for contrast */
+}
+
+/* Blackgold-Table Style */
+.blackgold-table th {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #333;
+  color: #FFD700; /* Gold text */
+  border: 2px solid #FFD700;
+}
+
+.blackgold-table td {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #111;
+  color: #FFF;
+  border: 1px solid #444;
+}
+
+.blackgold-table tr:nth-child(odd) {
+  background-color: #111; /* Slightly lighter shade for odd rows */
+}
+
+.blackgold-table tr:nth-child(even) {
+  background-color: #111; /* Dark shade for even rows */
+}
+
+.blackgold-table th, .blackgold-table td {
+  padding: 10px;
+  text-align: center;
+}

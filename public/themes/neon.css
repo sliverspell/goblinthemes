@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&family=Audiowide&family=Expletus+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+body {
+  background-image: url('/*placeholder*/');
+  font-family: 'Orbitron', sans-serif; /* Setting the default font for the body */
+  background-color: #4d1f5f;
+}
+
+/* Background container image. Here you change the background color or image for the object journal, 
+or also known as markdown container */
+.markdown-container {
+  background-color: #4d1f5f !important; /* Force background color */
+  color: #ffffff !important; /* Force text color */
+  min-height: 100vh; /* Ensure it covers at least the viewport height */
+  border: 1px solid transparent;
+  padding: 20px 25px 20px 20px;
+}
+
+/* Text glow effect */
+.text-glow {
+  text-shadow: 0 0 8px #04d1ff; /* Blue glow */
+}
+
+/* Headers styling with specificity */
+h1, div.markdown-container h1 {
+  font-family: 'Zen Dots', cursive !important;
+  font-size: 30px !important;
+  color: #d1ff04 !important; /* Force color */
+  text-align: center;
+  border-bottom: 8px solid #d1ff04 !important;
+}
+
+h2, div.markdown-container h2 {
+  font-family: 'Audiowide', cursive !important;
+  font-size: 24px !important;
+  color: #04d1ff !important; /* Force color */
+  background: rgba(15, 139, 141, 0.2) !important; /* Force background */
+  text-align: center;
+  padding: 10px 0 !important;
+  width: 100% !important;
+  border-bottom: none !important; /*  removes any border */
+  border: 0; solid : #0f8b8d; /* Neon border */
+
+}
+
+h3, div.markdown-container h3 {
+  font-size: 20px !important;
+  color: #ccf381; /* Keeping the neon green */
+}
+
+h4, div.markdown-container h4 {
+  font-size: 18px !important;
+  background: rgba(204, 243, 129, 0.2) !important; /* Semi-transparent neon green background */
+  padding: 5px;
+  width: 100%;
+
+}
+
+/* Additional headers if needed */
+.markdown-container h5, .markdown-container h6 {
+  font-size: 14px !important; /* Adjusted for h5 */
+  color: #ffffff !important; /* White color for better readability */
+}
+
+/* Overriding and ensuring other styles */
+.markdown-container li, .markdown-container div {
+  font-size: 12px !important; /* Ensuring paragraph and list items font size */
+  color: #ffffff !important; /* Ensuring text color */
+}
+
+/* Overriding and ensuring paragraph styles for better readability */
+.markdown-container p {
+    font-family: 'Orbitron', sans-serif; /* Maintaining theme consistency */
+    font-size: 12px !important; /* Slightly larger for readability */
+    color: #E0E0E0 !important; /* A light grey for high contrast but less harsh than pure white */
+    line-height: 1.6 !important; /* Increasing line height for better readability */
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.7); /* Adding a subtle shadow for depth */
+  }
+  
