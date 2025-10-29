@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import ThemeStore from './pages/ThemeStore';
 import TableGenerator from './pages/TableGenerator';
+import SnippetLibrary from './pages/SnippetLibrary';
 import Documentation from './pages/Documentation';
 import './styles/global.css';
 
@@ -14,6 +15,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="theme-store" element={<ThemeStore />} />
           <Route path="table-generator" element={<TableGenerator />} />
+          <Route path="snippet-library" element={<SnippetLibrary />} />
           <Route path="documentation" element={<Documentation />} />
         </Route>
       </Routes>

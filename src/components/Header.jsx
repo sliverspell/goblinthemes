@@ -24,6 +24,7 @@ export default function Header() {
             {isDropdownOpen && (
               <div className="dropdown-content">
                 <Link to="/table-generator">Table Generator</Link>
+                <Link to="/snippet-library">Snippet Library</Link>
               </div>
             )}
           </li>
