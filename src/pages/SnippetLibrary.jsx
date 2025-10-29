@@ -9,6 +9,8 @@ export default function SnippetLibrary() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedRpgSystem, setSelectedRpgSystem] = useState('all');
+  const [selectedLayoutType, setSelectedLayoutType] = useState('all');
+  const [selectedComplexity, setSelectedComplexity] = useState('all');
   const [selectedSnippet, setSelectedSnippet] = useState(null);
   const [copiedId, setCopiedId] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -19,7 +21,7 @@ export default function SnippetLibrary() {
 
   useEffect(() => {
     filterSnippets();
-  }, [selectedCategory, searchQuery, selectedRpgSystem, snippets]);
+  }, [selectedCategory, searchQuery, selectedRpgSystem, selectedLayoutType, selectedComplexity, snippets]);
 
   const fetchData = async () => {
     try {
@@ -46,6 +48,14 @@ export default function SnippetLibrary() {
 
     if (selectedRpgSystem !== 'all') {
       filtered = filtered.filter(s => s.rpg_system === selectedRpgSystem);
+    }
+
+    if (selectedLayoutType !== 'all') {
+      filtered = filtered.filter(s => s.layout_type === selectedLayoutType);
+    }
+
+    if (selectedComplexity !== 'all') {
+      filtered = filtered.filter(s => s.complexity_level === selectedComplexity);
     }
 
     if (searchQuery) {
@@ -120,6 +130,31 @@ export default function SnippetLibrary() {
         </div>
 
         <div className="filter-group">
+          <label>Layout Type:</label>
+          <select
+            value={selectedLayoutType}
+            onChange={(e) => setSelectedLayoutType(e.target.value)}
+          >
+            <option value="all">All Types</option>
+            <option value="single">Single Components</option>
+            <option value="complete">Complete Layouts</option>
+          </select>
+        </div>
+
+        <div className="filter-group">
+          <label>Complexity:</label>
+          <select
+            value={selectedComplexity}
+            onChange={(e) => setSelectedComplexity(e.target.value)}
+          >
+            <option value="all">All Levels</option>
+            <option value="basic">Basic</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </div>
+
+        <div className="filter-group">
           <label>Search:</label>
           <input
             type="text"
@@ -142,6 +177,12 @@ export default function SnippetLibrary() {
 
             <div className="snippet-meta">
               <span className="rpg-system">{snippet.rpg_system}</span>
+              <span className={`layout-type-badge ${snippet.layout_type || 'single'}`}>
+                {snippet.layout_type === 'complete' ? '📄 Complete Layout' : '🧩 Component'}
+              </span>
+              <span className={`complexity-badge ${snippet.complexity_level || 'basic'}`}>
+                {snippet.complexity_level || 'basic'}
+              </span>
               {snippet.requires_css && (
                 <span className="requires-css" title="Requires CSS classes">
                   CSS: {snippet.css_classes.join(', ')}
@@ -186,6 +227,23 @@ export default function SnippetLibrary() {
 
             <h2>{selectedSnippet.title}</h2>
             <p>{selectedSnippet.description}</p>
+
+            <div className="snippet-preview-meta">
+              <span><strong>Type:</strong> {selectedSnippet.layout_type === 'complete' ? 'Complete Layout' : 'Single Component'}</span>
+              <span><strong>Complexity:</strong> {selectedSnippet.complexity_level || 'basic'}</span>
+              <span><strong>System:</strong> {selectedSnippet.rpg_system}</span>
+            </div>
+
+            {selectedSnippet.component_list && selectedSnippet.component_list.length > 0 && (
+              <div className="preview-notice">
+                <strong>Components Included:</strong>
+                <ul>
+                  {selectedSnippet.component_list.map((comp, idx) => (
+                    <li key={idx}>{comp}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {selectedSnippet.requires_css && (
               <div className="preview-notice">

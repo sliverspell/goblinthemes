@@ -48,7 +48,8 @@
   display: block;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #2c3e50;
+  color: #1a1a1a;
+  font-size: 0.95rem;
 }
 
 .category-buttons {
@@ -61,10 +62,12 @@
   padding: 0.5rem 1rem;
   border: 2px solid #dee2e6;
   background: white;
+  color: #2c3e50;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s;
   font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .category-buttons button:hover {
@@ -166,6 +169,46 @@
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
+}
+
+.layout-type-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.layout-type-badge.complete {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.layout-type-badge.single {
+  background: #f3e5f5;
+  color: #6a1b9a;
+}
+
+.complexity-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.complexity-badge.basic {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.complexity-badge.intermediate {
+  background: #fff8e1;
+  color: #f57f17;
+}
+
+.complexity-badge.advanced {
+  background: #ffebee;
+  color: #c62828;
 }
 
 .snippet-tags {
@@ -282,6 +325,24 @@
   margin-bottom: 1.5rem;
 }
 
+.snippet-preview-meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.snippet-preview-meta span {
+  font-size: 0.9rem;
+}
+
+.snippet-preview-meta strong {
+  color: #2c3e50;
+}
+
 .preview-notice {
   background: #fff3e0;
   border-left: 4px solid #e65100;
@@ -292,6 +353,15 @@
 
 .preview-notice strong {
   color: #e65100;
+}
+
+.preview-notice ul {
+  margin: 0.5rem 0 0 1.5rem;
+  line-height: 1.6;
+}
+
+.preview-notice li {
+  color: #666;
 }
 
 .preview-section {
