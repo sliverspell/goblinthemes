@@ -30,7 +30,8 @@ export default function TableGenerator() {
   };
 
   const generateTable = () => {
-    let tableHTML = '<table class="custom-table">\n';
+    const tableClass = selectedStyle ? `class="${selectedStyle}"` : 'class="custom-table"';
+    let tableHTML = `<table ${tableClass}>\n`;
     let markdown = '';
 
     tableHTML += '<thead>\n';
@@ -66,17 +67,8 @@ export default function TableGenerator() {
     tableHTML += '</tbody>\n';
     tableHTML += '</table>\n';
 
-    const wrapperClass = selectedStyle || '';
-    let htmlWithWrapper = wrapperClass
-      ? `<div class="${wrapperClass}">\n\n${tableHTML}</div>`
-      : tableHTML;
-
-    let mdWithWrapper = wrapperClass
-      ? `<div class="${wrapperClass}">\n\n${markdown}\n</div>`
-      : markdown;
-
-    setHtmlOutput(htmlWithWrapper);
-    setMarkdownOutput(mdWithWrapper);
+    setHtmlOutput(tableHTML);
+    setMarkdownOutput(markdown);
   };
 
   const clearOutputs = () => {
